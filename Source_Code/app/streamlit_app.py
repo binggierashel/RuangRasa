@@ -19,7 +19,7 @@ ROOT_DIR = SRC_DIR.parent
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from depresi_project import DISPLAY, validate_input  # noqa: E402
+from depresi_project import DISPLAY, TARGET, make_preprocessor, prepare_features, validate_input  # noqa: E402
 
 APP_NAME = "RuangRasa"
 TEAL, RED = "#0F766E", "#B42318"
@@ -35,11 +35,33 @@ if css_file.exists():
 def load_artifacts():
     schema = json.loads((ROOT_DIR / "Model/input_schema.json").read_text(encoding="utf-8"))
     metadata = json.loads((ROOT_DIR / "Model/model_metadata.json").read_text(encoding="utf-8"))
-    models = {
-        "Random Forest (terpilih)": joblib.load(ROOT_DIR / "Model/random_forest_pipeline.joblib"),
-        "Logistic Regression": joblib.load(ROOT_DIR / "Model/logistic_regression_pipeline.joblib"),
-        "Decision Tree": joblib.load(ROOT_DIR / "Model/decision_tree_pipeline.joblib"),
-    }
+    try:
+        models = {
+            "Random Forest (terpilih)": joblib.load(ROOT_DIR / "Model/random_forest_pipeline.joblib"),
+            "Logistic Regression": joblib.load(ROOT_DIR / "Model/logistic_regression_pipeline.joblib"),
+            "Decision Tree": joblib.load(ROOT_DIR / "Model/decision_tree_pipeline.joblib"),
+        }
+    except Exception:
+        from sklearn.ensemble import RandomForestClassifier
+        from sklearn.linear_model import LogisticRegression
+        from sklearn.pipeline import Pipeline
+        from sklearn.tree import DecisionTreeClassifier
+
+        train_df = pd.read_csv(ROOT_DIR / "Dataset/Data_Olahan/train.csv", low_memory=False)
+        X_train = prepare_features(train_df)
+        y_train = train_df[TARGET]
+        specs = {
+            "Random Forest (terpilih)": RandomForestClassifier(
+                n_estimators=100, max_depth=10, class_weight="balanced", random_state=42, n_jobs=-1
+            ),
+            "Logistic Regression": LogisticRegression(C=1.0, max_iter=1000, random_state=42),
+            "Decision Tree": DecisionTreeClassifier(max_depth=6, random_state=42),
+        }
+        models = {}
+        for name, clf in specs.items():
+            pipe = Pipeline([("preprocess", make_preprocessor()), ("model", clf)])
+            pipe.fit(X_train, y_train)
+            models[name] = pipe
     return schema, metadata, models
 
 
