@@ -224,7 +224,7 @@ with tab_single:
         st.markdown("##### Profil")
         a, b, c = st.columns(3)
         gender = pick(a, "Jenis kelamin", "Gender")
-        age = b.slider("Usia (tahun)", 18, 100, int(v["Age"]), step=1, key=f"num_age_{pid}")
+        age = b.number_input("Usia", 18, 100, int(v["Age"]), key=f"num_age_{pid}")
         marital = pick(c, "Status pernikahan", "Marital Status")
         a, b = st.columns(2)
         edu = pick(a, "Pendidikan", "Education Level")
