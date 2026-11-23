@@ -196,26 +196,35 @@ model = MODELS[model_name]
 
 # ------------------------------------------------------------------ Skrining
 with tab_single:
+    if "inputs" not in st.session_state:
+        st.session_state["inputs"] = dict(DEFAULTS)
+        st.session_state["preset_id"] = 0
+
     c1, c2, c3 = st.columns(3)
     if c1.button("Contoh risiko rendah", width="stretch"):
         st.session_state["inputs"] = dict(DEFAULTS)
+        st.session_state["preset_id"] = st.session_state.get("preset_id", 0) + 1
     if c2.button("Contoh risiko tinggi", width="stretch"):
         st.session_state["inputs"] = dict(HIGH_RISK)
-    if c3.button("Reset", width="stretch") or "inputs" not in st.session_state:
+        st.session_state["preset_id"] = st.session_state.get("preset_id", 0) + 1
+    if c3.button("Reset", width="stretch"):
         st.session_state["inputs"] = dict(DEFAULTS)
+        st.session_state["preset_id"] = st.session_state.get("preset_id", 0) + 1
     v = st.session_state["inputs"]
+    pid = st.session_state.get("preset_id", 0)
 
     def pick(col, label, key):
         return col.selectbox(
             label, CAT[key], index=CAT[key].index(v[key]),
             format_func=lambda x: id_label(key, x),
+            key=f"sel_{key}_{pid}",
         )
 
     with st.form("skrining"):
         st.markdown("##### Profil")
         a, b, c = st.columns(3)
         gender = pick(a, "Jenis kelamin", "Gender")
-        age = b.number_input("Usia", 18, 100, int(v["Age"]))
+        age = b.slider("Usia (tahun)", 18, 100, int(v["Age"]), step=1, key=f"num_age_{pid}")
         marital = pick(c, "Status pernikahan", "Marital Status")
         a, b = st.columns(2)
         edu = pick(a, "Pendidikan", "Education Level")
@@ -223,10 +232,10 @@ with tab_single:
 
         st.markdown("##### Tidur & aktivitas")
         a, b = st.columns(2)
-        sleep = a.number_input("Durasi tidur (jam)", 1.0, 18.0, float(v["Sleep Hours"]), step=0.5)
+        sleep = a.slider("Durasi tidur (jam)", 1.0, 18.0, float(v["Sleep Hours"]), step=0.5, key=f"num_sleep_{pid}")
         trouble = pick(b, "Riwayat gangguan tidur", "Trouble Sleeping History")
         a, b, c, d = st.columns(4)
-        sedentary = a.number_input("Waktu duduk (menit/hari)", 0.0, 1440.0, float(v["Sedentary Time"]), step=30.0)
+        sedentary = float(a.slider("Waktu duduk (menit/hari)", 0, 1440, int(v["Sedentary Time"]), step=30, key=f"num_sed_{pid}"))
         vigorous = pick(b, "Olahraga berat", "Vigorous Recreation")
         moderate = pick(c, "Olahraga sedang", "Moderate Recreation")
         smoker = pick(d, "Status merokok", "Current Smoker")
@@ -239,10 +248,10 @@ with tab_single:
 
         st.markdown("##### Pengukuran tubuh")
         a, b, c, d = st.columns(4)
-        bmi = a.number_input("BMI", 12.0, 70.0, float(v["BMI"]), step=0.1)
-        sys_bp = b.number_input("Sistolik", 70.0, 240.0, float(v["Systolic"]), step=1.0)
-        dia_bp = c.number_input("Diastolik", 40.0, 150.0, float(v["Diastolic"]), step=1.0)
-        pulse = d.number_input("Nadi (bpm)", 40.0, 200.0, float(v["Pulse"]), step=1.0)
+        bmi = a.slider("BMI", 12.0, 70.0, float(v["BMI"]), step=0.1, key=f"num_bmi_{pid}")
+        sys_bp = float(b.slider("Sistolik", 70, 240, int(v["Systolic"]), step=1, key=f"num_sys_{pid}"))
+        dia_bp = float(c.slider("Diastolik", 40, 150, int(v["Diastolic"]), step=1, key=f"num_dia_{pid}"))
+        pulse = float(d.slider("Nadi (bpm)", 40, 200, int(v["Pulse"]), step=1, key=f"num_pulse_{pid}"))
 
         submitted = st.form_submit_button("Analisis", type="primary", width="stretch")
 
