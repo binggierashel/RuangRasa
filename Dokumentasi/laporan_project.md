@@ -8,19 +8,11 @@
 ---
 
 ### Disusun Oleh:
-**Kelompok [Nomor Kelompok] - Kelas [Kelas/Ruang]**
+**Kelompok 11**
 
-1. **[Nama Mahasiswa 1]** — NIM: [NIM_001] *(Peran: Data Engineering & Pipeline Preprocessing)*
-2. **[Nama Mahasiswa 2]** — NIM: [NIM_002] *(Peran: Model Training, CV Tuning & Hyperparameter)*
-3. **[Nama Mahasiswa 3]** — NIM: [NIM_003] *(Peran: Streamlit Web App Developer & UI/UX)*
-4. **[Nama Mahasiswa 4]** — NIM: [NIM_004] *(Peran: Evaluasi Komparatif, Interpretasi Klinis & Laporan)*
-
-**Dosen Pengampu:**  
-[Nama Lengkap Dosen Pengampu, Gelar]
-
-**PROGRAM STUDI TEKNIK INFORMATIKA / SAINS DATA**  
-**FAKULTAS ILMU KOMPUTER / SAINS DAN TEKNOLOGI**  
-**TAHUN AKADEMIK 2024/2025**
+1. **Bintang Karini Br Padang** — NIM: J0404241005 *(Pembagian Tugas: Modeling dan evaluasi)*
+2. **Binggie Rashel Prasetyo** — NIM: J0404241009 *(Pembagian Tugas: Dataset, EDA, dan preprocessing)*
+3. **Gregorius Gil Ovidio Sebayang** — NIM: J0404241088 *(Pembagian Tugas: Implementasi aplikasi dan deployment)*
 
 ---
 
@@ -232,14 +224,13 @@ Model terpilih diintegrasikan ke dalam aplikasi web **RuangRasa** (`Source_Code/
 
 ## LAMPIRAN
 
-### Lampiran 1: Pembagian Tugas Anggota Kelompok
+### Lampiran 1: Pembagian Tugas Anggota Kelompok (Kelompok 11)
 
-| No. | Nama Mahasiswa | NIM | Peran Utama | Rincian Kontribusi Riil |
+| No. | Nama Mahasiswa | NIM | Pembagian Tugas | Rincian Kontribusi Riil |
 |:---:|---|---|---|---|
-| 1 | [Nama Mahasiswa 1] | [NIM_001] | Data Engineering & Pipeline Preprocessing | Mengidentifikasi dataset CDC NHANES, mengekstraksi 18 fitur klinis relevan, deduplikasi data, perancangan fungsi imputasi dan encoding zero leakage (`depresi_project.py`), serta validasi integritas data. |
-| 2 | [Nama Mahasiswa 2] | [NIM_002] | Model Training & CV Hyperparameter Tuning | Mengembangkan skrip pelatihan (`train.py`), menyusun protokol 5-Fold Stratified CV, konfigurasi GridSearchCV pada 3 algoritma, dan mengunci model terpilih berdasarkan CV Macro-F1. |
-| 3 | [Nama Mahasiswa 3] | [NIM_003] | Streamlit Web App Developer | Membangun dashboard Streamlit 5 modul (`streamlit_app.py`), mendesain stylesheet antarmuka (`styles.css`), membuat modul prediksi batch CSV, visualisasi dinamis, dan pengujian interaktif. |
-| 4 | [Nama Mahasiswa 4] | [NIM_004] | Evaluasi Komparatif, XAI & Dokumentasi | Menyusun laporan akademik, menganalisis matriks konfusi dan permutation importance, menyusun kamus data, metodologi, dan review 5 jurnal ber-DOI. |
+| 1 | **Bintang Karini Br Padang** | J0404241005 | Modeling dan evaluasi | Mengembangkan skrip pelatihan (`train.py`), menyusun protokol 5-Fold Stratified CV, konfigurasi GridSearchCV pada 3 algoritma (Random Forest, Logistic Regression, Decision Tree), mengunci model terpilih berdasarkan CV Macro-F1, serta menganalisis matriks konfusi dan *Permutation Feature Importance*. |
+| 2 | **Binggie Rashel Prasetyo** | J0404241009 | Dataset, EDA, dan preprocessing | Mengumpulkan & mengekstraksi dataset CDC NHANES (2005–2018), memilih 18 fitur klinis relevan, melakukan eksplorasi data (EDA) beserta 6 visualisasi utama, deduplikasi data, pembagian data stratified 80:20, serta merancang fungsi imputasi dan encoding zero leakage (`depresi_project.py`). |
+| 3 | **Gregorius Gil Ovidio Sebayang** | J0404241088 | Implementasi aplikasi dan deployment | Membangun aplikasi web interaktif Streamlit RuangRasa (`streamlit_app.py`), mendesain stylesheet antarmuka (`styles.css`), membuat modul skrining individu dan prediksi batch CSV, integrasi visualisasi model, pengujian aplikasi, serta deployment. |
 
 ### Lampiran 2: Struktur Repositori Proyek
 ```

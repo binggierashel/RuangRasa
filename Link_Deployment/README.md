@@ -6,8 +6,8 @@ Repositori ini siap untuk dijalankan baik secara lokal maupun dideploy ke layana
 
 ### I. Template Tautan Deployment Publik (Untuk Pengumpulan PJBL)
 
-- **URL Aplikasi Cloud:** `https://mindscope-depression-screening.streamlit.app` *(Ganti dengan URL aktif setelah proses deploy di Streamlit Cloud)*
-- **URL Repositori GitHub:** `https://github.com/[username-kelompok]/prediksi_gangguan_depresi`
+- **URL Aplikasi Cloud:** `https://ruangrasa.streamlit.app` *(Ganti dengan URL aktif setelah proses deploy di Streamlit Cloud)*
+- **URL Repositori GitHub:** `https://github.com/binggierashel/RuangRasa`
 - **Video Demo Aplikasi (Google Drive / YouTube):** `https://youtu.be/[link-video-demo]`
 
 ---

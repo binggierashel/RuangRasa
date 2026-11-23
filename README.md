@@ -184,20 +184,16 @@ Buka browser pada alamat: `http://localhost:8501`.
 
 ---
 
-## 👥 Identitas Anggota Kelompok
+## 👥 Identitas Anggota Kelompok — Kelompok 11
 
-*Silakan sesuaikan data identitas pada `Dokumentasi/identitas_kelompok.json` sebelum pengumpulan tugas akhir:*
-
-| No. | Nama Mahasiswa | NIM | Peran Utama |
+| No. | Nama Mahasiswa | NIM | Pembagian Tugas |
 |:---:|---|---|---|
-| 1 | [Nama Mahasiswa 1 / Ketua] | [NIM_001] | Data Engineering, Preprocessing Pipeline & Integritas Data |
-| 2 | [Nama Mahasiswa 2] | [NIM_002] | Model Training, CV Hyperparameter Tuning & Seleksi Macro-F1 |
-| 3 | [Nama Mahasiswa 3] | [NIM_003] | Streamlit Web App Developer, UI/UX & Batch Processing |
-| 4 | [Nama Mahasiswa 4] | [NIM_004] | Evaluasi Komparatif, Explainable AI & Laporan Akademik |
+| 1 | **Bintang Karini Br Padang** | J0404241005 | Modeling dan evaluasi |
+| 2 | **Binggie Rashel Prasetyo** | J0404241009 | Dataset, EDA, dan preprocessing |
+| 3 | **Gregorius Gil Ovidio Sebayang** | J0404241088 | Implementasi aplikasi dan deployment |
 
-- **Mata Kuliah:** Machine Learning (Semester 5, Ganjil 2024/2025)
-- **Dosen Pengampu:** [Nama Dosen Pengampu, Gelar]
-- **Program Studi:** Teknik Informatika / Sains Data
+- **Kelompok:** Kelompok 11
+- **Mata Kuliah:** Machine Learning (Semester 5)
 
 ---
 

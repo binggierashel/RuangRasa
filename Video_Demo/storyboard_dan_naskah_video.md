@@ -21,15 +21,14 @@ Dokumen ini disusun untuk memandu pembuatan video demonstrasi proyek PJBL Machin
 ### II. Naskah Narasi Lengkap Per Menit (Script)
 
 #### Segmen 1: Pembukaan & Identitas Kelompok (00:00 – 00:45)
-- **Tampilan Visual:** Tampilkan halaman muka presentasi atau buka modul `Informasi Proyek & Tim` pada aplikasi web Streamlit.
-- **Narator 1:**
-  > *"Halo, selamat pagi/siang kepada Bapak/Ibu Dosen Pengampu dan rekan-rekan sekalian. Kami dari Kelompok [Nomor Kelompok] Kelas [Nama Kelas] mempersembahkan proyek tugas besar Machine Learning Semester 5 berjudul:*  
-  > **'Sistem Klasifikasi dan Skrining Risiko Gangguan Depresi Mayor Menggunakan Pendekatan Machine Learning Berbasis Data CDC NHANES'**.*  
-  > *Kelompok kami beranggotakan:*
-  > 1. *[Nama Mahasiswa 1] - NIM [NIM_001], bertindak sebagai Data Engineer & Preprocessing Pipeline,*
-  > 2. *[Nama Mahasiswa 2] - NIM [NIM_002], bertindak sebagai Model Training & Hyperparameter Tuning,*
-  > 3. *[Nama Mahasiswa 3] - NIM [NIM_003], bertindak sebagai Streamlit App Developer,*
-  > 4. *[Nama Mahasiswa 4] - NIM [NIM_004], bertindak sebagai Evaluator Model & Dokumentasi Akademik.*  
+- **Tampilan Visual:** Tampilkan halaman muka presentasi atau buka modul `Tentang` pada aplikasi web Streamlit RuangRasa.
+- **Narator 1 (Binggie Rashel Prasetyo):**
+  > *"Halo, selamat pagi/siang kepada Bapak/Ibu Dosen Pengampu dan rekan-rekan sekalian. Kami dari Kelompok 11 mempersembahkan proyek tugas besar Machine Learning Semester 5 berjudul:*  
+  > **'RuangRasa: Sistem Klasifikasi dan Skrining Risiko Gangguan Depresi Mayor Menggunakan Pendekatan Machine Learning Berbasis Data CDC NHANES'**.*  
+  > *Kelompok 11 beranggotakan:*
+  > 1. *Bintang Karini Br Padang (J0404241005), bertugas pada bagian Modeling dan evaluasi,*
+  > 2. *Binggie Rashel Prasetyo (J0404241009), bertugas pada bagian Dataset, EDA, dan preprocessing,*
+  > 3. *Gregorius Gil Ovidio Sebayang (J0404241088), bertugas pada bagian Implementasi aplikasi dan deployment.*  
   > *Mari kita simak latar belakang mengapa proyek ini sangat penting untuk dikembangkan."*
 
 ---
