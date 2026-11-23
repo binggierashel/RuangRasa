@@ -304,6 +304,31 @@ with tab_camera:
         "**bukan diagnosis medis**."
     )
 
+    st.markdown("##### Arsitektur deteksi visual")
+    vision_spec = pd.DataFrame([
+        {
+            "Komponen": "Deteksi wajah",
+            "Model / Metode": "TinyFaceDetector (Tiny-YOLOv2)",
+            "Fungsi": "Mendeteksi kotak wajah (bounding box) dan confidence score secara real-time di browser.",
+        },
+        {
+            "Komponen": "Titik anatomi & mata",
+            "Model / Metode": "FaceLandmark68TinyNet + Eye Aspect Ratio (EAR)",
+            "Fungsi": "Memetakan 68 titik wajah untuk mengukur bukaan kelopak mata sebagai indikator kelelahan/kurang tidur.",
+        },
+        {
+            "Komponen": "Klasifikasi ekspresi",
+            "Model / Metode": "FaceExpressionNet (CNN)",
+            "Fungsi": "Mengukur proporsi ekspresi netral (afek datar) serta mikro-ekspresi sedih/tegang.",
+        },
+        {
+            "Komponen": "Skor gabungan",
+            "Model / Metode": "Multimodal Fusion (75% Klinis + 25% Visual)",
+            "Fungsi": "Menggabungkan probabilitas model Random Forest (CDC NHANES) dengan sinyal visual kamera.",
+        },
+    ])
+    st.dataframe(vision_spec, hide_index=True, width="stretch")
+
 # ------------------------------------------------------------------ Batch
 with tab_batch:
     st.markdown("Unggah CSV berisi banyak responden untuk diprediksi sekaligus.")
