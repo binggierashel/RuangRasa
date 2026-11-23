@@ -298,7 +298,7 @@ with tab_single:
 # ------------------------------------------------------------------ Kamera AI
 with tab_camera:
     st.markdown("Deteksi wajah, bukaan mata, dan ekspresi secara langsung sebagai sinyal pendukung.")
-    render_realtime_yolo_scanner(st.session_state.get("last_clinical_prob"))
+    render_realtime_yolo_scanner()
     st.caption(
         "Sinyal visual ini hanya indikator pendukung terkait kelelahan tidur dan afek, "
         "**bukan diagnosis medis**."
@@ -320,11 +320,6 @@ with tab_camera:
             "Komponen": "Klasifikasi ekspresi",
             "Model / Metode": "FaceExpressionNet (CNN)",
             "Fungsi": "Mengukur proporsi ekspresi netral (afek datar) serta mikro-ekspresi sedih/tegang.",
-        },
-        {
-            "Komponen": "Skor gabungan",
-            "Model / Metode": "Multimodal Fusion (75% Klinis + 25% Visual)",
-            "Fungsi": "Menggabungkan probabilitas model Random Forest (CDC NHANES) dengan sinyal visual kamera.",
         },
     ])
     st.dataframe(vision_spec, hide_index=True, width="stretch")

@@ -206,9 +206,9 @@ def render_realtime_yolo_scanner(clinical_prob: float | None = None) -> None:
       <div class="metric-note">Deteksi mikro-ekspresi</div>
     </div>
     <div class="metric">
-      <div class="metric-label" id="lblFusion">{("Skor gabungan" if clin_val >= 0 else "Sinyal visual")}</div>
-      <div class="metric-value" id="valFusion">{(str(clin_val) + "%" if clin_val >= 0 else "–")}</div>
-      <div class="metric-note">{("75% model + 25% visual" if clin_val >= 0 else "Rata-rata indikator visual")}</div>
+      <div class="metric-label">Sinyal visual</div>
+      <div class="metric-value" id="valFusion">–</div>
+      <div class="metric-note">Rata-rata indikator visual</div>
     </div>
   </div>
 
@@ -377,14 +377,8 @@ def render_realtime_yolo_scanner(clinical_prob: float | None = None) -> None:
     document.getElementById("valSad").textContent = sd + "%";
 
     const fusionEl = document.getElementById("valFusion");
-    if (CLINICAL_PROB >= 0) {{
-      const fused = Math.round(0.75 * CLINICAL_PROB + 0.25 * vs);
-      fusionEl.textContent = fused + "%";
-      fusionEl.style.color = fused >= 50 ? "#B42318" : "#0F766E";
-    }} else {{
-      fusionEl.textContent = vs + "%";
-      fusionEl.style.color = vs >= 55 ? "#B42318" : "#0F172A";
-    }}
+    fusionEl.textContent = vs + "%";
+    fusionEl.style.color = vs >= 52 ? "#B42318" : "#0F172A";
   }}
 
   function loop(now) {{
