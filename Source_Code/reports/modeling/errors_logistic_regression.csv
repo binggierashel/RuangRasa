@@ -1,0 +1,616 @@
+Gender,Education Level,Marital Status,Household Income,Trouble Sleeping History,Vigorous Recreation,Moderate Recreation,Current Smoker,Memory Problems,Cant Work,Limited Work,Age,Sleep Hours,Sedentary Time,BMI,Systolic,Diastolic,Pulse,clean_index,actual,predicted,correct,probability_Depressed,probability_Not Depressed
+Male,9-11th Grade,Widowed,Below $45K,Yes,No,No,Missing,No,No,No,39,5.0,120.0,34.58,122.0,78.0,82.0,15376,Depressed,Not Depressed,False,0.1287256456519611,0.8712743543480389
+Female,High School,Married,Below $10K,Yes,No,No,Every Day,Yes,Yes,Yes,36,5.0,300.0,23.72,100.0,78.0,84.0,8468,Not Depressed,Depressed,False,0.7864876124900576,0.21351238750994242
+Female,College Graduate or Above,Never Married,Below $15K,Yes,No,Yes,Missing,No,Yes,Yes,41,7.0,540.0,38.38,106.0,80.0,94.0,11993,Depressed,Not Depressed,False,0.28772803861323804,0.712271961386762
+Female,High School,Separated,Below $25K,Yes,No,No,Every Day,Yes,Yes,Yes,61,5.0,120.0,23.5,104.0,62.0,78.0,17635,Not Depressed,Depressed,False,0.7670745737562296,0.23292542624377044
+Female,Some College or AA Degree,Married,Over $20K,Yes,No,Yes,Missing,No,No,No,51,6.0,240.0,22.15,92.0,70.0,72.0,10611,Depressed,Not Depressed,False,0.050181231571147955,0.949818768428852
+Male,College Graduate or Above,Married,Below $20K,No,No,Yes,Missing,No,No,No,80,9.0,240.0,24.6,118.0,36.0,60.0,25251,Depressed,Not Depressed,False,0.004972925706970943,0.9950270742930291
+Female,High School,Never Married,Below $55K,Yes,No,No,Every Day,Yes,No,No,52,5.0,240.0,31.27,118.0,68.0,64.0,15096,Depressed,Not Depressed,False,0.4439526332118281,0.5560473667881719
+Male,Some College or AA Degree,Divorced,Below $25K,Yes,No,No,Every Day,No,Yes,Yes,59,12.0,240.0,23.5,66.0,44.0,120.0,24374,Depressed,Not Depressed,False,0.2299372609438335,0.7700627390561665
+Female,Some College or AA Degree,Divorced,Below $35K,No,No,No,Missing,No,No,No,51,5.0,120.0,33.02,90.0,60.0,78.0,15386,Depressed,Not Depressed,False,0.06764941261503743,0.9323505873849626
+Female,Some College or AA Degree,Married,Below $20K,Yes,No,No,Never,No,No,No,59,8.0,480.0,33.7,154.0,74.0,56.0,27628,Depressed,Not Depressed,False,0.12091410636701339,0.8790858936329866
+Female,High School,Separated,Below $45K,Yes,No,No,Every Day,Yes,Yes,Yes,66,7.0,120.0,36.5,144.0,74.0,66.0,32380,Not Depressed,Depressed,False,0.6779919403596144,0.32200805964038554
+Female,High School,Divorced,Below $35K,Yes,No,No,Missing,No,Yes,Yes,47,9.0,60.0,46.39,0.0,0.0,88.0,2461,Depressed,Not Depressed,False,0.33651540941397295,0.663484590586027
+Male,9-11th Grade,Never Married,Below $45K,Yes,No,No,Never,No,No,No,43,7.5,90.0,26.7,0.0,0.0,60.0,31517,Depressed,Not Depressed,False,0.09961971858907948,0.9003802814109205
+Male,High School,Married,Below $65K,Yes,No,No,Every Day,Yes,No,No,55,9.0,240.0,26.7,110.0,68.0,74.0,28681,Depressed,Not Depressed,False,0.18344865281586797,0.816551347184132
+Female,9-11th Grade,Married,Below $75K,Yes,No,No,Missing,No,No,No,58,9.5,180.0,31.9,126.0,64.0,70.0,28844,Depressed,Not Depressed,False,0.0791905796284873,0.9208094203715127
+Female,Some College or AA Degree,Married,$75K+,No,No,No,Missing,No,No,No,33,8.0,300.0,31.28,124.0,70.0,78.0,6417,Depressed,Not Depressed,False,0.038095840693421756,0.9619041593065782
+Female,Missing,Missing,Below $25K,No,Yes,Yes,Missing,No,No,No,18,7.0,600.0,26.7,114.0,68.0,90.0,33846,Depressed,Not Depressed,False,0.06067973388618897,0.939320266113811
+Female,High School,Widowed,Below $35K,Yes,No,No,Missing,No,No,No,69,7.0,300.0,36.1,0.0,0.0,70.0,32460,Depressed,Not Depressed,False,0.08821158636615467,0.9117884136338453
+Male,9-11th Grade,Partner,Below $15K,No,No,No,Never,No,No,No,27,6.0,360.0,29.1,118.0,58.0,78.0,22704,Depressed,Not Depressed,False,0.08147147566967328,0.9185285243303267
+Female,9-11th Grade,Widowed,Below $35K,Yes,No,Yes,Missing,Yes,No,Yes,61,7.0,240.0,34.4,130.0,66.0,94.0,17797,Depressed,Not Depressed,False,0.3285600597664844,0.6714399402335156
+Female,9-11th Grade,Separated,Below $10K,No,No,No,Every Day,No,No,No,24,8.0,180.0,23.15,112.0,78.0,86.0,1880,Depressed,Not Depressed,False,0.17719989037845973,0.8228001096215403
+Male,Less Than 9th Grade,Separated,Below $15K,Yes,No,No,Every Day,No,No,Yes,52,8.0,300.0,39.0,122.0,70.0,74.0,17361,Depressed,Not Depressed,False,0.3319559643712128,0.6680440356287872
+Male,Less Than 9th Grade,Married,Missing,Yes,Yes,Yes,Every Day,Yes,Yes,Yes,55,7.0,180.0,38.9,122.0,76.0,90.0,36037,Depressed,Not Depressed,False,0.48703319253417376,0.5129668074658262
+Female,High School,Separated,Below $5K,Yes,No,No,Missing,No,Yes,Yes,58,8.0,360.0,54.9,0.0,0.0,0.0,21930,Depressed,Not Depressed,False,0.4634330472610011,0.5365669527389989
+Male,Some College or AA Degree,Partner,$75K+,Yes,No,No,Every Day,No,No,No,30,7.0,240.0,23.75,108.0,70.0,82.0,15150,Depressed,Not Depressed,False,0.13701399573570283,0.8629860042642972
+Female,Some College or AA Degree,Partner,Below $45K,Yes,No,No,Every Day,No,No,No,32,6.0,600.0,27.5,170.0,104.0,74.0,27790,Depressed,Not Depressed,False,0.295697591106146,0.704302408893854
+Male,College Graduate or Above,Married,Over $20K,Yes,No,No,Missing,No,No,No,45,6.0,240.0,31.19,0.0,0.0,84.0,14410,Depressed,Not Depressed,False,0.03940981740833094,0.9605901825916691
+Female,Some College or AA Degree,Widowed,Below $35K,No,No,No,Every Day,Yes,Yes,Yes,63,6.0,180.0,24.8,138.0,56.0,68.0,20727,Depressed,Not Depressed,False,0.36890685336221596,0.631093146637784
+Female,9-11th Grade,Widowed,Below $25K,No,No,No,Missing,Yes,Yes,Yes,71,11.5,270.0,29.8,136.0,66.0,66.0,35143,Depressed,Not Depressed,False,0.2204545222891776,0.7795454777108224
+Male,9-11th Grade,Separated,Below $25K,No,No,No,Every Day,Yes,Yes,Yes,41,10.0,480.0,21.8,104.0,70.0,114.0,12833,Depressed,Not Depressed,False,0.470495891392978,0.529504108607022
+Female,Some College or AA Degree,Partner,Below $45K,No,No,No,Never,No,No,No,32,4.0,600.0,23.4,110.0,70.0,70.0,16909,Depressed,Not Depressed,False,0.10579775832524507,0.8942022416747549
+Female,9-11th Grade,Never Married,Below $10K,Yes,No,No,Every Day,Yes,Yes,Yes,47,9.0,720.0,33.6,122.0,72.0,78.0,24399,Not Depressed,Depressed,False,0.782329730019089,0.21767026998091094
+Male,Less Than 9th Grade,Married,Below $15K,No,No,No,Missing,Yes,No,No,80,8.0,120.0,24.0,140.0,78.0,70.0,29353,Depressed,Not Depressed,False,0.056250823440552766,0.9437491765594472
+Male,Some College or AA Degree,Never Married,Below $25K,No,No,No,Every Day,No,No,No,49,4.0,480.0,26.5,100.0,62.0,98.0,21997,Depressed,Not Depressed,False,0.07092042535258214,0.9290795746474179
+Female,9-11th Grade,Widowed,Below $35K,Yes,No,No,Every Day,No,No,No,70,8.0,360.0,20.78,140.0,60.0,74.0,8545,Depressed,Not Depressed,False,0.13570796260922602,0.864292037390774
+Male,Less Than 9th Grade,Married,Below $20K,No,No,No,Never,No,No,No,76,6.0,360.0,25.6,140.0,78.0,64.0,21501,Depressed,Not Depressed,False,0.03220856180891285,0.9677914381910871
+Male,Some College or AA Degree,Divorced,Below $20K,No,No,No,Every Day,Yes,No,Yes,45,6.0,600.0,29.71,110.0,78.0,74.0,13523,Depressed,Not Depressed,False,0.3517281550740372,0.6482718449259628
+Female,9-11th Grade,Divorced,Below $15K,Yes,No,No,Every Day,No,Yes,Yes,50,6.0,300.0,31.1,102.0,78.0,82.0,19349,Not Depressed,Depressed,False,0.6312106468392267,0.36878935316077327
+Female,College Graduate or Above,Married,Over $20K,Yes,Yes,Yes,Missing,No,No,No,59,7.0,360.0,28.67,100.0,64.0,78.0,10724,Depressed,Not Depressed,False,0.02380552016398685,0.9761944798360132
+Female,High School,Divorced,Below $15K,Yes,No,No,Every Day,No,Yes,Yes,45,7.0,300.0,35.28,110.0,54.0,64.0,12476,Not Depressed,Depressed,False,0.5409280575156783,0.45907194248432176
+Male,Some College or AA Degree,Never Married,Missing,No,No,No,Every Day,No,No,No,26,7.5,840.0,19.7,124.0,82.0,76.0,32367,Depressed,Not Depressed,False,0.08584079233360187,0.9141592076663981
+Female,Some College or AA Degree,Never Married,Below $20K,No,No,No,Missing,No,No,No,22,6.0,480.0,20.6,108.0,66.0,78.0,24450,Depressed,Not Depressed,False,0.10333766586207072,0.8966623341379293
+Female,College Graduate or Above,Married,Below $55K,No,No,No,Missing,No,No,No,37,8.0,360.0,26.34,88.0,70.0,80.0,8488,Depressed,Not Depressed,False,0.034464549267870015,0.96553545073213
+Female,High School,Married,$75K+,Yes,Yes,Yes,Every Day,No,Yes,Yes,37,7.0,180.0,24.19,102.0,56.0,64.0,14399,Depressed,Not Depressed,False,0.2027804970427003,0.7972195029572997
+Female,Some College or AA Degree,Widowed,Below $20K,Yes,No,No,Missing,No,No,No,80,6.0,720.0,32.1,130.0,66.0,76.0,20977,Depressed,Not Depressed,False,0.10631305145699821,0.8936869485430018
+Male,Less Than 9th Grade,Divorced,Below $5K,No,No,No,Never,Yes,Yes,Yes,63,6.0,360.0,25.7,118.0,74.0,88.0,24335,Depressed,Not Depressed,False,0.4750929783451757,0.5249070216548243
+Male,9-11th Grade,Widowed,Below $20K,No,No,No,Never,No,No,Yes,78,6.0,120.0,24.72,106.0,52.0,98.0,1896,Depressed,Not Depressed,False,0.04277933164378889,0.9572206683562111
+Male,Some College or AA Degree,Never Married,Below $15K,No,No,Yes,Missing,No,Yes,Yes,32,9.0,240.0,22.77,120.0,50.0,60.0,10584,Depressed,Not Depressed,False,0.060006533413265006,0.939993466586735
+Female,Missing,Missing,Below $15K,No,No,No,Missing,No,No,No,19,5.0,0.0,16.6,92.0,54.0,88.0,20136,Depressed,Not Depressed,False,0.11032286830873528,0.8896771316912647
+Female,College Graduate or Above,Never Married,Over $20K,No,No,Yes,Missing,No,No,No,21,8.0,480.0,22.3,90.0,56.0,70.0,18591,Depressed,Not Depressed,False,0.024579685862892164,0.9754203141371078
+Female,College Graduate or Above,Separated,Below $75K,Yes,No,No,Missing,No,No,No,44,7.0,240.0,44.6,0.0,0.0,94.0,32721,Depressed,Not Depressed,False,0.14220216147967912,0.8577978385203209
+Male,Less Than 9th Grade,Married,Below $35K,No,No,No,Never,No,No,Yes,77,12.0,840.0,42.42,156.0,84.0,58.0,5955,Depressed,Not Depressed,False,0.03124410612726858,0.9687558938727314
+Male,College Graduate or Above,Never Married,Over $20K,No,No,Yes,Some Days,No,No,No,39,8.0,180.0,27.65,144.0,90.0,94.0,7238,Depressed,Not Depressed,False,0.014235482600966964,0.985764517399033
+Male,High School,Divorced,Below $5K,Yes,No,No,Missing,No,Yes,Yes,37,3.0,1080.0,51.9,0.0,0.0,86.0,25341,Not Depressed,Depressed,False,0.6019361347309682,0.39806386526903187
+Female,Some College or AA Degree,Separated,Missing,Yes,Yes,Yes,Every Day,No,Yes,Yes,42,6.0,360.0,21.3,168.0,82.0,58.0,16303,Depressed,Not Depressed,False,0.3847454133145458,0.6152545866854542
+Female,Some College or AA Degree,Divorced,Below $5K,No,No,No,Every Day,No,Yes,Yes,43,14.0,720.0,22.2,102.0,64.0,78.0,28953,Depressed,Not Depressed,False,0.23863803962728958,0.7613619603727104
+Female,Some College or AA Degree,Never Married,Below $35K,No,No,No,Missing,No,No,No,23,6.0,360.0,17.56,98.0,64.0,62.0,13642,Depressed,Not Depressed,False,0.08057450184893689,0.9194254981510631
+Male,High School,Never Married,Below $35K,No,No,No,Every Day,No,No,No,34,7.0,420.0,48.92,126.0,76.0,82.0,8529,Depressed,Not Depressed,False,0.07273570628353754,0.9272642937164625
+Female,Some College or AA Degree,Divorced,Below $75K,Yes,No,Yes,Every Day,No,No,No,44,8.0,480.0,29.2,116.0,74.0,76.0,33100,Depressed,Not Depressed,False,0.15868645678159488,0.8413135432184051
+Male,Some College or AA Degree,Married,Below $25K,Yes,Yes,Yes,Missing,No,No,No,24,5.0,360.0,30.4,132.0,82.0,70.0,17303,Depressed,Not Depressed,False,0.07389607900400175,0.9261039209959983
+Female,High School,Widowed,Below $10K,Yes,No,No,Never,No,Yes,Yes,50,4.0,120.0,27.2,104.0,64.0,76.0,16539,Depressed,Not Depressed,False,0.4118626317288171,0.5881373682711829
+Male,College Graduate or Above,Married,Below $55K,Yes,No,No,Every Day,No,No,No,46,4.0,300.0,29.76,112.0,66.0,78.0,1378,Depressed,Not Depressed,False,0.10499254678039294,0.8950074532196071
+Male,Some College or AA Degree,Divorced,Below $20K,Yes,No,No,Every Day,Yes,Yes,Yes,38,12.0,660.0,26.73,128.0,84.0,104.0,6991,Not Depressed,Depressed,False,0.666754431161354,0.33324556883864603
+Male,9-11th Grade,Partner,Missing,Yes,No,Yes,Never,Yes,Yes,Yes,74,0.0,120.0,26.2,176.0,56.0,102.0,32678,Depressed,Not Depressed,False,0.4896696020057588,0.5103303979942412
+Male,Less Than 9th Grade,Married,Below $45K,Yes,No,No,Never,Yes,No,No,48,5.0,120.0,31.16,114.0,72.0,60.0,9407,Depressed,Not Depressed,False,0.32324618956060835,0.6767538104393916
+Female,Some College or AA Degree,Never Married,Below $55K,Yes,No,No,Missing,No,No,No,36,7.0,600.0,60.9,116.0,80.0,96.0,28729,Depressed,Not Depressed,False,0.21127831805818897,0.788721681941811
+Female,9-11th Grade,Married,Below $35K,No,Yes,No,Missing,No,No,No,24,8.0,240.0,21.28,120.0,60.0,80.0,4527,Depressed,Not Depressed,False,0.04870711250314508,0.9512928874968549
+Female,High School,Divorced,Below $35K,Yes,No,No,Never,Yes,Yes,Yes,62,8.0,240.0,28.1,144.0,86.0,88.0,17262,Not Depressed,Depressed,False,0.6112064695694688,0.38879353043053116
+Female,High School,Divorced,Below $45K,Yes,No,Yes,Every Day,No,No,No,37,8.0,480.0,22.0,116.0,52.0,84.0,24053,Depressed,Not Depressed,False,0.15609928134911866,0.8439007186508813
+Male,Some College or AA Degree,Partner,Below $75K,Yes,No,No,Every Day,Yes,Yes,Yes,59,6.0,900.0,26.4,136.0,70.0,72.0,16572,Not Depressed,Depressed,False,0.5947299033092895,0.40527009669071046
+Male,9-11th Grade,Partner,Below $25K,No,No,No,Never,Yes,No,Yes,51,6.0,480.0,18.7,136.0,68.0,78.0,8516,Depressed,Not Depressed,False,0.2156154872664915,0.7843845127335085
+Female,Less Than 9th Grade,Divorced,Below $35K,Yes,No,Yes,Missing,No,No,No,62,7.0,360.0,33.6,0.0,0.0,72.0,31437,Depressed,Not Depressed,False,0.12399777649164978,0.8760022235083502
+Female,Some College or AA Degree,Divorced,Below $45K,No,No,Yes,Every Day,No,Yes,Yes,58,6.0,540.0,19.3,146.0,76.0,76.0,20866,Depressed,Not Depressed,False,0.14378606233208135,0.8562139376679186
+Male,9-11th Grade,Partner,Below $35K,Yes,No,No,Every Day,Yes,Yes,Yes,38,3.0,240.0,20.61,116.0,68.0,56.0,5551,Not Depressed,Depressed,False,0.7722475878936502,0.2277524121063498
+Female,Less Than 9th Grade,Never Married,Below $20K,No,No,No,Missing,No,No,No,31,5.0,120.0,23.97,100.0,54.0,58.0,11772,Depressed,Not Depressed,False,0.12376978284750051,0.8762302171524995
+Female,Less Than 9th Grade,Widowed,Below $20K,Yes,No,No,Missing,No,Yes,Yes,80,4.0,720.0,37.2,122.0,72.0,68.0,22259,Depressed,Not Depressed,False,0.43774556006840737,0.5622544399315926
+Female,9-11th Grade,Widowed,Below $5K,Yes,No,No,Every Day,No,Yes,Yes,64,8.0,720.0,33.9,144.0,78.0,58.0,35562,Not Depressed,Depressed,False,0.5431256660479178,0.4568743339520822
+Female,High School,Divorced,Below $15K,Yes,No,No,Every Day,No,No,No,33,3.0,360.0,30.78,106.0,76.0,94.0,13877,Depressed,Not Depressed,False,0.43911602355752943,0.5608839764424706
+Female,High School,Widowed,Below $55K,No,No,No,Missing,No,No,No,59,4.0,120.0,30.06,104.0,64.0,60.0,11203,Depressed,Not Depressed,False,0.0423173597879648,0.9576826402120352
+Female,High School,Married,Below $15K,Yes,No,No,Missing,No,No,No,35,5.0,420.0,39.1,128.0,80.0,70.0,17452,Depressed,Not Depressed,False,0.2081857339755956,0.7918142660244044
+Female,Some College or AA Degree,Never Married,Below $25K,No,No,Yes,Missing,No,No,No,27,6.0,480.0,34.8,124.0,56.0,58.0,27785,Depressed,Not Depressed,False,0.05931385663205224,0.9406861433679478
+Male,College Graduate or Above,Married,Below $25K,Yes,No,No,Every Day,No,Yes,Yes,58,5.0,300.0,51.5,112.0,68.0,76.0,19505,Depressed,Not Depressed,False,0.2910403997814054,0.7089596002185946
+Female,Some College or AA Degree,Widowed,Below $10K,No,No,No,Missing,No,Yes,Yes,57,7.0,180.0,28.5,126.0,84.0,78.0,35315,Depressed,Not Depressed,False,0.12218807080639904,0.877811929193601
+Male,Less Than 9th Grade,Married,Below $35K,Yes,No,No,Never,Yes,No,No,80,6.0,480.0,38.06,150.0,50.0,78.0,8795,Depressed,Not Depressed,False,0.20040075101710553,0.7995992489828945
+Male,Some College or AA Degree,Divorced,Below $35K,Yes,No,No,Every Day,Yes,Yes,Yes,46,3.0,360.0,24.36,128.0,94.0,72.0,7178,Not Depressed,Depressed,False,0.7593079171652649,0.24069208283473506
+Female,Some College or AA Degree,Divorced,Below $15K,No,No,Yes,Missing,No,No,No,51,7.0,300.0,28.6,146.0,84.0,88.0,32157,Depressed,Not Depressed,False,0.04152935721828721,0.9584706427817128
+Male,Some College or AA Degree,Separated,Below $25K,Yes,No,Yes,Never,No,No,No,51,8.0,420.0,33.0,142.0,92.0,82.0,5906,Depressed,Not Depressed,False,0.08802728276758187,0.9119727172324181
+Female,Less Than 9th Grade,Never Married,Below $25K,No,No,No,Missing,No,No,No,60,6.0,180.0,32.5,148.0,72.0,72.0,10516,Depressed,Not Depressed,False,0.06611497783901332,0.9338850221609867
+Female,High School,Married,Over $20K,No,No,Yes,Never,No,Yes,Yes,60,7.0,660.0,38.0,126.0,72.0,80.0,22009,Depressed,Not Depressed,False,0.058228732959470286,0.9417712670405297
+Male,College Graduate or Above,Partner,Below $35K,Yes,No,Yes,Missing,No,Yes,Yes,62,4.0,240.0,27.1,136.0,80.0,56.0,24129,Depressed,Not Depressed,False,0.12394096770303531,0.8760590322969647
+Female,College Graduate or Above,Divorced,Below $65K,No,No,Yes,Missing,No,No,Yes,66,7.0,480.0,33.3,134.0,42.0,78.0,19287,Depressed,Not Depressed,False,0.026764444109017793,0.9732355558909822
+Male,Missing,Never Married,Below $65K,Yes,Yes,Yes,Missing,No,No,No,18,7.0,480.0,20.78,118.0,70.0,64.0,3244,Depressed,Not Depressed,False,0.061840791901234704,0.9381592080987653
+Female,9-11th Grade,Partner,Below $25K,Yes,No,No,Missing,No,No,No,33,4.0,300.0,37.9,128.0,64.0,68.0,19659,Depressed,Not Depressed,False,0.3025912328220315,0.6974087671779685
+Female,9-11th Grade,Separated,Below $20K,No,No,No,Every Day,No,No,Yes,35,8.0,180.0,24.26,0.0,0.0,80.0,6951,Depressed,Not Depressed,False,0.2282967365301115,0.7717032634698885
+Female,Some College or AA Degree,Divorced,Below $15K,Yes,No,Yes,Every Day,No,Yes,Yes,53,7.0,480.0,29.4,110.0,66.0,84.0,23374,Depressed,Not Depressed,False,0.4130477990912934,0.5869522009087066
+Male,High School,Partner,Over $20K,Yes,Yes,No,Every Day,No,No,No,35,6.0,240.0,26.9,122.0,82.0,74.0,20496,Depressed,Not Depressed,False,0.09186159538928496,0.908138404610715
+Female,Some College or AA Degree,Married,Below $25K,Yes,No,No,Every Day,No,No,No,42,4.0,180.0,23.4,134.0,78.0,76.0,25914,Depressed,Not Depressed,False,0.24784629423899507,0.7521537057610049
+Male,Some College or AA Degree,Divorced,Below $35K,Yes,Yes,Yes,Missing,Yes,Yes,Yes,39,7.0,960.0,31.8,128.0,82.0,70.0,35458,Depressed,Not Depressed,False,0.4599541419197771,0.5400458580802229
+Female,College Graduate or Above,Married,Over $20K,Yes,No,No,Missing,No,Yes,Yes,45,7.0,240.0,24.3,126.0,82.0,76.0,25498,Depressed,Not Depressed,False,0.17326031928822272,0.8267396807117773
+Female,Some College or AA Degree,Married,Below $75K,Yes,No,No,Every Day,No,No,No,42,5.0,60.0,30.45,122.0,88.0,74.0,3003,Depressed,Not Depressed,False,0.20506838589259002,0.79493161410741
+Male,High School,Divorced,Below $55K,No,No,No,Missing,No,Yes,Yes,38,6.0,300.0,39.34,138.0,84.0,58.0,3000,Depressed,Not Depressed,False,0.13059070061346245,0.8694092993865375
+Male,High School,Never Married,Over $20K,Yes,No,No,Every Day,No,Yes,Yes,34,8.0,240.0,24.3,108.0,76.0,90.0,31315,Depressed,Not Depressed,False,0.2558987965385924,0.7441012034614076
+Female,Some College or AA Degree,Married,Below $10K,No,No,No,Missing,No,No,Yes,29,8.0,480.0,30.64,0.0,0.0,74.0,13636,Depressed,Not Depressed,False,0.09065731371173835,0.9093426862882616
+Female,Some College or AA Degree,Married,Below $45K,Yes,No,Yes,Every Day,No,No,Yes,40,4.0,480.0,36.7,108.0,70.0,88.0,16638,Depressed,Not Depressed,False,0.2679345933289543,0.7320654066710457
+Male,Less Than 9th Grade,Married,Below $10K,No,No,No,Missing,No,Yes,Yes,40,8.0,120.0,33.51,142.0,86.0,82.0,9763,Depressed,Not Depressed,False,0.11748670168114517,0.8825132983188548
+Male,High School,Never Married,Missing,No,No,Yes,Missing,No,No,No,23,12.0,300.0,20.8,126.0,72.0,58.0,26541,Depressed,Not Depressed,False,0.018295635294707235,0.9817043647052928
+Male,Some College or AA Degree,Divorced,Below $15K,No,No,No,Missing,No,Yes,Yes,63,6.0,480.0,28.0,112.0,72.0,70.0,25830,Depressed,Not Depressed,False,0.10504050274865917,0.8949594972513408
+Female,Less Than 9th Grade,Widowed,Below $25K,No,No,No,Missing,Yes,Yes,Yes,67,6.0,180.0,27.44,122.0,82.0,108.0,13972,Depressed,Not Depressed,False,0.40794510624330027,0.5920548937566997
+Female,Some College or AA Degree,Partner,Below $55K,Yes,No,No,Missing,No,No,No,21,5.0,120.0,33.24,108.0,44.0,84.0,13225,Depressed,Not Depressed,False,0.21087361619336098,0.789126383806639
+Male,Some College or AA Degree,Never Married,Below $45K,Yes,Yes,No,Every Day,Yes,No,Yes,28,8.5,180.0,21.1,134.0,78.0,104.0,29276,Depressed,Not Depressed,False,0.3743471343023804,0.6256528656976196
+Male,Some College or AA Degree,Divorced,Below $35K,Yes,No,No,Never,No,Yes,Yes,52,9.0,180.0,25.03,124.0,94.0,100.0,6098,Depressed,Not Depressed,False,0.2438563536374565,0.7561436463625435
+Female,Less Than 9th Grade,Married,Below $35K,Yes,No,No,Missing,No,No,Yes,76,6.0,120.0,32.0,146.0,82.0,76.0,33652,Depressed,Not Depressed,False,0.1591590193770379,0.8408409806229621
+Female,9-11th Grade,Widowed,Below $15K,No,No,No,Every Day,No,Yes,No,61,6.0,480.0,31.7,196.0,94.0,62.0,16434,Depressed,Not Depressed,False,0.16922144546620987,0.8307785545337901
+Female,Some College or AA Degree,Never Married,Below $20K,Yes,No,No,Every Day,Yes,Yes,Yes,36,7.0,480.0,31.1,100.0,60.0,76.0,29407,Not Depressed,Depressed,False,0.8160785674013538,0.1839214325986463
+Male,High School,Married,Below $55K,No,No,No,Every Day,Yes,No,No,60,8.0,180.0,19.7,166.0,100.0,112.0,26133,Depressed,Not Depressed,False,0.07038212821229795,0.929617871787702
+Male,Some College or AA Degree,Married,Below $75K,Yes,Yes,Yes,Missing,No,Yes,Yes,46,6.0,360.0,56.43,154.0,98.0,76.0,10891,Depressed,Not Depressed,False,0.1301448965112063,0.8698551034887937
+Female,High School,Partner,Below $45K,No,Yes,Yes,Every Day,No,No,No,31,9.0,90.0,21.24,112.0,74.0,70.0,3979,Depressed,Not Depressed,False,0.03652850681658126,0.9634714931834187
+Male,High School,Married,Below $25K,Yes,No,No,Every Day,No,No,No,38,5.0,300.0,43.74,0.0,0.0,74.0,1551,Depressed,Not Depressed,False,0.17765243137564934,0.8223475686243507
+Female,9-11th Grade,Separated,Below $15K,Yes,No,No,Every Day,No,No,No,37,5.0,180.0,28.98,104.0,76.0,88.0,11981,Depressed,Not Depressed,False,0.4367617750520276,0.5632382249479724
+Male,College Graduate or Above,Never Married,Below $35K,Yes,Yes,No,Missing,No,No,No,25,7.0,720.0,37.2,116.0,70.0,90.0,17718,Depressed,Not Depressed,False,0.09036780639953823,0.9096321936004618
+Male,High School,Divorced,Below $15K,No,No,Yes,Missing,No,No,No,69,9.0,8.0,25.6,140.0,70.0,76.0,12265,Depressed,Not Depressed,False,0.011317744059466728,0.9886822559405333
+Female,Some College or AA Degree,Never Married,Below $45K,No,No,No,Every Day,No,No,Yes,20,4.0,300.0,34.6,116.0,90.0,74.0,17863,Depressed,Not Depressed,False,0.2542789770384001,0.7457210229615999
+Female,Less Than 9th Grade,Partner,Below $25K,No,No,No,Every Day,Yes,No,No,64,12.0,600.0,48.99,138.0,72.0,44.0,9686,Depressed,Not Depressed,False,0.21922535095556261,0.7807746490444374
+Female,Some College or AA Degree,Partner,Below $25K,No,No,No,Every Day,Yes,Yes,Yes,45,12.0,1080.0,28.1,96.0,60.0,80.0,20023,Depressed,Not Depressed,False,0.4740785066113893,0.5259214933886107
+Female,Less Than 9th Grade,Widowed,Below $35K,No,No,No,Never,Yes,No,Yes,64,5.0,360.0,49.0,132.0,62.0,80.0,19473,Depressed,Not Depressed,False,0.3296292814361226,0.6703707185638774
+Female,Missing,Never Married,$75K+,Yes,No,Yes,Missing,No,No,No,18,8.0,90.0,23.33,108.0,54.0,68.0,2002,Depressed,Not Depressed,False,0.09751948582026226,0.9024805141797377
+Male,Less Than 9th Grade,Married,Over $20K,Yes,No,No,Never,Yes,Yes,Yes,65,8.5,120.0,30.6,130.0,68.0,58.0,27567,Depressed,Not Depressed,False,0.33493799635938803,0.665062003640612
+Female,High School,Never Married,Below $5K,No,No,No,Missing,No,Yes,Yes,51,5.0,720.0,48.6,142.0,78.0,74.0,16061,Depressed,Not Depressed,False,0.27531153097693706,0.7246884690230629
+Female,High School,Married,$75K+,No,Yes,Yes,Missing,No,No,No,32,8.0,360.0,20.7,104.0,70.0,68.0,21822,Depressed,Not Depressed,False,0.017496812521858196,0.9825031874781418
+Female,9-11th Grade,Married,Below $15K,Yes,No,No,Every Day,No,No,Yes,67,8.0,300.0,31.54,104.0,60.0,92.0,8167,Depressed,Not Depressed,False,0.23805132870838952,0.7619486712916105
+Female,9-11th Grade,Never Married,Below $10K,Yes,No,No,Never,Yes,Yes,Yes,33,6.0,240.0,18.61,110.0,70.0,92.0,9772,Not Depressed,Depressed,False,0.7797684004659686,0.22023159953403132
+Female,Less Than 9th Grade,Separated,$75K+,No,No,No,Some Days,No,No,No,41,8.0,300.0,29.57,0.0,0.0,66.0,12842,Depressed,Not Depressed,False,0.10447763038670721,0.8955223696132928
+Female,Some College or AA Degree,Married,Below $5K,No,No,No,Every Day,No,No,No,41,7.0,480.0,28.8,106.0,66.0,70.0,25799,Depressed,Not Depressed,False,0.11861605781485485,0.8813839421851452
+Male,High School,Divorced,Below $15K,No,Yes,Yes,Never,No,No,Yes,59,6.0,600.0,29.1,142.0,70.0,64.0,21177,Depressed,Not Depressed,False,0.03264865867127942,0.9673513413287206
+Female,College Graduate or Above,Married,Over $20K,Yes,No,No,Missing,No,No,No,55,5.0,360.0,48.9,0.0,0.0,74.0,34341,Depressed,Not Depressed,False,0.07263672987559244,0.9273632701244076
+Male,High School,Separated,Below $10K,Yes,No,No,Every Day,Yes,No,Yes,73,4.0,240.0,25.9,174.0,82.0,80.0,25415,Depressed,Not Depressed,False,0.4333957446358716,0.5666042553641284
+Male,Some College or AA Degree,Married,Over $20K,Yes,No,No,Missing,No,Yes,Yes,43,6.0,840.0,37.03,120.0,80.0,74.0,13571,Depressed,Not Depressed,False,0.19854229586830308,0.8014577041316969
+Female,Less Than 9th Grade,Partner,Missing,No,No,No,Some Days,No,No,No,23,5.0,300.0,32.34,122.0,60.0,66.0,11863,Depressed,Not Depressed,False,0.21206880149431617,0.7879311985056838
+Male,9-11th Grade,Divorced,Below $10K,Yes,No,No,Never,Yes,Yes,Yes,66,8.0,960.0,29.0,114.0,42.0,68.0,6839,Not Depressed,Depressed,False,0.5638455480185873,0.4361544519814126
+Male,High School,Never Married,Below $35K,Yes,Yes,Yes,Missing,Yes,Yes,Yes,40,7.0,720.0,25.8,114.0,66.0,76.0,15921,Depressed,Not Depressed,False,0.354251459180293,0.645748540819707
+Male,College Graduate or Above,Divorced,Below $20K,Yes,No,No,Never,Yes,No,Yes,55,10.5,480.0,30.3,154.0,102.0,88.0,35308,Depressed,Not Depressed,False,0.31512079281224514,0.6848792071877549
+Female,Less Than 9th Grade,Married,Below $25K,No,No,No,Never,Yes,Yes,Yes,64,6.0,180.0,30.6,114.0,64.0,80.0,5250,Depressed,Not Depressed,False,0.41631448343518074,0.5836855165648193
+Male,College Graduate or Above,Married,Over $20K,No,Yes,Yes,Missing,No,No,No,36,7.0,720.0,32.8,126.0,70.0,56.0,36007,Depressed,Not Depressed,False,0.008333140165068031,0.991666859834932
+Male,High School,Married,Below $45K,No,No,Yes,Never,No,Yes,Yes,52,4.0,360.0,29.3,120.0,84.0,74.0,19125,Depressed,Not Depressed,False,0.0665253528786669,0.9334746471213331
+Male,Less Than 9th Grade,Widowed,Below $15K,No,No,No,Missing,No,No,Yes,62,12.0,120.0,26.1,130.0,70.0,102.0,31393,Depressed,Not Depressed,False,0.032265780582715564,0.9677342194172844
+Female,College Graduate or Above,Divorced,Over $20K,No,Yes,Yes,Never,No,No,No,47,7.0,600.0,32.4,124.0,84.0,84.0,34716,Depressed,Not Depressed,False,0.021159313448104844,0.9788406865518952
+Male,9-11th Grade,Never Married,Below $20K,No,No,No,Missing,No,No,No,20,9.0,360.0,40.58,100.0,82.0,104.0,4874,Depressed,Not Depressed,False,0.07615114822356073,0.9238488517764393
+Male,College Graduate or Above,Never Married,$75K+,No,Yes,Yes,Missing,No,No,No,31,6.0,660.0,26.94,124.0,72.0,56.0,6869,Depressed,Not Depressed,False,0.013396041007314397,0.9866039589926856
+Female,Some College or AA Degree,Partner,Below $45K,No,No,No,Never,No,No,No,22,11.0,300.0,33.5,116.0,68.0,70.0,34373,Depressed,Not Depressed,False,0.0642193670291662,0.9357806329708338
+Female,9-11th Grade,Divorced,Below $45K,Yes,No,No,Every Day,Yes,No,No,30,7.0,300.0,35.04,118.0,80.0,74.0,1067,Not Depressed,Depressed,False,0.6566247623065457,0.34337523769345435
+Male,9-11th Grade,Widowed,Below $25K,Yes,No,No,Some Days,No,Yes,No,41,5.0,300.0,28.21,128.0,80.0,74.0,7686,Depressed,Not Depressed,False,0.33728677540495533,0.6627132245950447
+Female,Less Than 9th Grade,Widowed,Below $5K,No,No,No,Missing,No,No,No,65,8.0,600.0,43.6,0.0,0.0,70.0,17482,Depressed,Not Depressed,False,0.08401448031735959,0.9159855196826404
+Female,Less Than 9th Grade,Married,Below $15K,Yes,No,No,Missing,Yes,No,Yes,64,5.0,600.0,38.42,134.0,78.0,80.0,10059,Not Depressed,Depressed,False,0.561840117573202,0.4381598824267981
+Female,Some College or AA Degree,Divorced,Below $5K,Yes,No,No,Every Day,No,Yes,Yes,60,6.0,360.0,24.6,134.0,68.0,82.0,18668,Not Depressed,Depressed,False,0.5570231847751059,0.44297681522489407
+Male,Less Than 9th Grade,Married,Below $35K,No,No,No,Every Day,No,Yes,Yes,46,10.0,300.0,0.0,122.0,82.0,86.0,15867,Depressed,Not Depressed,False,0.11119901948535749,0.8888009805146425
+Female,9-11th Grade,Never Married,Below $25K,No,No,No,Some Days,No,No,No,25,7.0,420.0,45.65,110.0,52.0,66.0,12443,Depressed,Not Depressed,False,0.16178309656372625,0.8382169034362738
+Male,High School,Never Married,Over $20K,No,No,Yes,Missing,No,No,No,20,6.0,300.0,25.7,110.0,80.0,70.0,20666,Depressed,Not Depressed,False,0.022805842782373964,0.977194157217626
+Female,Some College or AA Degree,Married,Below $35K,Yes,No,No,Missing,No,No,No,72,6.0,360.0,25.06,160.0,52.0,60.0,14220,Depressed,Not Depressed,False,0.06608139396324364,0.9339186060367564
+Female,Less Than 9th Grade,Married,Below $35K,No,Yes,Yes,Missing,No,No,No,36,9.0,120.0,28.9,98.0,60.0,58.0,34798,Depressed,Not Depressed,False,0.028698055465979144,0.9713019445340209
+Female,College Graduate or Above,Never Married,Below $25K,No,No,Yes,Never,No,No,No,38,7.0,360.0,26.36,106.0,64.0,104.0,14158,Depressed,Not Depressed,False,0.04004422522483997,0.95995577477516
+Female,High School,Married,Below $25K,No,No,Yes,Missing,Yes,No,Yes,60,11.0,240.0,33.6,116.0,82.0,78.0,35774,Depressed,Not Depressed,False,0.08294462290558458,0.9170553770944154
+Male,Some College or AA Degree,Never Married,Below $35K,Yes,Yes,Yes,Some Days,No,No,No,42,5.0,180.0,32.69,126.0,60.0,70.0,1639,Depressed,Not Depressed,False,0.07041998370221225,0.9295800162977877
+Male,Some College or AA Degree,Separated,Below $20K,No,No,No,Every Day,No,Yes,Yes,35,5.0,960.0,31.2,126.0,88.0,86.0,21717,Depressed,Not Depressed,False,0.35610866144314113,0.6438913385568589
+Female,9-11th Grade,Divorced,Below $45K,No,No,No,Every Day,No,No,No,60,6.0,120.0,32.3,150.0,82.0,62.0,18316,Depressed,Not Depressed,False,0.09052372359078653,0.9094762764092135
+Female,Some College or AA Degree,Divorced,Below $45K,No,No,No,Missing,No,No,No,52,6.0,1080.0,34.7,118.0,70.0,66.0,22780,Depressed,Not Depressed,False,0.0752921901022412,0.9247078098977588
+Male,9-11th Grade,Widowed,Below $15K,Yes,No,No,Every Day,Yes,Yes,Yes,58,6.0,360.0,26.58,130.0,94.0,96.0,11915,Not Depressed,Depressed,False,0.6835867359093672,0.31641326409063275
+Male,College Graduate or Above,Widowed,Below $75K,No,No,No,Never,Yes,No,No,80,9.0,600.0,23.3,138.0,66.0,58.0,35095,Depressed,Not Depressed,False,0.03177132319685971,0.9682286768031403
+Female,Some College or AA Degree,Separated,Below $5K,Yes,No,Yes,Never,No,Yes,Yes,44,7.0,120.0,33.11,132.0,84.0,88.0,6620,Depressed,Not Depressed,False,0.45513422152239347,0.5448657784776065
+Male,College Graduate or Above,Married,Below $45K,Yes,No,No,Every Day,Yes,Yes,Yes,60,0.0,300.0,33.0,144.0,86.0,64.0,30280,Not Depressed,Depressed,False,0.5979805601888823,0.4020194398111176
+Male,9-11th Grade,Never Married,Below $10K,Yes,No,No,Never,Yes,Yes,Yes,52,3.0,180.0,29.7,122.0,76.0,72.0,19961,Not Depressed,Depressed,False,0.6661774065125632,0.3338225934874368
+Female,9-11th Grade,Never Married,Below $55K,No,No,No,Missing,No,No,No,31,7.0,420.0,24.0,116.0,60.0,66.0,24079,Depressed,Not Depressed,False,0.07220774284267317,0.9277922571573268
+Female,High School,Married,Below $45K,Yes,No,Yes,Missing,No,No,No,50,6.0,300.0,40.7,116.0,62.0,68.0,10340,Depressed,Not Depressed,False,0.07517407771847728,0.9248259222815227
+Female,College Graduate or Above,Never Married,Below $10K,Yes,No,No,Missing,No,No,Yes,23,9.0,480.0,26.5,124.0,80.0,86.0,16804,Depressed,Not Depressed,False,0.2267169656261564,0.7732830343738436
+Female,High School,Divorced,Below $15K,Yes,No,No,Every Day,No,Yes,Yes,45,8.0,300.0,0.0,0.0,0.0,64.0,19049,Depressed,Not Depressed,False,0.4432138188889082,0.5567861811110918
+Male,Some College or AA Degree,Never Married,Below $20K,Yes,No,Yes,Never,Yes,Yes,Yes,55,8.0,360.0,24.4,178.0,104.0,90.0,17359,Depressed,Not Depressed,False,0.3993007625784015,0.6006992374215985
+Male,9-11th Grade,Widowed,Below $25K,No,Yes,Yes,Some Days,No,No,No,71,10.5,20.0,26.7,126.0,60.0,62.0,35148,Depressed,Not Depressed,False,0.010137116520063771,0.9898628834799362
+Female,Some College or AA Degree,Widowed,Below $65K,No,No,No,Missing,Yes,Yes,Yes,62,8.0,480.0,28.3,0.0,0.0,0.0,23923,Depressed,Not Depressed,False,0.22839725489426,0.77160274510574
+Male,Missing,Missing,Missing,No,No,Yes,Missing,No,No,No,19,5.0,840.0,29.69,104.0,48.0,64.0,8346,Depressed,Not Depressed,False,0.05883074613536654,0.9411692538646335
+Male,Some College or AA Degree,Never Married,$75K+,No,Yes,Yes,Every Day,No,No,No,21,3.0,300.0,22.35,122.0,62.0,76.0,760,Depressed,Not Depressed,False,0.03765727825865439,0.9623427217413456
+Female,Less Than 9th Grade,Divorced,Below $15K,No,No,No,Missing,No,No,No,56,5.0,180.0,21.56,128.0,66.0,68.0,11615,Depressed,Not Depressed,False,0.09061341015260327,0.9093865898473967
+Female,9-11th Grade,Divorced,Below $10K,Yes,No,No,Some Days,No,No,No,36,5.0,120.0,27.91,122.0,72.0,74.0,8369,Depressed,Not Depressed,False,0.3504540661701846,0.6495459338298154
+Male,Less Than 9th Grade,Partner,Below $10K,No,No,No,Every Day,No,No,No,34,6.0,720.0,21.66,126.0,70.0,64.0,8089,Depressed,Not Depressed,False,0.11397522615766409,0.8860247738423359
+Male,Less Than 9th Grade,Partner,Below $25K,No,No,No,Every Day,Yes,Yes,Yes,60,5.0,120.0,34.1,118.0,74.0,82.0,19443,Depressed,Not Depressed,False,0.47318452863576754,0.5268154713642325
+Female,College Graduate or Above,Divorced,Below $35K,Yes,Yes,No,Missing,Yes,No,No,52,4.0,600.0,40.65,102.0,70.0,74.0,8962,Depressed,Not Depressed,False,0.36205138183041474,0.6379486181695853
+Male,High School,Married,Missing,Yes,No,No,Missing,No,Yes,Yes,61,3.0,420.0,52.4,0.0,0.0,56.0,27913,Depressed,Not Depressed,False,0.26362240949628446,0.7363775905037155
+Male,College Graduate or Above,Divorced,Below $15K,No,No,Yes,Never,No,Yes,No,77,9.0,600.0,36.4,138.0,72.0,70.0,33913,Depressed,Not Depressed,False,0.024449368786357284,0.9755506312136427
+Male,High School,Separated,Below $35K,No,No,Yes,Every Day,No,No,Yes,56,5.0,720.0,34.08,124.0,78.0,74.0,12781,Depressed,Not Depressed,False,0.07745206143991945,0.9225479385600805
+Female,College Graduate or Above,Never Married,Below $25K,Yes,No,Yes,Missing,No,No,No,40,8.0,480.0,37.0,98.0,58.0,64.0,16086,Depressed,Not Depressed,False,0.09157467828182086,0.9084253217181791
+Male,High School,Married,$75K+,No,No,No,Never,Yes,Yes,Yes,73,6.0,300.0,26.59,128.0,64.0,72.0,2291,Depressed,Not Depressed,False,0.12333905306895543,0.8766609469310446
+Female,9-11th Grade,Partner,Below $5K,Yes,No,Yes,Every Day,Yes,No,Yes,23,6.0,360.0,29.8,114.0,62.0,70.0,16910,Not Depressed,Depressed,False,0.765079417225838,0.23492058277416197
+Female,Some College or AA Degree,Married,Missing,No,No,Yes,Missing,No,Yes,Yes,60,6.0,180.0,24.3,192.0,74.0,80.0,31953,Depressed,Not Depressed,False,0.062137397208648526,0.9378626027913515
+Female,Missing,Missing,Below $55K,Yes,No,No,Some Days,No,No,No,19,10.0,480.0,28.5,94.0,60.0,72.0,33655,Depressed,Not Depressed,False,0.2540242043485057,0.7459757956514943
+Male,Some College or AA Degree,Never Married,Below $15K,Yes,No,Yes,Never,No,No,Yes,36,7.0,240.0,25.9,120.0,78.0,80.0,19653,Depressed,Not Depressed,False,0.1330809184237559,0.8669190815762441
+Female,High School,Never Married,Below $65K,Yes,No,No,Every Day,No,No,No,43,5.0,300.0,29.95,166.0,70.0,54.0,5075,Depressed,Not Depressed,False,0.19812410964723792,0.8018758903527621
+Male,High School,Partner,Below $35K,No,No,No,Missing,No,No,No,27,6.0,480.0,33.5,102.0,66.0,98.0,23572,Depressed,Not Depressed,False,0.055142125016324095,0.9448578749836759
+Female,Some College or AA Degree,Married,Below $75K,Yes,No,No,Missing,No,No,No,52,7.0,840.0,44.49,116.0,62.0,80.0,6888,Depressed,Not Depressed,False,0.1230480513488349,0.8769519486511651
+Female,Some College or AA Degree,Married,Below $35K,No,No,No,Never,No,No,No,80,6.0,480.0,37.43,140.0,46.0,52.0,15372,Depressed,Not Depressed,False,0.027711233583224804,0.9722887664167752
+Female,Less Than 9th Grade,Widowed,Below $15K,Yes,No,No,Every Day,No,Yes,Yes,60,2.0,720.0,30.4,124.0,66.0,54.0,24908,Not Depressed,Depressed,False,0.6684241029282472,0.3315758970717528
+Male,High School,Divorced,Below $15K,No,No,No,Every Day,No,No,Yes,39,4.0,420.0,40.69,156.0,94.0,76.0,9941,Depressed,Not Depressed,False,0.1718548225469042,0.8281451774530958
+Female,Missing,Missing,Below $35K,Yes,No,No,Missing,No,No,No,18,8.0,480.0,38.1,122.0,74.0,62.0,19619,Depressed,Not Depressed,False,0.2603239086800754,0.7396760913199246
+Female,9-11th Grade,Divorced,Missing,Yes,No,No,Never,Yes,Yes,Yes,60,5.0,30.0,37.2,114.0,42.0,54.0,28642,Not Depressed,Depressed,False,0.7386699606022602,0.26133003939773986
+Male,High School,Never Married,Below $55K,No,Yes,No,Every Day,No,No,Yes,28,6.5,360.0,18.8,110.0,58.0,86.0,32236,Depressed,Not Depressed,False,0.06590528985945765,0.9340947101405424
+Male,Less Than 9th Grade,Married,Below $15K,Yes,No,No,Every Day,No,Yes,Yes,53,8.0,300.0,33.42,98.0,74.0,74.0,2452,Depressed,Not Depressed,False,0.38083520705627105,0.619164792943729
+Male,Some College or AA Degree,Married,Below $25K,Yes,No,No,Never,No,Yes,Yes,63,6.0,300.0,28.67,120.0,74.0,68.0,11005,Depressed,Not Depressed,False,0.20520275472561378,0.7947972452743862
+Female,High School,Married,Over $20K,Yes,No,No,Missing,No,No,No,44,8.0,120.0,54.9,148.0,92.0,76.0,5907,Depressed,Not Depressed,False,0.08641681796673784,0.9135831820332622
+Female,9-11th Grade,Divorced,Below $55K,Yes,No,No,Every Day,No,No,No,51,6.0,120.0,36.8,100.0,56.0,70.0,19929,Depressed,Not Depressed,False,0.2657653983968308,0.7342346016031692
+Male,College Graduate or Above,Married,Missing,No,No,No,Missing,No,No,No,44,6.0,120.0,25.5,110.0,76.0,72.0,21472,Depressed,Not Depressed,False,0.023818482074814185,0.9761815179251858
+Female,Some College or AA Degree,Never Married,Below $15K,No,No,No,Every Day,Yes,Yes,Yes,60,8.0,600.0,24.5,134.0,76.0,86.0,34335,Depressed,Not Depressed,False,0.43477210105617337,0.5652278989438266
+Female,Less Than 9th Grade,Married,Below $45K,No,No,No,Missing,No,No,No,44,6.0,60.0,25.86,112.0,60.0,66.0,1055,Depressed,Not Depressed,False,0.05809060209833661,0.9419093979016634
+Female,Less Than 9th Grade,Widowed,Below $5K,Yes,No,No,Missing,Yes,Yes,Yes,60,6.0,120.0,34.71,114.0,78.0,76.0,711,Not Depressed,Depressed,False,0.7695186437073123,0.2304813562926878
+Female,College Graduate or Above,Widowed,Missing,Yes,No,No,Missing,Yes,Yes,Yes,80,5.0,420.0,35.5,176.0,94.0,72.0,25182,Depressed,Not Depressed,False,0.4850026101892496,0.5149973898107504
+Female,9-11th Grade,Married,Below $25K,No,No,No,Every Day,No,Yes,No,44,8.0,540.0,19.18,0.0,0.0,0.0,14662,Depressed,Not Depressed,False,0.15440076601907737,0.8455992339809226
+Female,9-11th Grade,Never Married,Below $25K,No,No,No,Missing,No,No,No,62,9.0,480.0,22.5,132.0,76.0,76.0,23687,Depressed,Not Depressed,False,0.0433846316856481,0.9566153683143519
+Female,9-11th Grade,Married,Below $55K,Yes,No,No,Every Day,No,No,No,32,9.0,120.0,20.4,114.0,72.0,72.0,27080,Depressed,Not Depressed,False,0.19295437826446138,0.8070456217355386
+Female,Less Than 9th Grade,Widowed,Below $35K,No,No,No,Missing,Yes,Yes,Yes,69,5.0,240.0,29.9,180.0,74.0,50.0,19815,Depressed,Not Depressed,False,0.3565620273242456,0.6434379726757544
+Female,9-11th Grade,Married,Below $55K,Yes,No,No,Missing,Yes,Yes,Yes,78,6.0,120.0,25.59,180.0,78.0,80.0,13954,Depressed,Not Depressed,False,0.4291631061819938,0.5708368938180062
+Female,High School,Never Married,Below $10K,No,No,No,Never,No,Yes,Yes,66,5.0,30.0,39.1,0.0,0.0,0.0,33268,Depressed,Not Depressed,False,0.13467306057400874,0.8653269394259913
+Female,Less Than 9th Grade,Married,Below $20K,Yes,No,No,Missing,Yes,No,No,70,5.0,120.0,26.9,126.0,58.0,68.0,25086,Depressed,Not Depressed,False,0.3439737106144093,0.6560262893855907
+Female,Less Than 9th Grade,Partner,Below $5K,No,No,No,Missing,No,Yes,No,50,7.0,300.0,50.18,112.0,78.0,92.0,8201,Depressed,Not Depressed,False,0.23641502585227092,0.7635849741477291
+Female,9-11th Grade,Never Married,Below $45K,No,Yes,Yes,Missing,No,No,No,30,5.0,180.0,41.28,126.0,86.0,78.0,13277,Depressed,Not Depressed,False,0.05173795303256834,0.9482620469674317
+Male,Missing,Missing,Below $45K,No,No,Yes,Every Day,No,No,No,19,9.0,240.0,21.1,138.0,58.0,80.0,28479,Depressed,Not Depressed,False,0.039129323194588395,0.9608706768054116
+Female,High School,Never Married,Below $35K,Yes,No,No,Missing,No,No,No,26,6.0,480.0,51.38,120.0,66.0,72.0,15455,Depressed,Not Depressed,False,0.244105204138094,0.755894795861906
+Male,Less Than 9th Grade,Partner,Below $20K,No,No,No,Every Day,Yes,No,Yes,61,4.0,360.0,27.34,168.0,70.0,94.0,10800,Depressed,Not Depressed,False,0.3230677673141673,0.6769322326858327
+Male,Some College or AA Degree,Never Married,Below $35K,No,No,No,Missing,No,No,No,21,8.0,360.0,39.0,120.0,70.0,86.0,17744,Depressed,Not Depressed,False,0.04833801274112792,0.9516619872588721
+Male,High School,Married,$75K+,Yes,No,No,Never,Yes,Yes,Yes,66,6.0,270.0,35.22,124.0,74.0,56.0,3240,Depressed,Not Depressed,False,0.3511752646248103,0.6488247353751897
+Female,Missing,Widowed,Below $10K,No,No,No,Missing,Yes,Yes,Yes,72,8.0,60.0,26.6,156.0,60.0,96.0,26858,Depressed,Not Depressed,False,0.2072509463751282,0.7927490536248718
+Female,High School,Widowed,Below $35K,No,No,No,Every Day,No,Yes,Yes,63,8.0,420.0,18.6,140.0,94.0,84.0,34385,Depressed,Not Depressed,False,0.14828903587501474,0.8517109641249853
+Female,9-11th Grade,Divorced,Below $15K,Yes,No,No,Every Day,No,Yes,Yes,53,4.0,120.0,26.71,132.0,70.0,76.0,11151,Not Depressed,Depressed,False,0.6138012996597779,0.3861987003402221
+Female,College Graduate or Above,Divorced,Below $45K,Yes,Yes,No,Missing,No,No,No,26,9.0,240.0,21.15,106.0,82.0,78.0,11771,Depressed,Not Depressed,False,0.11060558605542137,0.8893944139445786
+Male,High School,Married,Below $15K,No,No,No,Never,No,Yes,Yes,48,4.0,600.0,24.52,116.0,78.0,58.0,9486,Depressed,Not Depressed,False,0.13519458804199336,0.8648054119580066
+Female,Some College or AA Degree,Partner,Below $15K,No,No,No,Missing,No,No,No,36,8.0,30.0,22.08,102.0,48.0,74.0,3207,Depressed,Not Depressed,False,0.05408121236204222,0.9459187876379578
+Male,College Graduate or Above,Married,Below $75K,No,No,Yes,Never,No,No,No,33,7.0,600.0,40.94,120.0,62.0,68.0,15584,Depressed,Not Depressed,False,0.01997064541427429,0.9800293545857257
+Female,High School,Married,Below $55K,Yes,No,Yes,Never,No,Yes,Yes,61,5.0,360.0,40.51,154.0,82.0,114.0,208,Depressed,Not Depressed,False,0.21817067694954229,0.7818293230504577
+Female,High School,Married,Below $35K,No,No,Yes,Missing,No,No,No,31,8.0,300.0,30.45,106.0,62.0,112.0,1533,Depressed,Not Depressed,False,0.033218683750961264,0.9667813162490387
+Female,9-11th Grade,Married,Below $10K,No,No,Yes,Missing,No,No,No,47,7.0,90.0,21.96,122.0,74.0,76.0,14411,Depressed,Not Depressed,False,0.03160838672620603,0.968391613273794
+Female,Some College or AA Degree,Married,Below $35K,No,No,No,Missing,No,No,No,23,8.0,360.0,26.8,98.0,64.0,86.0,30703,Depressed,Not Depressed,False,0.061720943872638934,0.9382790561273611
+Female,Some College or AA Degree,Never Married,Below $10K,Yes,No,Yes,Missing,Yes,Yes,Yes,22,11.0,300.0,33.7,108.0,70.0,74.0,30700,Not Depressed,Depressed,False,0.5626044958917507,0.4373955041082494
+Female,9-11th Grade,Divorced,Below $55K,Yes,No,No,Every Day,No,No,No,64,7.5,360.0,31.4,120.0,56.0,70.0,33540,Depressed,Not Depressed,False,0.1917375274141836,0.8082624725858164
+Female,Less Than 9th Grade,Widowed,Below $5K,Yes,No,No,Never,No,Yes,Yes,63,6.0,60.0,44.0,136.0,62.0,86.0,19673,Not Depressed,Depressed,False,0.5156645900749114,0.4843354099250886
+Male,Some College or AA Degree,Married,Below $20K,Yes,No,No,Some Days,No,No,Yes,29,9.0,600.0,37.8,130.0,64.0,96.0,30352,Depressed,Not Depressed,False,0.2242733329358707,0.7757266670641293
+Female,9-11th Grade,Partner,Below $15K,Yes,No,No,Missing,Yes,Yes,Yes,64,3.0,120.0,26.66,124.0,80.0,84.0,8666,Not Depressed,Depressed,False,0.7199605135188305,0.28003948648116944
+Female,Missing,Missing,Below $15K,Yes,No,No,Missing,No,No,No,19,10.0,600.0,35.77,102.0,72.0,66.0,12172,Depressed,Not Depressed,False,0.2559634326893707,0.7440365673106293
+Female,High School,Divorced,Below $20K,Yes,No,No,Missing,Yes,Yes,Yes,53,7.0,60.0,19.6,136.0,0.0,96.0,30000,Not Depressed,Depressed,False,0.5580341653841467,0.44196583461585326
+Female,High School,Married,Missing,Yes,No,Yes,Never,Yes,No,Yes,49,8.0,120.0,30.92,0.0,0.0,60.0,7180,Depressed,Not Depressed,False,0.3133456339337707,0.6866543660662293
+Male,College Graduate or Above,Divorced,Over $20K,Yes,Yes,Yes,Missing,No,No,No,39,7.0,600.0,25.28,116.0,74.0,60.0,5620,Depressed,Not Depressed,False,0.0318592272776369,0.9681407727223631
+Male,9-11th Grade,Never Married,Below $25K,Yes,Yes,No,Every Day,No,No,No,29,4.0,480.0,29.83,114.0,60.0,62.0,13922,Depressed,Not Depressed,False,0.23652202573293357,0.7634779742670664
+Male,Some College or AA Degree,Never Married,Below $15K,Yes,No,No,Never,No,Yes,Yes,31,5.0,480.0,31.8,122.0,90.0,88.0,28365,Depressed,Not Depressed,False,0.43929779780241296,0.560702202197587
+Male,Some College or AA Degree,Never Married,Below $25K,Yes,Yes,Yes,Every Day,No,No,No,28,8.0,420.0,22.6,120.0,68.0,70.0,16328,Depressed,Not Depressed,False,0.08995453120932495,0.910045468790675
+Male,Some College or AA Degree,Divorced,Below $10K,No,No,No,Missing,No,Yes,Yes,61,9.0,600.0,24.0,132.0,84.0,86.0,31969,Depressed,Not Depressed,False,0.07810187474805963,0.9218981252519404
+Male,Less Than 9th Grade,Married,Below $35K,Yes,No,No,Every Day,No,Yes,Yes,49,8.0,480.0,30.1,128.0,70.0,92.0,19359,Depressed,Not Depressed,False,0.35710613797674473,0.6428938620232553
+Male,High School,Never Married,Below $5K,No,No,Yes,Missing,Yes,Yes,Yes,48,8.0,480.0,27.5,118.0,72.0,82.0,16624,Depressed,Not Depressed,False,0.22102337588847787,0.7789766241115221
+Female,Some College or AA Degree,Divorced,Below $5K,Yes,No,No,Every Day,No,Yes,Yes,63,6.5,600.0,44.7,110.0,66.0,60.0,34478,Not Depressed,Depressed,False,0.6027315998733767,0.3972684001266234
+Female,High School,Partner,Below $15K,Yes,No,No,Never,No,No,No,35,7.0,120.0,35.4,126.0,70.0,86.0,17837,Depressed,Not Depressed,False,0.21464518929544785,0.7853548107045522
+Female,High School,Separated,Below $25K,No,No,No,Every Day,No,No,No,25,6.0,240.0,38.5,120.0,54.0,72.0,32209,Depressed,Not Depressed,False,0.17681760174111516,0.8231823982588848
+Female,College Graduate or Above,Divorced,Below $20K,Yes,No,No,Every Day,Yes,Yes,Yes,47,4.0,180.0,35.5,122.0,74.0,84.0,25280,Not Depressed,Depressed,False,0.8148202775505886,0.18517972244941144
+Female,High School,Never Married,Below $25K,Yes,No,No,Missing,No,No,Yes,60,5.0,360.0,49.01,132.0,68.0,80.0,120,Depressed,Not Depressed,False,0.23196335407191948,0.7680366459280805
+Female,Less Than 9th Grade,Widowed,Below $15K,Yes,No,No,Missing,Yes,No,No,64,7.5,60.0,44.7,120.0,62.0,56.0,29231,Depressed,Not Depressed,False,0.37339815005882326,0.6266018499411767
+Male,Some College or AA Degree,Married,Below $45K,Yes,No,Yes,Missing,Yes,No,Yes,40,5.0,120.0,33.4,122.0,66.0,54.0,21352,Depressed,Not Depressed,False,0.23297350439237552,0.7670264956076245
+Male,9-11th Grade,Married,Below $25K,No,No,No,Every Day,No,Yes,Yes,35,10.0,480.0,29.49,118.0,74.0,70.0,13712,Depressed,Not Depressed,False,0.162911926194517,0.837088073805483
+Female,Some College or AA Degree,Married,Below $25K,Yes,No,No,Missing,No,Yes,Yes,80,10.0,240.0,26.0,180.0,56.0,68.0,34787,Depressed,Not Depressed,False,0.11981665157538923,0.8801833484246108
+Female,Some College or AA Degree,Never Married,Below $25K,No,No,Yes,Some Days,Yes,No,Yes,38,7.0,300.0,27.67,110.0,76.0,76.0,9785,Depressed,Not Depressed,False,0.26586906983214065,0.7341309301678594
+Female,Some College or AA Degree,Never Married,Below $35K,No,No,Yes,Missing,No,No,No,25,5.0,330.0,41.52,90.0,52.0,76.0,1193,Depressed,Not Depressed,False,0.06510500253780105,0.934894997462199
+Male,Some College or AA Degree,Married,Below $15K,Yes,No,Yes,Missing,No,No,No,60,5.5,360.0,41.3,118.0,78.0,72.0,31342,Depressed,Not Depressed,False,0.05389126261465482,0.9461087373853452
+Male,College Graduate or Above,Never Married,Below $75K,No,Yes,Yes,Missing,No,No,No,30,8.0,480.0,23.4,0.0,0.0,88.0,30084,Depressed,Not Depressed,False,0.011755901530543955,0.988244098469456
+Female,Some College or AA Degree,Never Married,Below $55K,No,No,Yes,Missing,No,No,No,20,7.0,240.0,23.9,126.0,68.0,68.0,10320,Depressed,Not Depressed,False,0.04372023559143545,0.9562797644085645
+Female,High School,Divorced,Below $25K,Yes,No,No,Missing,No,No,No,51,7.5,240.0,30.4,128.0,80.0,64.0,33705,Depressed,Not Depressed,False,0.1579797393507243,0.8420202606492757
+Female,Some College or AA Degree,Never Married,Below $45K,Yes,No,Yes,Missing,No,No,No,28,8.0,480.0,34.7,120.0,86.0,88.0,25796,Depressed,Not Depressed,False,0.12538659769588056,0.8746134023041194
+Female,9-11th Grade,Married,Missing,Yes,No,No,Every Day,No,Yes,Yes,58,4.0,180.0,35.34,104.0,66.0,78.0,661,Not Depressed,Depressed,False,0.5236638510688063,0.47633614893119364
+Male,Less Than 9th Grade,Separated,Below $10K,No,No,No,Some Days,Yes,Yes,Yes,72,8.0,480.0,29.4,124.0,64.0,68.0,19181,Depressed,Not Depressed,False,0.35925761403698175,0.6407423859630182
+Female,Some College or AA Degree,Divorced,Below $20K,No,No,No,Every Day,Yes,Yes,Yes,66,10.0,1200.0,30.1,0.0,0.0,88.0,27097,Depressed,Not Depressed,False,0.4812850387757174,0.5187149612242826
+Male,High School,Never Married,Below $65K,No,Yes,No,Every Day,No,No,No,33,6.0,120.0,20.0,140.0,92.0,60.0,31550,Depressed,Not Depressed,False,0.03768410547517731,0.9623158945248227
+Female,High School,Widowed,Below $35K,No,No,No,Never,No,No,No,51,6.0,480.0,36.6,0.0,0.0,70.0,6809,Depressed,Not Depressed,False,0.06191371206670826,0.9380862879332917
+Male,High School,Married,Below $45K,No,No,No,Every Day,No,No,No,45,8.0,600.0,20.0,118.0,74.0,76.0,17192,Depressed,Not Depressed,False,0.034954176918149726,0.9650458230818503
+Female,High School,Never Married,Below $25K,Yes,No,No,Every Day,No,No,Yes,40,9.0,240.0,42.8,0.0,0.0,106.0,32776,Depressed,Not Depressed,False,0.31504524506145126,0.6849547549385487
+Female,High School,Married,$75K+,Yes,No,No,Never,Yes,Yes,Yes,63,7.0,240.0,28.8,114.0,76.0,74.0,31455,Depressed,Not Depressed,False,0.4694095459281825,0.5305904540718175
+Male,High School,Married,Below $35K,Yes,No,No,Never,No,No,Yes,74,7.0,240.0,27.59,120.0,62.0,78.0,6094,Depressed,Not Depressed,False,0.07035406279920742,0.9296459372007926
+Female,Less Than 9th Grade,Married,Below $20K,No,No,No,Missing,No,No,No,62,8.0,180.0,30.88,152.0,68.0,68.0,2747,Depressed,Not Depressed,False,0.045851598924615655,0.9541484010753843
+Female,High School,Never Married,Below $10K,No,No,No,Every Day,No,No,No,59,8.0,480.0,31.34,222.0,134.0,102.0,13816,Depressed,Not Depressed,False,0.06719582492404086,0.9328041750759591
+Female,Some College or AA Degree,Never Married,Below $10K,Yes,No,No,Some Days,No,No,No,35,8.5,240.0,33.7,126.0,70.0,80.0,35772,Depressed,Not Depressed,False,0.2078883952507563,0.7921116047492437
+Female,Missing,Missing,Below $10K,Yes,No,No,Missing,No,No,No,18,10.0,720.0,22.9,108.0,76.0,104.0,26866,Depressed,Not Depressed,False,0.23462708241525732,0.7653729175847427
+Female,9-11th Grade,Separated,Below $35K,No,No,No,Missing,No,No,No,57,5.0,120.0,27.3,110.0,64.0,66.0,19914,Depressed,Not Depressed,False,0.07558476182665441,0.9244152381733456
+Male,9-11th Grade,Married,Below $45K,Yes,No,No,Every Day,No,No,No,44,4.0,120.0,31.43,140.0,90.0,80.0,10255,Depressed,Not Depressed,False,0.17063850924459956,0.8293614907554004
+Male,Less Than 9th Grade,Married,Below $25K,Yes,No,Yes,Missing,No,No,Yes,64,4.0,300.0,27.9,142.0,76.0,74.0,33581,Depressed,Not Depressed,False,0.10841411820519464,0.8915858817948054
+Male,High School,Divorced,Below $5K,No,No,No,Some Days,Yes,Yes,Yes,54,7.0,480.0,21.5,126.0,76.0,80.0,29015,Depressed,Not Depressed,False,0.432116655910466,0.567883344089534
+Male,Some College or AA Degree,Married,$75K+,Yes,No,No,Never,No,No,No,57,8.0,420.0,36.38,130.0,68.0,74.0,373,Depressed,Not Depressed,False,0.05036542807051514,0.9496345719294849
+Male,9-11th Grade,Divorced,Missing,No,No,No,Every Day,No,Yes,Yes,58,8.0,180.0,22.55,176.0,100.0,70.0,9014,Depressed,Not Depressed,False,0.155796155928983,0.844203844071017
+Female,9-11th Grade,Never Married,Below $10K,Yes,No,No,Missing,No,Yes,Yes,62,10.0,240.0,37.1,0.0,0.0,0.0,34882,Depressed,Not Depressed,False,0.26138078658150476,0.7386192134184952
+Female,College Graduate or Above,Divorced,Below $15K,No,No,No,Missing,Yes,No,Yes,55,8.0,720.0,32.2,150.0,78.0,70.0,21864,Depressed,Not Depressed,False,0.21326151124724857,0.7867384887527514
+Female,Less Than 9th Grade,Partner,Below $15K,Yes,No,No,Every Day,No,Yes,Yes,22,6.0,180.0,61.01,110.0,62.0,68.0,15298,Not Depressed,Depressed,False,0.7756602842462438,0.22433971575375622
+Male,Missing,Missing,Below $20K,No,No,No,Missing,No,No,No,18,10.0,360.0,36.2,140.0,78.0,88.0,32882,Depressed,Not Depressed,False,0.05872034604422216,0.9412796539557778
+Female,9-11th Grade,Married,Below $35K,No,No,No,Never,No,No,Yes,69,8.0,300.0,45.12,148.0,64.0,80.0,13732,Depressed,Not Depressed,False,0.06119034229071463,0.9388096577092854
+Male,Less Than 9th Grade,Married,$75K+,No,Yes,Yes,Missing,No,Yes,No,25,7.0,120.0,24.03,122.0,52.0,76.0,3251,Depressed,Not Depressed,False,0.032646651126432724,0.9673533488735673
+Female,College Graduate or Above,Divorced,Over $20K,No,No,No,Every Day,No,Yes,No,51,8.0,600.0,47.7,120.0,68.0,104.0,21050,Depressed,Not Depressed,False,0.10280680599485814,0.8971931940051419
+Female,Some College or AA Degree,Married,Below $55K,Yes,No,Yes,Missing,No,No,No,26,12.0,180.0,26.32,102.0,68.0,78.0,1970,Depressed,Not Depressed,False,0.06119601176987588,0.9388039882301241
+Female,College Graduate or Above,Married,Below $65K,No,Yes,Yes,Never,Yes,Yes,Yes,57,8.0,840.0,27.3,140.0,68.0,96.0,22512,Depressed,Not Depressed,False,0.12192832862100089,0.8780716713789991
+Female,9-11th Grade,Partner,Below $55K,No,No,Yes,Every Day,Yes,Yes,Yes,43,3.0,180.0,36.54,128.0,86.0,90.0,11606,Not Depressed,Depressed,False,0.5482124002784479,0.4517875997215521
+Male,Some College or AA Degree,Widowed,Below $15K,Yes,No,No,Every Day,Yes,Yes,Yes,61,9.0,420.0,19.2,94.0,60.0,82.0,31862,Not Depressed,Depressed,False,0.510446974782027,0.48955302521797295
+Male,9-11th Grade,Never Married,Below $65K,Yes,No,No,Every Day,Yes,Yes,Yes,26,8.0,240.0,27.3,120.0,78.0,98.0,20973,Not Depressed,Depressed,False,0.6982740589595173,0.3017259410404826
+Female,Missing,Missing,Below $25K,No,No,No,Missing,No,No,No,18,5.0,360.0,17.0,106.0,76.0,68.0,25524,Depressed,Not Depressed,False,0.13089073989108424,0.8691092601089158
+Female,College Graduate or Above,Married,Below $75K,Yes,No,No,Never,Yes,Yes,Yes,40,7.0,660.0,33.8,126.0,72.0,100.0,17878,Not Depressed,Depressed,False,0.606870482190907,0.39312951780909305
+Female,Some College or AA Degree,Divorced,$75K+,No,No,Yes,Every Day,No,No,No,22,5.0,480.0,21.84,100.0,58.0,56.0,14356,Depressed,Not Depressed,False,0.09201982743710413,0.9079801725628959
+Female,9-11th Grade,Never Married,Below $5K,No,No,No,Every Day,No,No,No,48,7.0,60.0,32.0,146.0,80.0,58.0,16886,Depressed,Not Depressed,False,0.13210432200370748,0.8678956779962925
+Female,High School,Widowed,Below $15K,Yes,No,No,Every Day,Yes,Yes,Yes,59,6.0,600.0,41.03,106.0,62.0,68.0,14026,Not Depressed,Depressed,False,0.758157091869585,0.24184290813041504
+Female,Missing,Missing,Below $75K,No,No,No,Missing,No,No,No,19,8.0,240.0,23.65,136.0,66.0,72.0,6846,Depressed,Not Depressed,False,0.07214191815516868,0.9278580818448313
+Male,College Graduate or Above,Married,$75K+,Yes,Yes,Yes,Missing,No,No,No,31,7.0,540.0,31.9,124.0,70.0,80.0,23755,Depressed,Not Depressed,False,0.029828592155721978,0.970171407844278
+Male,9-11th Grade,Partner,Below $35K,No,No,No,Every Day,No,Yes,Yes,44,4.0,360.0,26.6,164.0,100.0,122.0,13792,Depressed,Not Depressed,False,0.24364507077807163,0.7563549292219284
+Female,High School,Never Married,Below $65K,Yes,No,No,Never,No,No,No,37,5.0,240.0,25.21,92.0,52.0,90.0,7145,Depressed,Not Depressed,False,0.1747307427681658,0.8252692572318342
+Female,High School,Married,$75K+,Yes,Yes,No,Missing,No,Yes,Yes,50,8.0,180.0,24.77,0.0,0.0,80.0,2132,Depressed,Not Depressed,False,0.1443405426233788,0.8556594573766212
+Female,High School,Divorced,Below $5K,Yes,No,Yes,Every Day,Yes,Yes,Yes,50,4.0,480.0,31.0,0.0,0.0,0.0,19572,Not Depressed,Depressed,False,0.8046716526483311,0.19532834735166893
+Male,High School,Married,Below $25K,Yes,No,No,Some Days,Yes,Yes,Yes,73,9.0,720.0,25.8,164.0,4.0,68.0,25077,Depressed,Not Depressed,False,0.3129938148041964,0.6870061851958036
+Female,Some College or AA Degree,Married,Below $35K,No,Yes,Yes,Missing,No,No,No,31,7.5,480.0,38.4,118.0,68.0,76.0,26460,Depressed,Not Depressed,False,0.029547789584452477,0.9704522104155475
+Male,Missing,Partner,Below $20K,No,Yes,Yes,Missing,No,No,No,19,7.0,480.0,23.77,136.0,78.0,66.0,2055,Depressed,Not Depressed,False,0.032793900535664555,0.9672060994643354
+Male,High School,Divorced,Below $15K,No,Yes,No,Every Day,Yes,No,Yes,57,3.0,180.0,17.93,128.0,86.0,76.0,14061,Depressed,Not Depressed,False,0.23096158765702846,0.7690384123429715
+Female,9-11th Grade,Separated,Missing,Yes,No,Yes,Missing,No,Yes,Yes,58,12.0,240.0,34.5,172.0,76.0,72.0,29048,Depressed,Not Depressed,False,0.214368133935256,0.785631866064744
+Female,Less Than 9th Grade,Widowed,Below $5K,No,No,No,Every Day,Yes,Yes,Yes,67,8.0,180.0,23.35,136.0,58.0,68.0,11704,Not Depressed,Depressed,False,0.5114354692369153,0.4885645307630847
+Female,Some College or AA Degree,Never Married,Below $5K,No,No,Yes,Never,No,No,No,20,6.0,600.0,26.03,88.0,50.0,96.0,9234,Depressed,Not Depressed,False,0.11048572367026555,0.8895142763297345
+Female,Less Than 9th Grade,Married,Below $55K,No,No,No,Missing,Yes,No,No,30,4.0,180.0,25.5,104.0,54.0,70.0,13048,Depressed,Not Depressed,False,0.2500000278153758,0.7499999721846242
+Female,College Graduate or Above,Never Married,Below $10K,No,No,No,Never,No,No,No,60,7.0,360.0,27.7,124.0,82.0,64.0,20414,Depressed,Not Depressed,False,0.03914776840083678,0.9608522315991632
+Male,Some College or AA Degree,Never Married,Below $20K,No,Yes,No,Never,No,No,No,20,7.0,360.0,35.7,126.0,52.0,74.0,29376,Depressed,Not Depressed,False,0.05055742057327861,0.9494425794267214
+Female,Missing,Missing,Below $75K,Yes,Yes,Yes,Missing,No,No,No,19,5.0,480.0,31.9,108.0,48.0,78.0,20350,Depressed,Not Depressed,False,0.14370487845047653,0.8562951215495235
+Male,Less Than 9th Grade,Divorced,Below $10K,No,No,Yes,Every Day,No,Yes,Yes,63,6.0,300.0,17.7,118.0,58.0,60.0,30993,Depressed,Not Depressed,False,0.11992803889382286,0.8800719611061771
+Male,9-11th Grade,Widowed,Below $25K,No,No,No,Never,No,No,Yes,72,6.0,420.0,30.86,104.0,60.0,52.0,7307,Depressed,Not Depressed,False,0.05316290196282647,0.9468370980371735
+Male,Less Than 9th Grade,Partner,Below $55K,Yes,No,No,Every Day,Yes,Yes,Yes,67,10.5,540.0,23.4,0.0,0.0,66.0,27486,Not Depressed,Depressed,False,0.5109925594514539,0.4890074405485461
+Female,High School,Married,Below $35K,Yes,No,No,Never,No,Yes,Yes,52,3.0,180.0,38.98,140.0,80.0,88.0,7022,Depressed,Not Depressed,False,0.4057238510782414,0.5942761489217586
+Male,Missing,Missing,Below $35K,No,No,No,Missing,No,No,No,18,9.0,360.0,26.9,114.0,76.0,84.0,35888,Depressed,Not Depressed,False,0.0523896481223558,0.9476103518776442
+Female,College Graduate or Above,Widowed,Below $20K,No,No,No,Missing,No,Yes,Yes,62,9.0,30.0,33.54,116.0,74.0,84.0,9875,Depressed,Not Depressed,False,0.08223252242800994,0.9177674775719901
+Male,Some College or AA Degree,Divorced,Below $25K,Yes,No,No,Missing,No,Yes,Yes,38,5.0,600.0,38.0,172.0,100.0,90.0,25337,Depressed,Not Depressed,False,0.41628097594437685,0.5837190240556231
+Female,Some College or AA Degree,Divorced,Below $5K,Yes,No,No,Every Day,No,Yes,Yes,52,4.0,360.0,29.7,102.0,58.0,86.0,18858,Not Depressed,Depressed,False,0.6610757243412433,0.3389242756587567
+Female,High School,Widowed,Below $25K,No,No,No,Never,No,No,No,41,5.0,300.0,20.87,106.0,82.0,72.0,14091,Depressed,Not Depressed,False,0.08535270752503377,0.9146472924749662
+Female,Some College or AA Degree,Never Married,Below $10K,Yes,No,No,Every Day,No,Yes,Yes,33,9.0,600.0,37.43,108.0,54.0,64.0,11070,Not Depressed,Depressed,False,0.513247568979804,0.4867524310201961
+Male,Some College or AA Degree,Married,Missing,Yes,No,No,Every Day,No,No,Yes,66,5.5,360.0,31.7,144.0,78.0,56.0,34506,Depressed,Not Depressed,False,0.15212514807574773,0.8478748519242523
+Female,9-11th Grade,Divorced,Below $35K,Yes,No,Yes,Missing,Yes,Yes,Yes,63,6.0,480.0,15.4,132.0,80.0,100.0,24187,Not Depressed,Depressed,False,0.5624442875214655,0.43755571247853453
+Female,Some College or AA Degree,Married,Below $15K,No,No,No,Never,No,Yes,Yes,48,4.0,720.0,59.7,124.0,76.0,104.0,20677,Depressed,Not Depressed,False,0.2818097973594723,0.7181902026405277
+Male,Some College or AA Degree,Married,Over $20K,Yes,No,Yes,Missing,No,No,No,39,6.5,300.0,29.7,134.0,94.0,68.0,28917,Depressed,Not Depressed,False,0.03881124849554807,0.9611887515044519
+Female,9-11th Grade,Divorced,Below $55K,Yes,No,No,Missing,No,Yes,Yes,57,7.0,180.0,27.2,158.0,88.0,86.0,25680,Depressed,Not Depressed,False,0.3486941421195343,0.6513058578804657
+Female,Some College or AA Degree,Partner,Below $55K,No,Yes,Yes,Some Days,No,No,No,24,8.0,300.0,24.7,114.0,52.0,74.0,17839,Depressed,Not Depressed,False,0.04109924907807749,0.9589007509219225
+Male,Some College or AA Degree,Married,Below $25K,Yes,No,No,Never,Yes,Yes,Yes,63,6.0,840.0,34.3,136.0,64.0,70.0,23475,Depressed,Not Depressed,False,0.49988458747471454,0.5001154125252855
+Male,Some College or AA Degree,Married,Below $45K,Yes,No,No,Never,No,No,No,51,4.0,600.0,26.52,136.0,86.0,68.0,10335,Depressed,Not Depressed,False,0.10172029347017841,0.8982797065298216
+Male,9-11th Grade,Divorced,Below $10K,No,No,Yes,Some Days,No,Yes,Yes,64,4.0,120.0,24.3,114.0,80.0,78.0,28358,Depressed,Not Depressed,False,0.1192516774251623,0.8807483225748377
+Female,Some College or AA Degree,Divorced,Below $10K,Yes,No,No,Every Day,No,Yes,Yes,63,4.0,120.0,24.97,0.0,0.0,0.0,11285,Depressed,Not Depressed,False,0.4678267531309258,0.5321732468690742
+Male,9-11th Grade,Partner,Below $45K,No,No,No,Never,No,Yes,Yes,37,3.0,720.0,63.91,106.0,72.0,104.0,14393,Depressed,Not Depressed,False,0.29815835238728283,0.7018416476127172
+Female,Less Than 9th Grade,Widowed,Below $25K,No,No,No,Never,No,Yes,Yes,73,11.0,480.0,26.9,180.0,74.0,86.0,30030,Depressed,Not Depressed,False,0.109194856019457,0.890805143980543
+Female,College Graduate or Above,Never Married,Below $45K,Yes,No,Yes,Missing,No,No,No,36,5.0,780.0,62.7,136.0,84.0,92.0,31016,Depressed,Not Depressed,False,0.14765348407720258,0.8523465159227974
+Female,9-11th Grade,Separated,Below $5K,Yes,No,No,Missing,No,No,No,27,4.0,360.0,32.8,100.0,70.0,82.0,33832,Depressed,Not Depressed,False,0.4801978725153515,0.5198021274846485
+Female,High School,Separated,$75K+,No,No,Yes,Every Day,No,No,No,45,5.0,60.0,37.12,124.0,64.0,84.0,5904,Depressed,Not Depressed,False,0.06099642722905585,0.9390035727709442
+Female,Some College or AA Degree,Married,$75K+,No,No,No,Missing,Yes,Yes,Yes,62,10.0,720.0,26.37,146.0,88.0,72.0,8600,Depressed,Not Depressed,False,0.17909973370372845,0.8209002662962716
+Male,Some College or AA Degree,Divorced,Below $55K,No,Yes,No,Never,No,No,No,37,7.0,210.0,34.22,136.0,80.0,86.0,757,Depressed,Not Depressed,False,0.034777746725999314,0.9652222532740007
+Female,High School,Separated,Below $20K,No,No,Yes,Missing,No,No,No,59,5.0,420.0,41.3,122.0,66.0,72.0,26499,Depressed,Not Depressed,False,0.05374650145107218,0.9462534985489278
+Female,9-11th Grade,Divorced,Below $5K,No,No,No,Every Day,No,Yes,No,70,7.0,120.0,25.19,104.0,64.0,66.0,5728,Depressed,Not Depressed,False,0.19249791895148982,0.8075020810485102
+Male,Less Than 9th Grade,Widowed,Below $10K,Yes,No,No,Every Day,Yes,No,No,66,7.0,600.0,25.26,144.0,60.0,84.0,14919,Depressed,Not Depressed,False,0.33615296195282207,0.6638470380471779
+Female,Less Than 9th Grade,Widowed,Over $20K,Yes,No,No,Missing,Yes,Yes,Yes,76,8.0,240.0,36.6,0.0,0.0,60.0,32903,Depressed,Not Depressed,False,0.44217967256227775,0.5578203274377223
+Female,High School,Divorced,Below $20K,No,No,No,Every Day,No,No,No,32,5.0,120.0,25.96,104.0,62.0,72.0,9303,Depressed,Not Depressed,False,0.15995320344803554,0.8400467965519645
+Female,High School,Married,Below $35K,No,No,No,Never,Yes,No,Yes,73,6.0,720.0,35.8,144.0,66.0,80.0,17549,Depressed,Not Depressed,False,0.16842551062688604,0.831574489373114
+Female,9-11th Grade,Divorced,Below $45K,Yes,No,Yes,Never,No,No,Yes,73,6.0,720.0,27.0,160.0,70.0,54.0,17282,Depressed,Not Depressed,False,0.15546873330602673,0.8445312666939733
+Male,Less Than 9th Grade,Never Married,Below $25K,No,No,No,Missing,No,No,No,37,8.0,120.0,32.3,136.0,48.0,74.0,5845,Depressed,Not Depressed,False,0.045392300312519396,0.9546076996874806
+Male,9-11th Grade,Married,Below $10K,Yes,No,No,Every Day,Yes,Yes,No,42,5.0,600.0,21.86,110.0,78.0,62.0,11225,Not Depressed,Depressed,False,0.6163519179575969,0.383648082042403
+Female,Some College or AA Degree,Divorced,Missing,No,Yes,Yes,Never,No,No,Yes,39,7.5,360.0,26.1,94.0,54.0,76.0,32696,Depressed,Not Depressed,False,0.06676475527334025,0.9332352447266598
+Female,Some College or AA Degree,Partner,Below $55K,No,No,No,Every Day,No,Yes,Yes,28,6.0,300.0,47.7,0.0,0.0,96.0,23646,Depressed,Not Depressed,False,0.3227785722442724,0.6772214277557276
+Female,Some College or AA Degree,Never Married,Below $75K,No,Yes,Yes,Missing,No,No,No,21,7.0,540.0,25.6,116.0,68.0,74.0,29220,Depressed,Not Depressed,False,0.036677233011569776,0.9633227669884302
+Female,High School,Married,$75K+,Yes,No,No,Missing,No,No,Yes,49,7.0,240.0,36.23,0.0,0.0,54.0,11592,Depressed,Not Depressed,False,0.1280360636495922,0.8719639363504078
+Male,Less Than 9th Grade,Married,Below $15K,Yes,No,No,Never,Yes,Yes,Yes,33,7.0,540.0,40.3,124.0,86.0,80.0,35131,Not Depressed,Depressed,False,0.7372803310384843,0.2627196689615157
+Male,High School,Married,Below $25K,Yes,Yes,No,Every Day,No,No,No,43,8.0,120.0,34.85,120.0,90.0,76.0,11625,Depressed,Not Depressed,False,0.09472653093513372,0.9052734690648663
+Female,Some College or AA Degree,Married,$75K+,Yes,No,Yes,Missing,No,No,No,31,4.0,150.0,23.68,142.0,86.0,84.0,4151,Depressed,Not Depressed,False,0.09657235124574193,0.9034276487542581
+Male,High School,Partner,Below $20K,Yes,No,No,Every Day,No,No,No,38,6.0,120.0,31.3,114.0,66.0,68.0,18767,Depressed,Not Depressed,False,0.18761462622564729,0.8123853737743527
+Female,Some College or AA Degree,Separated,Below $25K,Yes,Yes,Yes,Missing,No,No,No,33,5.0,90.0,21.93,86.0,52.0,82.0,398,Depressed,Not Depressed,False,0.1333317416041646,0.8666682583958354
+Female,College Graduate or Above,Married,Over $20K,No,Yes,Yes,Missing,No,No,No,42,6.0,180.0,23.27,104.0,68.0,68.0,13035,Depressed,Not Depressed,False,0.011323071000857166,0.9886769289991428
+Female,Some College or AA Degree,Divorced,Below $20K,Yes,Yes,Yes,Missing,No,No,No,55,6.0,300.0,23.34,130.0,72.0,72.0,11002,Depressed,Not Depressed,False,0.08700283009123755,0.9129971699087625
+Female,Some College or AA Degree,Divorced,Below $45K,Yes,No,No,Missing,No,Yes,Yes,44,4.0,30.0,32.08,106.0,74.0,104.0,12330,Depressed,Not Depressed,False,0.44406553592250486,0.5559344640774951
+Male,High School,Partner,Below $55K,Yes,No,No,Every Day,No,No,No,33,6.0,300.0,26.13,116.0,76.0,86.0,3730,Depressed,Not Depressed,False,0.16687308629109188,0.8331269137089081
+Female,Some College or AA Degree,Never Married,Below $20K,Yes,No,No,Every Day,No,No,No,38,6.0,480.0,24.3,0.0,0.0,74.0,21152,Depressed,Not Depressed,False,0.2880132198121965,0.7119867801878035
+Female,High School,Married,Below $35K,Yes,No,Yes,Missing,No,Yes,Yes,60,5.5,360.0,50.0,146.0,66.0,50.0,28717,Depressed,Not Depressed,False,0.20326412383088366,0.7967358761691163
+Female,Less Than 9th Grade,Widowed,Below $20K,Yes,No,No,Missing,No,No,No,65,6.0,180.0,28.67,128.0,56.0,72.0,13459,Depressed,Not Depressed,False,0.1593867845274073,0.8406132154725927
+Female,Some College or AA Degree,Married,Below $20K,No,No,No,Never,No,Yes,Yes,46,8.0,780.0,55.04,128.0,84.0,78.0,12733,Depressed,Not Depressed,False,0.22395867155344407,0.7760413284465559
+Female,Some College or AA Degree,Widowed,Below $25K,Yes,No,No,Never,Yes,Yes,Yes,80,9.0,600.0,32.8,146.0,0.0,92.0,29830,Depressed,Not Depressed,False,0.41462315379279935,0.5853768462072007
+Female,College Graduate or Above,Separated,Below $5K,Yes,No,Yes,Every Day,No,No,No,39,6.0,120.0,20.1,126.0,76.0,80.0,12334,Depressed,Not Depressed,False,0.2299301103980863,0.7700698896019137
+Male,Less Than 9th Grade,Married,Below $45K,Yes,No,No,Never,Yes,Yes,Yes,67,5.0,180.0,21.48,114.0,82.0,108.0,1444,Not Depressed,Depressed,False,0.5109378897657346,0.48906211023426543
+Male,Missing,Missing,Below $10K,Yes,Yes,No,Missing,No,No,No,19,7.0,420.0,22.76,100.0,58.0,74.0,5257,Depressed,Not Depressed,False,0.1240034314349916,0.8759965685650084
+Female,9-11th Grade,Separated,Below $15K,Yes,No,No,Every Day,No,Yes,Yes,51,7.0,240.0,23.74,116.0,78.0,102.0,5142,Not Depressed,Depressed,False,0.5951880077936288,0.4048119922063712
+Female,Some College or AA Degree,Divorced,Below $15K,No,No,No,Never,No,Yes,Yes,50,10.5,180.0,49.8,126.0,80.0,114.0,28225,Depressed,Not Depressed,False,0.1835098237260796,0.8164901762739204
+Female,High School,Widowed,Below $25K,No,No,No,Missing,Yes,No,Yes,80,11.0,180.0,21.9,154.0,58.0,64.0,33869,Depressed,Not Depressed,False,0.07393691429843274,0.9260630857015673
+Female,College Graduate or Above,Partner,Over $20K,No,No,Yes,Never,No,No,No,66,7.0,240.0,34.6,132.0,68.0,66.0,29209,Depressed,Not Depressed,False,0.013678950875351648,0.9863210491246484
+Female,Missing,Missing,Over $20K,Yes,No,Yes,Missing,No,No,No,19,7.0,240.0,23.95,98.0,52.0,76.0,13860,Depressed,Not Depressed,False,0.1079788436024175,0.8920211563975825
+Female,Some College or AA Degree,Never Married,$75K+,No,No,Yes,Every Day,No,No,No,25,6.0,540.0,31.96,114.0,88.0,68.0,14306,Depressed,Not Depressed,False,0.07948060344484387,0.9205193965551561
+Female,High School,Widowed,Below $15K,Yes,No,No,Every Day,No,Yes,Yes,64,11.0,360.0,19.0,0.0,0.0,62.0,35868,Depressed,Not Depressed,False,0.2750222034392388,0.7249777965607612
+Female,Some College or AA Degree,Married,Missing,No,No,No,Missing,No,No,No,67,5.0,480.0,23.09,126.0,84.0,58.0,14386,Depressed,Not Depressed,False,0.04043990852080681,0.9595600914791932
+Male,College Graduate or Above,Separated,Below $25K,Yes,Yes,Yes,Every Day,No,No,No,37,5.0,480.0,33.8,0.0,0.0,82.0,26773,Depressed,Not Depressed,False,0.11369240782891554,0.8863075921710845
+Female,College Graduate or Above,Never Married,Below $10K,Yes,No,No,Missing,No,Yes,Yes,54,8.0,600.0,35.9,122.0,82.0,86.0,34466,Depressed,Not Depressed,False,0.28223912278599517,0.7177608772140048
+Male,Some College or AA Degree,Never Married,Below $10K,Yes,No,Yes,Missing,No,No,Yes,30,5.0,210.0,63.87,136.0,86.0,86.0,2158,Depressed,Not Depressed,False,0.18267576335650082,0.8173242366434992
+Male,High School,Widowed,Below $35K,Yes,No,No,Missing,No,No,No,47,3.0,300.0,39.43,0.0,0.0,0.0,12010,Depressed,Not Depressed,False,0.11422349076974392,0.8857765092302561
+Female,College Graduate or Above,Married,Below $65K,No,No,No,Missing,No,No,No,35,7.0,240.0,24.1,146.0,104.0,92.0,25940,Depressed,Not Depressed,False,0.03600862056818521,0.9639913794318148
+Female,Missing,Missing,Missing,Yes,No,No,Missing,No,No,No,18,12.0,720.0,45.9,106.0,64.0,76.0,35891,Depressed,Not Depressed,False,0.2355533662605841,0.7644466337394159
+Female,9-11th Grade,Never Married,Below $35K,Yes,No,No,Missing,No,Yes,Yes,48,4.0,480.0,20.0,118.0,80.0,62.0,23586,Depressed,Not Depressed,False,0.4630430430218795,0.5369569569781205
+Male,9-11th Grade,Married,$75K+,No,No,No,Never,No,No,Yes,80,4.0,600.0,39.84,142.0,50.0,72.0,11974,Depressed,Not Depressed,False,0.03277820280347632,0.9672217971965237
+Female,9-11th Grade,Divorced,Below $15K,Yes,No,No,Never,No,Yes,Yes,60,4.0,480.0,56.65,0.0,0.0,70.0,14174,Not Depressed,Depressed,False,0.5929092400623475,0.4070907599376526
+Male,High School,Divorced,Below $5K,Yes,No,No,Every Day,No,Yes,Yes,60,3.0,60.0,22.36,0.0,0.0,80.0,9524,Depressed,Not Depressed,False,0.4574078062957192,0.5425921937042808
+Male,High School,Divorced,Below $35K,Yes,No,Yes,Never,No,No,No,71,9.5,840.0,42.4,134.0,68.0,72.0,35474,Depressed,Not Depressed,False,0.048383620318013576,0.9516163796819864
+Female,Some College or AA Degree,Partner,Below $10K,Yes,Yes,Yes,Every Day,No,Yes,Yes,45,12.0,60.0,20.4,96.0,62.0,68.0,19339,Depressed,Not Depressed,False,0.18654512699936798,0.813454873000632
+Female,High School,Never Married,Below $10K,Yes,No,No,Every Day,No,Yes,Yes,51,1.0,240.0,31.71,108.0,80.0,88.0,8981,Not Depressed,Depressed,False,0.6041414836224632,0.3958585163775368
+Female,9-11th Grade,Separated,Below $20K,Yes,No,No,Never,No,Yes,Yes,46,6.0,180.0,34.63,158.0,82.0,60.0,15132,Not Depressed,Depressed,False,0.5724588474209702,0.42754115257902975
+Female,9-11th Grade,Married,Over $20K,No,No,Yes,Missing,No,No,No,48,5.0,60.0,30.2,118.0,66.0,70.0,23036,Depressed,Not Depressed,False,0.024061596166010335,0.9759384038339897
+Female,High School,Never Married,Below $45K,No,No,No,Missing,Yes,No,No,28,5.0,240.0,51.9,0.0,0.0,86.0,22809,Depressed,Not Depressed,False,0.2398635679277299,0.7601364320722701
+Female,Less Than 9th Grade,Married,Below $15K,No,No,No,Missing,No,No,No,49,5.0,240.0,29.58,136.0,86.0,80.0,8932,Depressed,Not Depressed,False,0.08385682102686087,0.9161431789731391
+Female,9-11th Grade,Never Married,Below $5K,No,No,No,Missing,No,No,No,39,3.0,420.0,31.45,112.0,68.0,70.0,11780,Depressed,Not Depressed,False,0.16165529259461553,0.8383447074053845
+Female,Less Than 9th Grade,Widowed,Below $35K,Yes,No,Yes,Never,Yes,Yes,No,68,4.0,120.0,24.1,116.0,64.0,72.0,16254,Depressed,Not Depressed,False,0.47230007382410477,0.5276999261758952
+Male,Missing,Missing,$75K+,Yes,Yes,No,Missing,No,No,No,19,8.0,480.0,38.5,92.0,50.0,66.0,35296,Depressed,Not Depressed,False,0.09524790503223846,0.9047520949677615
+Male,Some College or AA Degree,Partner,Over $20K,Yes,No,Yes,Every Day,No,Yes,Yes,31,6.0,600.0,36.4,126.0,70.0,82.0,30019,Depressed,Not Depressed,False,0.2647774282299279,0.7352225717700721
+Female,9-11th Grade,Married,Below $25K,Yes,No,No,Every Day,No,No,No,23,7.0,120.0,20.04,96.0,58.0,86.0,10502,Depressed,Not Depressed,False,0.30379897184370885,0.6962010281562911
+Female,College Graduate or Above,Never Married,$75K+,Yes,Yes,Yes,Missing,No,No,No,27,9.0,480.0,25.3,104.0,68.0,78.0,30496,Depressed,Not Depressed,False,0.051666132132275666,0.9483338678677243
+Male,9-11th Grade,Married,Below $15K,Yes,No,Yes,Every Day,No,Yes,Yes,62,4.0,540.0,39.6,146.0,76.0,72.0,23882,Depressed,Not Depressed,False,0.29453349251697825,0.7054665074830218
+Male,High School,Never Married,Below $45K,Yes,No,No,Missing,Yes,No,No,51,6.0,60.0,24.39,118.0,76.0,74.0,4762,Depressed,Not Depressed,False,0.1946416488594067,0.8053583511405933
+Female,High School,Separated,Missing,Yes,No,Yes,Missing,No,No,No,62,7.0,20.0,23.6,120.0,64.0,68.0,31692,Depressed,Not Depressed,False,0.08212409061901516,0.9178759093809848
+Male,9-11th Grade,Never Married,Below $35K,Yes,No,Yes,Every Day,Yes,Yes,Yes,28,8.0,300.0,0.0,0.0,0.0,0.0,109,Not Depressed,Depressed,False,0.5465417304526621,0.45345826954733787
+Male,High School,Never Married,Below $45K,Yes,No,Yes,Every Day,No,Yes,Yes,37,5.0,360.0,50.9,100.0,76.0,106.0,8754,Depressed,Not Depressed,False,0.34674831075226564,0.6532516892477344
+Female,9-11th Grade,Married,Below $20K,No,No,No,Every Day,No,No,No,21,7.0,360.0,17.28,112.0,50.0,68.0,14075,Depressed,Not Depressed,False,0.13830945155093266,0.8616905484490673
+Male,High School,Married,Below $25K,Yes,No,No,Never,Yes,Yes,Yes,62,6.5,480.0,32.2,138.0,74.0,90.0,31308,Depressed,Not Depressed,False,0.46231872830526255,0.5376812716947375
+Female,9-11th Grade,Widowed,Below $20K,Yes,No,No,Missing,Yes,Yes,Yes,74,6.0,480.0,40.14,140.0,52.0,70.0,13032,Not Depressed,Depressed,False,0.6196130379963096,0.3803869620036904
+Male,High School,Divorced,Below $35K,Yes,No,No,Every Day,Yes,No,Yes,46,8.0,480.0,26.9,126.0,74.0,60.0,18522,Depressed,Not Depressed,False,0.47821885849810564,0.5217811415018944
+Male,Missing,Missing,Below $45K,No,No,No,Missing,No,No,No,19,4.0,360.0,26.55,116.0,60.0,62.0,6730,Depressed,Not Depressed,False,0.06915980472375516,0.9308401952762448
+Female,Some College or AA Degree,Married,$75K+,No,No,Yes,Never,No,No,No,60,8.0,300.0,28.81,148.0,74.0,78.0,8248,Depressed,Not Depressed,False,0.016100376646549064,0.9838996233534509
+Female,Missing,Never Married,Below $20K,No,Yes,Yes,Missing,No,No,No,18,7.0,150.0,23.75,0.0,0.0,86.0,3453,Depressed,Not Depressed,False,0.046973275319167285,0.9530267246808327
+Female,Some College or AA Degree,Never Married,Below $35K,No,No,No,Missing,No,No,No,48,7.0,180.0,40.45,114.0,72.0,82.0,12584,Depressed,Not Depressed,False,0.0522641364494415,0.9477358635505585
+Female,College Graduate or Above,Never Married,Below $25K,No,Yes,No,Missing,No,No,No,55,4.0,60.0,23.3,144.0,82.0,78.0,18802,Depressed,Not Depressed,False,0.032144116535689826,0.9678558834643102
+Female,Some College or AA Degree,Never Married,Below $35K,No,No,No,Missing,No,No,No,20,7.0,600.0,28.4,114.0,74.0,78.0,19847,Depressed,Not Depressed,False,0.09279746267903977,0.9072025373209602
+Male,9-11th Grade,Never Married,Below $15K,No,No,No,Missing,Yes,Yes,Yes,62,7.5,240.0,27.3,132.0,68.0,82.0,27604,Depressed,Not Depressed,False,0.231006664052247,0.768993335947753
+Female,Some College or AA Degree,Never Married,Missing,No,No,No,Missing,No,Yes,Yes,60,6.0,600.0,30.23,84.0,56.0,88.0,10763,Depressed,Not Depressed,False,0.15452176443603838,0.8454782355639616
+Male,9-11th Grade,Partner,Below $5K,No,Yes,Yes,Every Day,Yes,No,No,21,3.0,180.0,25.59,130.0,62.0,90.0,3810,Depressed,Not Depressed,False,0.2594113713478323,0.7405886286521677
+Female,Missing,Never Married,Below $5K,No,No,No,Missing,No,No,No,19,5.0,180.0,33.4,116.0,70.0,66.0,4207,Depressed,Not Depressed,False,0.15600478460170242,0.8439952153982976
+Female,9-11th Grade,Married,Below $15K,Yes,No,Yes,Missing,Yes,No,Yes,63,7.0,300.0,37.8,102.0,58.0,78.0,17780,Depressed,Not Depressed,False,0.3316683661671289,0.6683316338328711
+Female,9-11th Grade,Separated,Below $10K,Yes,No,No,Every Day,Yes,Yes,Yes,41,6.0,480.0,27.7,140.0,92.0,70.0,16028,Not Depressed,Depressed,False,0.8709601470168021,0.12903985298319784
+Female,Some College or AA Degree,Married,Below $45K,No,Yes,Yes,Missing,No,No,No,41,6.5,120.0,56.4,158.0,94.0,94.0,26620,Depressed,Not Depressed,False,0.025898642409415196,0.9741013575905848
+Male,9-11th Grade,Divorced,Below $5K,Yes,No,No,Missing,Yes,Yes,Yes,50,6.0,120.0,28.9,106.0,76.0,68.0,16813,Not Depressed,Depressed,False,0.7039027169223655,0.29609728307763444
+Male,9-11th Grade,Partner,Below $10K,Yes,No,Yes,Every Day,Yes,No,No,30,4.0,240.0,28.73,144.0,86.0,84.0,7954,Depressed,Not Depressed,False,0.4529150715335315,0.5470849284664685
+Female,Some College or AA Degree,Never Married,Below $25K,Yes,No,No,Every Day,No,Yes,Yes,58,0.0,480.0,31.4,146.0,68.0,68.0,26715,Not Depressed,Depressed,False,0.5995033863382973,0.40049661366170275
+Female,Some College or AA Degree,Divorced,Below $20K,Yes,No,No,Some Days,No,Yes,Yes,71,8.0,840.0,28.6,146.0,76.0,66.0,9103,Depressed,Not Depressed,False,0.4144433343443883,0.5855566656556117
+Male,High School,Married,Below $75K,Yes,No,No,Missing,Yes,No,No,75,4.0,840.0,40.9,118.0,30.0,70.0,19131,Depressed,Not Depressed,False,0.1544517221404894,0.8455482778595106
+Female,Some College or AA Degree,Married,Missing,No,No,No,Missing,No,No,No,30,8.0,480.0,34.9,0.0,0.0,88.0,25091,Depressed,Not Depressed,False,0.06340018328239638,0.9365998167176036
+Female,High School,Divorced,Below $20K,Yes,No,No,Every Day,No,Yes,Yes,49,5.0,420.0,32.0,138.0,82.0,74.0,23672,Not Depressed,Depressed,False,0.6042333259850949,0.39576667401490506
+Male,College Graduate or Above,Married,$75K+,No,Yes,Yes,Some Days,No,No,No,50,6.0,300.0,29.01,132.0,88.0,72.0,10158,Depressed,Not Depressed,False,0.010740933170906852,0.9892590668290931
+Female,College Graduate or Above,Never Married,Below $45K,Yes,Yes,No,Missing,No,No,No,24,8.0,720.0,17.5,114.0,62.0,92.0,30968,Depressed,Not Depressed,False,0.10621645370454658,0.8937835462954534
+Female,Some College or AA Degree,Separated,Below $15K,Yes,No,No,Every Day,Yes,No,Yes,48,3.5,60.0,36.6,120.0,66.0,72.0,32570,Not Depressed,Depressed,False,0.7380932854075062,0.26190671459249376
+Male,High School,Partner,Below $35K,Yes,No,No,Missing,No,No,No,22,7.0,480.0,28.45,138.0,60.0,86.0,7638,Depressed,Not Depressed,False,0.12878770658856054,0.8712122934114395
+Male,9-11th Grade,Separated,Below $15K,No,No,No,Every Day,Yes,Yes,Yes,55,12.0,480.0,48.4,144.0,76.0,74.0,19192,Depressed,Not Depressed,False,0.3917205888126497,0.6082794111873503
+Male,9-11th Grade,Never Married,Below $10K,No,Yes,No,Every Day,No,Yes,Yes,22,3.0,240.0,20.74,116.0,68.0,72.0,11007,Depressed,Not Depressed,False,0.25727275460397125,0.7427272453960287
+Male,Some College or AA Degree,Married,Missing,Yes,No,No,Never,No,No,Yes,77,0.0,480.0,36.2,162.0,78.0,60.0,25177,Depressed,Not Depressed,False,0.1582807852005984,0.8417192147994016
+Female,College Graduate or Above,Married,Over $20K,Yes,No,Yes,Never,No,No,No,34,4.0,480.0,24.42,0.0,0.0,88.0,12626,Depressed,Not Depressed,False,0.07841089062143392,0.9215891093785661
+Female,High School,Married,Below $45K,Yes,No,No,Every Day,Yes,Yes,Yes,51,4.0,540.0,16.66,98.0,62.0,96.0,11605,Not Depressed,Depressed,False,0.7150329949137003,0.2849670050862997
+Female,Less Than 9th Grade,Never Married,Below $25K,Yes,No,No,Never,No,No,No,46,5.0,360.0,41.2,110.0,68.0,70.0,17884,Depressed,Not Depressed,False,0.31385923359192436,0.6861407664080756
+Female,High School,Divorced,Below $20K,No,No,No,Never,No,Yes,Yes,70,8.0,900.0,37.7,146.0,74.0,70.0,24963,Depressed,Not Depressed,False,0.17414692512743046,0.8258530748725695
+Female,Less Than 9th Grade,Widowed,Below $45K,Yes,No,No,Missing,Yes,Yes,Yes,80,7.0,420.0,27.07,92.0,54.0,80.0,7103,Not Depressed,Depressed,False,0.5392583557900575,0.46074164420994246
+Male,9-11th Grade,Married,Below $55K,Yes,No,No,Never,No,No,Yes,70,7.0,720.0,43.2,150.0,62.0,56.0,32352,Depressed,Not Depressed,False,0.1066469683867266,0.8933530316132734
+Male,High School,Never Married,Below $20K,No,No,No,Missing,No,Yes,Yes,28,7.0,300.0,24.53,102.0,64.0,68.0,7975,Depressed,Not Depressed,False,0.13803208390105415,0.8619679160989459
+Male,Less Than 9th Grade,Married,Below $65K,No,No,No,Every Day,Yes,No,Yes,72,8.0,660.0,31.91,130.0,72.0,80.0,8422,Depressed,Not Depressed,False,0.15102992806515259,0.8489700719348474
+Male,Some College or AA Degree,Never Married,Below $10K,No,No,No,Missing,No,No,No,23,6.0,360.0,37.5,108.0,62.0,64.0,20405,Depressed,Not Depressed,False,0.05715068761090669,0.9428493123890933
+Female,Missing,Missing,Below $25K,No,No,Yes,Missing,No,No,No,19,6.0,1080.0,40.65,0.0,0.0,70.0,10224,Depressed,Not Depressed,False,0.10852109447858915,0.8914789055214108
+Female,9-11th Grade,Partner,Below $5K,Yes,No,Yes,Every Day,No,No,Yes,36,5.0,120.0,20.6,104.0,46.0,64.0,32835,Depressed,Not Depressed,False,0.4022583085911846,0.5977416914088154
+Female,Some College or AA Degree,Married,Below $15K,Yes,No,No,Missing,No,Yes,Yes,56,2.0,480.0,52.6,124.0,66.0,108.0,34202,Depressed,Not Depressed,False,0.4568004852826806,0.5431995147173194
+Female,Some College or AA Degree,Never Married,Below $25K,Yes,No,No,Some Days,Yes,No,Yes,35,7.0,720.0,32.4,98.0,60.0,86.0,25311,Not Depressed,Depressed,False,0.6778515919364243,0.32214840806357564
+Female,College Graduate or Above,Never Married,Below $65K,Yes,No,No,Missing,No,No,No,45,8.5,300.0,0.0,114.0,60.0,98.0,27909,Depressed,Not Depressed,False,0.06400094329521089,0.9359990567047891
+Male,9-11th Grade,Never Married,Below $5K,No,No,Yes,Some Days,No,No,No,61,6.0,360.0,32.1,136.0,96.0,96.0,20224,Depressed,Not Depressed,False,0.04967686768941104,0.950323132310589
+Female,Some College or AA Degree,Divorced,Below $20K,No,No,No,Every Day,No,No,No,41,6.0,240.0,39.25,116.0,64.0,68.0,14716,Depressed,Not Depressed,False,0.14436172767492716,0.8556382723250728
+Male,Some College or AA Degree,Married,Below $10K,No,No,Yes,Missing,No,No,Yes,50,8.0,300.0,23.04,118.0,80.0,50.0,295,Depressed,Not Depressed,False,0.021985613658409453,0.9780143863415905
+Female,9-11th Grade,Never Married,Below $15K,No,No,Yes,Some Days,No,No,No,21,8.0,240.0,24.6,88.0,60.0,82.0,19676,Depressed,Not Depressed,False,0.09507845934562786,0.9049215406543721
+Female,9-11th Grade,Married,Below $75K,No,No,Yes,Never,No,Yes,Yes,64,8.0,360.0,27.96,142.0,68.0,70.0,8964,Depressed,Not Depressed,False,0.06759143626088382,0.9324085637391162
+Female,Some College or AA Degree,Never Married,Missing,Yes,No,No,Missing,Yes,Yes,Yes,25,8.0,60.0,21.93,98.0,52.0,80.0,12291,Not Depressed,Depressed,False,0.684582877836748,0.3154171221632521
+Male,9-11th Grade,Never Married,Below $15K,No,No,No,Every Day,No,Yes,Yes,70,6.0,480.0,27.98,168.0,74.0,86.0,15363,Depressed,Not Depressed,False,0.1331152387394985,0.8668847612605015
+Female,High School,Divorced,Below $25K,Yes,No,Yes,Never,Yes,Yes,Yes,70,4.0,60.0,28.16,156.0,72.0,72.0,12468,Not Depressed,Depressed,False,0.5471195880138076,0.4528804119861924
+Male,Some College or AA Degree,Married,Missing,Yes,No,No,Never,No,Yes,Yes,50,6.0,480.0,33.4,134.0,90.0,92.0,11627,Depressed,Not Depressed,False,0.2818342865135559,0.7181657134864441
+Female,9-11th Grade,Never Married,Below $45K,No,No,No,Missing,No,Yes,Yes,42,8.0,360.0,34.44,120.0,74.0,64.0,12986,Depressed,Not Depressed,False,0.1728261513123649,0.8271738486876351
+Male,High School,Never Married,Below $10K,Yes,No,Yes,Every Day,Yes,Yes,Yes,59,6.5,300.0,24.5,126.0,70.0,62.0,27595,Depressed,Not Depressed,False,0.4378125794602642,0.5621874205397358
+Female,9-11th Grade,Married,Below $35K,Yes,No,No,Every Day,No,No,No,32,4.0,360.0,29.02,118.0,78.0,78.0,10020,Depressed,Not Depressed,False,0.34811620029987633,0.6518837997001237
+Female,9-11th Grade,Never Married,Below $20K,Yes,No,No,Missing,Yes,Yes,Yes,67,3.0,480.0,31.7,0.0,0.0,56.0,20968,Not Depressed,Depressed,False,0.7248981967087875,0.2751018032912125
+Female,Less Than 9th Grade,Married,Below $25K,Yes,No,No,Missing,No,Yes,Yes,64,10.0,180.0,48.9,126.0,52.0,84.0,28583,Depressed,Not Depressed,False,0.27963715184052407,0.7203628481594759
+Male,Less Than 9th Grade,Widowed,Below $20K,Yes,No,No,Never,Yes,No,No,62,5.0,60.0,26.4,122.0,78.0,44.0,18379,Depressed,Not Depressed,False,0.34500089472859186,0.6549991052714081
+Male,Some College or AA Degree,Married,Below $35K,Yes,No,No,Every Day,Yes,Yes,Yes,47,8.0,720.0,29.6,94.0,52.0,90.0,33514,Not Depressed,Depressed,False,0.5740560767365385,0.42594392326346153
+Male,Some College or AA Degree,Divorced,Below $35K,No,No,No,Every Day,No,No,Yes,40,7.0,300.0,28.57,136.0,82.0,76.0,7488,Depressed,Not Depressed,False,0.10340241787919269,0.8965975821208073
+Male,9-11th Grade,Married,Below $25K,No,No,No,Missing,No,No,Yes,25,6.0,180.0,27.29,112.0,78.0,82.0,1751,Depressed,Not Depressed,False,0.09088221040499256,0.9091177895950074
+Female,Missing,Missing,Over $20K,Yes,No,No,Missing,No,No,No,18,7.0,420.0,20.0,92.0,54.0,84.0,32879,Depressed,Not Depressed,False,0.1711480047639875,0.8288519952360125
+Male,Some College or AA Degree,Widowed,Below $25K,Yes,Yes,Yes,Every Day,Yes,Yes,Yes,47,8.0,120.0,30.2,122.0,76.0,88.0,19809,Depressed,Not Depressed,False,0.41024931654518526,0.5897506834548147
+Female,High School,Married,Over $20K,Yes,Yes,Yes,Never,No,Yes,Yes,48,6.0,120.0,23.17,122.0,78.0,58.0,7507,Depressed,Not Depressed,False,0.12424345703304307,0.8757565429669569
+Male,Some College or AA Degree,Married,Below $55K,Yes,No,No,Missing,No,No,No,67,6.0,240.0,28.7,112.0,80.0,60.0,21568,Depressed,Not Depressed,False,0.04792961842977295,0.952070381570227
+Female,9-11th Grade,Partner,Below $20K,Yes,No,No,Every Day,No,Yes,Yes,47,9.0,180.0,33.11,118.0,68.0,82.0,11474,Not Depressed,Depressed,False,0.520523353682029,0.47947664631797104
+Male,Some College or AA Degree,Divorced,Below $15K,No,No,No,Missing,No,No,No,80,9.0,180.0,18.7,126.0,66.0,86.0,36180,Depressed,Not Depressed,False,0.014925289375633755,0.9850747106243662
+Female,College Graduate or Above,Divorced,Below $55K,No,No,No,Missing,No,No,No,67,6.0,540.0,24.96,114.0,68.0,66.0,6880,Depressed,Not Depressed,False,0.033340212061353736,0.9666597879386463
+Male,9-11th Grade,Divorced,Below $55K,No,No,Yes,Never,No,Yes,No,69,7.0,120.0,34.9,140.0,96.0,72.0,31409,Depressed,Not Depressed,False,0.040898216157632006,0.959101783842368
+Female,Less Than 9th Grade,Widowed,Below $20K,Yes,No,No,Missing,Yes,Yes,Yes,80,8.0,420.0,0.0,126.0,50.0,76.0,31050,Not Depressed,Depressed,False,0.5016547913442113,0.49834520865578863
+Male,Less Than 9th Grade,Married,Below $25K,Yes,No,Yes,Never,No,No,No,55,7.0,240.0,30.8,108.0,64.0,78.0,20822,Depressed,Not Depressed,False,0.07604973604209697,0.923950263957903
+Female,Less Than 9th Grade,Never Married,Below $20K,No,No,No,Missing,No,No,No,33,4.0,300.0,27.4,108.0,70.0,66.0,23828,Depressed,Not Depressed,False,0.14874595632404097,0.851254043675959
+Male,High School,Married,Below $20K,Yes,No,No,Never,Yes,Yes,Yes,56,7.0,720.0,29.2,118.0,70.0,56.0,21722,Not Depressed,Depressed,False,0.5171156214801031,0.48288437851989685
+Female,High School,Married,Below $45K,Yes,No,No,Missing,No,No,No,48,3.0,240.0,32.38,104.0,68.0,78.0,7561,Depressed,Not Depressed,False,0.14885662096763663,0.8511433790323634
+Female,9-11th Grade,Married,Below $35K,No,No,No,Missing,Yes,Yes,Yes,56,6.0,120.0,29.44,120.0,76.0,94.0,10003,Depressed,Not Depressed,False,0.3454530308435293,0.6545469691564707
+Male,High School,Divorced,Below $10K,Yes,No,No,Every Day,No,Yes,Yes,67,3.0,480.0,28.98,150.0,76.0,74.0,13871,Depressed,Not Depressed,False,0.3770650109304976,0.6229349890695024
+Female,Some College or AA Degree,Married,Below $25K,Yes,No,No,Never,No,Yes,Yes,46,7.0,420.0,35.44,116.0,80.0,92.0,37,Depressed,Not Depressed,False,0.3999602867591292,0.6000397132408708
+Female,Less Than 9th Grade,Married,Missing,No,No,No,Missing,No,No,No,43,7.0,60.0,27.5,102.0,60.0,76.0,2544,Depressed,Not Depressed,False,0.06840782030254133,0.9315921796974587
+Female,9-11th Grade,Partner,Below $65K,No,Yes,Yes,Every Day,Yes,Yes,Yes,24,7.0,360.0,19.6,106.0,66.0,74.0,24711,Depressed,Not Depressed,False,0.41983004777786403,0.580169952222136
+Female,9-11th Grade,Never Married,Below $55K,No,No,No,Every Day,No,No,No,22,7.0,840.0,34.51,104.0,66.0,72.0,13709,Depressed,Not Depressed,False,0.17231762506490578,0.8276823749350942
+Female,Some College or AA Degree,Married,Below $20K,Yes,No,No,Every Day,Yes,Yes,Yes,60,8.0,180.0,18.1,100.0,72.0,66.0,18875,Not Depressed,Depressed,False,0.6365421808965129,0.36345781910348707
+Female,Some College or AA Degree,Widowed,Below $20K,Yes,No,Yes,Missing,No,Yes,Yes,56,6.0,210.0,51.23,0.0,0.0,0.0,3306,Depressed,Not Depressed,False,0.2720992336795496,0.7279007663204504
+Female,9-11th Grade,Never Married,Below $15K,Yes,No,No,Never,No,No,Yes,66,4.0,360.0,22.5,220.0,98.0,70.0,25528,Depressed,Not Depressed,False,0.25766249151082143,0.7423375084891786
+Male,Some College or AA Degree,Separated,Below $45K,Yes,No,No,Never,Yes,No,Yes,61,5.5,240.0,47.0,134.0,76.0,62.0,34605,Depressed,Not Depressed,False,0.407565548427938,0.592434451572062
+Male,Some College or AA Degree,Married,Over $20K,Yes,No,No,Missing,No,No,No,53,5.0,300.0,26.3,126.0,84.0,60.0,16897,Depressed,Not Depressed,False,0.049975712763808744,0.9500242872361913
+Female,Some College or AA Degree,Married,Below $75K,No,No,Yes,Missing,No,No,No,51,8.0,480.0,28.3,0.0,0.0,0.0,24856,Depressed,Not Depressed,False,0.019712580736920393,0.9802874192630796
+Male,Some College or AA Degree,Divorced,Below $15K,Yes,No,No,Missing,No,No,No,52,8.0,480.0,24.59,118.0,82.0,100.0,11671,Depressed,Not Depressed,False,0.10217208007480227,0.8978279199251977
+Female,High School,Never Married,Below $75K,No,No,No,Missing,No,No,No,23,11.0,480.0,39.1,108.0,60.0,62.0,30751,Depressed,Not Depressed,False,0.052431306508119,0.947568693491881
+Female,College Graduate or Above,Partner,Below $75K,Yes,No,No,Missing,No,No,No,56,6.5,480.0,42.4,132.0,72.0,78.0,26060,Depressed,Not Depressed,False,0.10406509723410207,0.8959349027658979
+Male,9-11th Grade,Never Married,Below $25K,Yes,Yes,Yes,Every Day,No,No,No,22,4.5,180.0,17.9,110.0,46.0,56.0,27215,Depressed,Not Depressed,False,0.14113141203330615,0.8588685879666939
+Female,College Graduate or Above,Divorced,Below $35K,Yes,No,No,Every Day,No,No,No,43,4.0,720.0,23.35,122.0,66.0,76.0,14488,Depressed,Not Depressed,False,0.2807270884956158,0.7192729115043842
+Female,College Graduate or Above,Never Married,$75K+,No,No,Yes,Never,No,No,No,26,9.0,480.0,23.04,104.0,64.0,70.0,10269,Depressed,Not Depressed,False,0.028350502682737644,0.9716494973172624
+Female,High School,Widowed,Below $25K,Yes,No,No,Never,No,No,No,69,7.0,300.0,32.9,110.0,56.0,66.0,33448,Depressed,Not Depressed,False,0.11165543832291958,0.8883445616770804
+Male,Missing,Missing,Below $45K,No,No,Yes,Missing,No,No,No,19,12.0,180.0,16.2,126.0,62.0,80.0,25687,Depressed,Not Depressed,False,0.017624676122519722,0.9823753238774803
+Female,College Graduate or Above,Widowed,Missing,No,No,No,Missing,Yes,No,Yes,80,10.0,360.0,20.6,0.0,0.0,0.0,21344,Depressed,Not Depressed,False,0.07371300473054276,0.9262869952694572
+Female,High School,Married,Below $25K,Yes,No,Yes,Missing,No,No,No,70,4.0,180.0,26.3,130.0,0.0,74.0,23395,Depressed,Not Depressed,False,0.04798908542654545,0.9520109145734545
+Male,9-11th Grade,Widowed,Below $20K,No,No,No,Missing,No,No,Yes,80,8.0,720.0,0.0,128.0,62.0,90.0,33454,Depressed,Not Depressed,False,0.02825047322523777,0.9717495267747622
+Female,Some College or AA Degree,Never Married,Missing,Yes,No,No,Missing,No,No,No,21,6.0,240.0,34.2,0.0,0.0,0.0,36009,Depressed,Not Depressed,False,0.2365926459551353,0.7634073540448647
+Female,High School,Partner,Below $35K,Yes,No,Yes,Every Day,Yes,No,Yes,28,4.0,360.0,19.48,94.0,52.0,74.0,4658,Not Depressed,Depressed,False,0.6201785004660845,0.3798214995339155
+Female,9-11th Grade,Married,Below $55K,No,No,No,Every Day,No,No,No,57,6.0,240.0,22.1,114.0,66.0,62.0,33533,Depressed,Not Depressed,False,0.06287051698190904,0.937129483018091
+Female,Some College or AA Degree,Never Married,Below $35K,No,No,No,Missing,No,No,No,23,9.0,360.0,19.0,98.0,62.0,70.0,15039,Depressed,Not Depressed,False,0.061269502365754236,0.9387304976342458
+Female,Some College or AA Degree,Never Married,Below $45K,No,No,No,Every Day,No,No,No,38,5.0,360.0,25.7,122.0,66.0,94.0,25074,Depressed,Not Depressed,False,0.10037652279721077,0.8996234772027892
+Female,Missing,Missing,Below $55K,No,No,No,Missing,No,No,No,19,7.0,360.0,22.17,112.0,72.0,68.0,12739,Depressed,Not Depressed,False,0.0878432136424111,0.9121567863575889
+Female,Some College or AA Degree,Never Married,Below $45K,Yes,No,No,Missing,No,No,No,60,8.0,540.0,31.9,122.0,72.0,116.0,28471,Depressed,Not Depressed,False,0.10047568170361199,0.899524318296388
+Female,High School,Married,Missing,Yes,No,No,Missing,Yes,No,No,79,7.0,360.0,32.6,0.0,0.0,62.0,30630,Depressed,Not Depressed,False,0.19933129240995173,0.8006687075900483
+Female,Some College or AA Degree,Never Married,Below $25K,Yes,No,No,Missing,Yes,No,Yes,40,8.0,120.0,50.45,118.0,54.0,58.0,2380,Not Depressed,Depressed,False,0.502979746658049,0.49702025334195105
+Female,Less Than 9th Grade,Partner,Below $45K,Yes,No,Yes,Every Day,Yes,Yes,Yes,43,9.0,240.0,32.0,136.0,74.0,86.0,35116,Not Depressed,Depressed,False,0.6893383589263846,0.31066164107361544
+Female,Some College or AA Degree,Divorced,Below $45K,Yes,No,No,Never,No,No,No,43,6.5,180.0,30.2,106.0,62.0,72.0,34216,Depressed,Not Depressed,False,0.18678975415848775,0.8132102458415122
+Male,9-11th Grade,Widowed,Below $20K,Yes,No,No,Never,No,No,No,51,6.0,300.0,19.8,0.0,0.0,58.0,22254,Depressed,Not Depressed,False,0.12639033205726624,0.8736096679427338
+Male,9-11th Grade,Separated,Below $20K,No,No,Yes,Every Day,No,Yes,Yes,60,8.0,480.0,28.3,126.0,74.0,60.0,21754,Depressed,Not Depressed,False,0.1322293792566409,0.8677706207433591
+Male,Some College or AA Degree,Partner,Below $25K,Yes,Yes,Yes,Missing,Yes,Yes,Yes,43,5.5,150.0,23.5,112.0,66.0,78.0,33691,Depressed,Not Depressed,False,0.37122713027751375,0.6287728697224862
+Female,Less Than 9th Grade,Never Married,Below $35K,Yes,No,No,Missing,Yes,Yes,Yes,70,6.0,120.0,29.9,164.0,88.0,62.0,16202,Not Depressed,Depressed,False,0.6154405063689585,0.3845594936310415
+Male,College Graduate or Above,Partner,Below $25K,Yes,No,No,Missing,No,No,Yes,57,7.5,840.0,44.5,124.0,68.0,90.0,27835,Depressed,Not Depressed,False,0.12351950983097815,0.8764804901690219
+Male,High School,Separated,Below $5K,Yes,No,Yes,Missing,Yes,Yes,Yes,44,4.0,60.0,27.49,146.0,102.0,64.0,7699,Not Depressed,Depressed,False,0.6290890565843237,0.3709109434156764
+Female,Missing,Never Married,$75K+,Yes,Yes,Yes,Missing,No,No,No,19,6.0,60.0,40.92,116.0,72.0,68.0,753,Depressed,Not Depressed,False,0.10434533515793665,0.8956546648420634
+Female,Some College or AA Degree,Married,Over $20K,Yes,No,Yes,Never,No,No,No,58,8.0,480.0,35.48,128.0,70.0,78.0,10810,Depressed,Not Depressed,False,0.04798473780127721,0.9520152621987228
+Female,9-11th Grade,Married,Below $15K,No,No,No,Missing,No,No,No,44,4.0,240.0,26.03,102.0,74.0,62.0,11652,Depressed,Not Depressed,False,0.08431274266544708,0.9156872573345529
+Female,9-11th Grade,Married,Below $45K,No,No,No,Missing,No,No,No,45,8.0,180.0,31.66,120.0,84.0,70.0,6443,Depressed,Not Depressed,False,0.04730761230945435,0.9526923876905457
+Male,Some College or AA Degree,Married,Below $45K,Yes,No,No,Missing,No,Yes,Yes,48,9.5,480.0,37.6,140.0,86.0,68.0,32476,Depressed,Not Depressed,False,0.16188245494463305,0.838117545055367
+Male,College Graduate or Above,Married,Over $20K,Yes,No,No,Some Days,No,No,No,35,6.0,600.0,29.2,112.0,76.0,68.0,30864,Depressed,Not Depressed,False,0.08168711358879321,0.9183128864112068
+Female,Less Than 9th Grade,Widowed,Below $10K,No,No,Yes,Missing,Yes,Yes,Yes,80,8.0,30.0,22.6,134.0,78.0,68.0,19621,Depressed,Not Depressed,False,0.1789445611043219,0.8210554388956781
+Female,Less Than 9th Grade,Separated,Below $20K,Yes,No,No,Missing,No,No,No,62,6.0,180.0,42.4,156.0,68.0,64.0,27220,Depressed,Not Depressed,False,0.23536187476849235,0.7646381252315076
+Female,9-11th Grade,Never Married,Below $20K,Yes,No,No,Some Days,Yes,Yes,Yes,55,6.0,780.0,31.1,224.0,124.0,54.0,34897,Not Depressed,Depressed,False,0.8071902652538014,0.19280973474619856
+Male,Some College or AA Degree,Married,Below $25K,Yes,No,No,Never,No,Yes,Yes,75,4.0,480.0,30.2,150.0,86.0,60.0,19669,Depressed,Not Depressed,False,0.20784544782541015,0.7921545521745899
+Female,High School,Divorced,Below $25K,No,No,No,Missing,No,No,No,43,6.0,120.0,41.28,104.0,78.0,84.0,2543,Depressed,Not Depressed,False,0.08745953162263254,0.9125404683773675
+Male,High School,Never Married,Below $10K,No,No,No,Missing,No,Yes,Yes,38,9.5,720.0,0.0,124.0,76.0,108.0,33354,Depressed,Not Depressed,False,0.07784263762417287,0.9221573623758271
+Male,Some College or AA Degree,Never Married,Below $75K,Yes,No,Yes,Every Day,No,Yes,Yes,21,11.0,360.0,20.8,110.0,44.0,58.0,35188,Depressed,Not Depressed,False,0.20276375283931736,0.7972362471606826
+Male,High School,Married,Below $25K,Yes,No,No,Every Day,No,Yes,Yes,43,6.0,840.0,32.1,122.0,78.0,62.0,19217,Depressed,Not Depressed,False,0.39699103136155733,0.6030089686384427
+Female,Some College or AA Degree,Partner,Below $75K,Yes,No,No,Every Day,No,No,No,32,6.0,180.0,22.74,98.0,62.0,72.0,10307,Depressed,Not Depressed,False,0.24850109375958973,0.7514989062404103
+Female,College Graduate or Above,Partner,Over $20K,Yes,No,No,Every Day,No,No,No,25,7.0,420.0,19.0,106.0,48.0,74.0,24625,Depressed,Not Depressed,False,0.15770551600617322,0.8422944839938268
+Female,9-11th Grade,Divorced,Below $45K,No,No,No,Missing,No,No,No,54,4.0,30.0,27.53,94.0,64.0,84.0,7425,Depressed,Not Depressed,False,0.07588748067318773,0.9241125193268123
+Male,Some College or AA Degree,Married,Below $25K,Yes,No,No,Never,No,Yes,Yes,59,8.0,480.0,23.2,148.0,96.0,78.0,33009,Depressed,Not Depressed,False,0.1949365104919083,0.8050634895080917
+Male,9-11th Grade,Never Married,Below $55K,No,No,No,Every Day,No,No,No,52,7.0,180.0,22.59,122.0,80.0,68.0,2983,Depressed,Not Depressed,False,0.04524250437088595,0.954757495629114
+Male,9-11th Grade,Married,Missing,No,No,No,Never,No,No,Yes,80,0.0,120.0,28.25,134.0,44.0,64.0,15606,Depressed,Not Depressed,False,0.0539470448447944,0.9460529551552056
+Female,9-11th Grade,Widowed,Below $45K,Yes,No,No,Some Days,Yes,Yes,Yes,62,8.0,120.0,32.2,120.0,72.0,64.0,31400,Not Depressed,Depressed,False,0.6384154826442352,0.3615845173557648
+Male,High School,Married,Below $15K,No,No,Yes,Missing,No,Yes,Yes,52,6.0,480.0,36.26,138.0,74.0,88.0,8348,Depressed,Not Depressed,False,0.058874257370862715,0.9411257426291373
+Female,High School,Separated,Below $35K,Yes,No,No,Missing,Yes,No,No,51,8.0,180.0,47.34,118.0,70.0,80.0,8416,Depressed,Not Depressed,False,0.3879898804756705,0.6120101195243295
+Female,Missing,Missing,Below $75K,No,No,No,Missing,No,No,No,18,6.0,420.0,15.9,96.0,58.0,72.0,21110,Depressed,Not Depressed,False,0.09305688381877264,0.9069431161812274
+Female,High School,Married,Below $35K,Yes,No,No,Never,Yes,No,No,80,5.5,0.0,19.8,172.0,66.0,60.0,35114,Depressed,Not Depressed,False,0.17550588800965405,0.824494111990346
+Female,High School,Widowed,Below $15K,Yes,No,No,Never,No,Yes,Yes,68,4.0,240.0,21.43,132.0,72.0,98.0,13758,Depressed,Not Depressed,False,0.3408552068390366,0.6591447931609634
+Male,Less Than 9th Grade,Married,Below $25K,No,No,No,Never,No,Yes,Yes,64,9.0,20.0,39.58,142.0,84.0,96.0,13894,Depressed,Not Depressed,False,0.0879699113472413,0.9120300886527587
+Male,Missing,Never Married,Below $10K,No,Yes,Yes,Missing,No,No,No,18,6.0,600.0,22.59,130.0,66.0,56.0,2327,Depressed,Not Depressed,False,0.029880903738124687,0.9701190962618753
+Female,9-11th Grade,Married,Below $25K,No,No,No,Missing,No,Yes,Yes,62,7.0,180.0,32.1,94.0,68.0,80.0,16542,Depressed,Not Depressed,False,0.13286242985165087,0.8671375701483491
+Female,Some College or AA Degree,Partner,Below $45K,Yes,No,Yes,Missing,Yes,No,No,25,10.0,360.0,33.5,114.0,62.0,84.0,29740,Depressed,Not Depressed,False,0.2728954913526125,0.7271045086473875
+Female,9-11th Grade,Never Married,Below $35K,No,No,No,Every Day,No,No,No,45,7.0,330.0,19.8,116.0,66.0,76.0,1586,Depressed,Not Depressed,False,0.09536792599908783,0.9046320740009122
+Female,Missing,Missing,Below $20K,Yes,No,No,Missing,No,No,No,18,8.0,720.0,19.96,102.0,68.0,78.0,13680,Depressed,Not Depressed,False,0.2898281450404021,0.7101718549595979
+Female,Some College or AA Degree,Married,Below $45K,Yes,No,No,Every Day,Yes,No,Yes,63,4.0,120.0,34.1,108.0,56.0,76.0,20410,Depressed,Not Depressed,False,0.49065629572591307,0.5093437042740869
+Female,9-11th Grade,Never Married,Below $15K,No,No,No,Missing,Yes,Yes,Yes,24,7.0,0.0,22.8,110.0,56.0,78.0,1254,Not Depressed,Depressed,False,0.5103699553119573,0.4896300446880427
+Female,Some College or AA Degree,Never Married,Below $55K,No,No,Yes,Missing,No,No,No,20,7.5,480.0,34.5,110.0,60.0,76.0,31424,Depressed,Not Depressed,False,0.049587798640440495,0.9504122013595595
+Female,High School,Partner,Below $25K,No,No,No,Every Day,No,No,No,32,4.5,60.0,30.4,98.0,56.0,70.0,33013,Depressed,Not Depressed,False,0.13689213919291177,0.8631078608070882
+Female,9-11th Grade,Widowed,Below $20K,Yes,No,Yes,Missing,Yes,Yes,Yes,80,9.0,300.0,22.6,154.0,92.0,70.0,30013,Depressed,Not Depressed,False,0.3881978636853719,0.6118021363146281
+Female,Some College or AA Degree,Divorced,Below $20K,Yes,No,No,Some Days,No,No,No,37,6.0,180.0,50.9,128.0,68.0,62.0,30541,Depressed,Not Depressed,False,0.3414531974090145,0.6585468025909855
+Male,Some College or AA Degree,Partner,Below $45K,Yes,No,No,Never,No,No,No,28,7.0,540.0,54.2,144.0,88.0,88.0,24574,Depressed,Not Depressed,False,0.17320261986518937,0.8267973801348106
+Male,9-11th Grade,Married,Below $10K,No,No,Yes,Every Day,Yes,Yes,Yes,58,9.0,480.0,26.2,148.0,98.0,74.0,32549,Depressed,Not Depressed,False,0.21112995366215126,0.7888700463378487
+Male,Less Than 9th Grade,Married,Below $15K,Yes,No,No,Every Day,Yes,No,No,68,11.0,240.0,30.5,158.0,54.0,66.0,26184,Depressed,Not Depressed,False,0.2071415175813277,0.7928584824186723
+Female,Some College or AA Degree,Never Married,Below $20K,No,No,Yes,Every Day,No,No,No,25,8.0,480.0,19.69,100.0,64.0,86.0,12661,Depressed,Not Depressed,False,0.08540635923560014,0.9145936407643999
+Female,Less Than 9th Grade,Separated,Below $10K,Yes,No,No,Never,Yes,Yes,No,65,10.0,600.0,32.83,94.0,54.0,80.0,11867,Not Depressed,Depressed,False,0.6053348316690312,0.39466516833096876
+Male,9-11th Grade,Never Married,Below $35K,Yes,Yes,No,Missing,No,No,No,20,3.5,180.0,22.2,114.0,52.0,66.0,26322,Depressed,Not Depressed,False,0.14576404577122737,0.8542359542287726
+Male,High School,Partner,Below $20K,Yes,No,No,Every Day,No,No,No,46,6.0,360.0,27.7,104.0,72.0,80.0,23633,Depressed,Not Depressed,False,0.18015777196971394,0.8198422280302861
+Female,High School,Widowed,Below $20K,Yes,No,Yes,Every Day,Yes,No,No,62,4.0,480.0,19.5,116.0,64.0,60.0,21850,Depressed,Not Depressed,False,0.37174649454004305,0.628253505459957
+Female,Less Than 9th Grade,Married,Below $20K,No,No,No,Missing,Yes,No,No,80,10.0,480.0,32.5,148.0,54.0,72.0,30586,Depressed,Not Depressed,False,0.08820774991238489,0.9117922500876151
+Female,Some College or AA Degree,Married,Over $20K,Yes,Yes,Yes,Missing,No,No,No,37,8.0,180.0,31.6,106.0,72.0,80.0,27124,Depressed,Not Depressed,False,0.04183801460824066,0.9581619853917593
+Female,College Graduate or Above,Married,$75K+,Yes,No,No,Every Day,No,No,No,51,6.5,600.0,19.7,116.0,66.0,56.0,29395,Depressed,Not Depressed,False,0.10879160013758804,0.891208399862412
+Female,9-11th Grade,Married,Below $35K,No,No,No,Every Day,Yes,No,Yes,50,12.0,240.0,16.56,116.0,84.0,74.0,12872,Depressed,Not Depressed,False,0.20917036982285564,0.7908296301771444
+Female,High School,Partner,Below $35K,Yes,No,No,Every Day,No,No,No,50,6.0,180.0,23.6,158.0,80.0,56.0,16036,Depressed,Not Depressed,False,0.19224050824775674,0.8077594917522433
+Female,9-11th Grade,Separated,Below $10K,Yes,No,No,Every Day,No,Yes,Yes,41,3.0,330.0,35.83,0.0,0.0,50.0,4091,Not Depressed,Depressed,False,0.71744591695295,0.28255408304705
+Female,Less Than 9th Grade,Separated,Below $25K,Yes,No,Yes,Missing,Yes,Yes,Yes,57,8.0,60.0,35.4,134.0,68.0,76.0,26071,Not Depressed,Depressed,False,0.623106588623894,0.376893411376106
+Female,9-11th Grade,Partner,Below $15K,Yes,No,No,Every Day,No,Yes,Yes,52,2.0,180.0,30.8,118.0,74.0,84.0,22192,Not Depressed,Depressed,False,0.6538670350599076,0.3461329649400924
+Male,9-11th Grade,Never Married,Below $15K,Yes,No,No,Some Days,Yes,Yes,Yes,62,9.0,60.0,34.7,106.0,70.0,84.0,22632,Not Depressed,Depressed,False,0.5490904441310949,0.4509095558689051
+Male,Missing,Missing,Below $10K,Yes,No,No,Missing,No,No,No,19,8.0,240.0,16.7,0.0,0.0,84.0,31797,Depressed,Not Depressed,False,0.13184618744143917,0.8681538125585608
+Female,Some College or AA Degree,Never Married,Below $20K,Yes,No,No,Never,No,No,Yes,27,8.5,180.0,21.3,0.0,0.0,0.0,27860,Depressed,Not Depressed,False,0.28019610967057484,0.7198038903294252
+Male,College Graduate or Above,Never Married,Below $20K,Yes,Yes,Yes,Missing,Yes,No,Yes,29,8.5,660.0,22.6,104.0,68.0,44.0,32065,Depressed,Not Depressed,False,0.21813112091442466,0.7818688790855753
+Male,9-11th Grade,Partner,Below $10K,Yes,No,No,Never,No,Yes,Yes,39,3.0,480.0,19.4,124.0,82.0,70.0,19198,Depressed,Not Depressed,False,0.4637855329141135,0.5362144670858865
+Female,9-11th Grade,Married,Below $25K,Yes,No,No,Every Day,No,No,No,25,2.0,600.0,40.45,108.0,56.0,96.0,10491,Depressed,Not Depressed,False,0.4867181402121983,0.5132818597878017
+Female,9-11th Grade,Widowed,Below $10K,Yes,No,No,Every Day,No,Yes,Yes,57,5.0,600.0,27.5,126.0,68.0,74.0,35346,Not Depressed,Depressed,False,0.5337142905464016,0.4662857094535983
+Male,Some College or AA Degree,Widowed,Below $15K,No,No,No,Every Day,No,No,No,55,5.0,120.0,22.7,110.0,82.0,80.0,17843,Depressed,Not Depressed,False,0.05219893330318037,0.9478010666968196
+Female,High School,Widowed,Below $15K,No,No,No,Missing,No,Yes,No,85,8.0,0.0,22.98,0.0,0.0,78.0,3876,Depressed,Not Depressed,False,0.0371971172930734,0.9628028827069266
+Female,High School,Married,Below $45K,Yes,No,No,Never,Yes,No,Yes,71,4.0,1080.0,32.1,0.0,0.0,70.0,24417,Depressed,Not Depressed,False,0.4439468720824723,0.5560531279175277
+Male,Less Than 9th Grade,Married,Below $45K,Yes,No,No,Missing,No,Yes,Yes,64,7.0,60.0,43.83,0.0,0.0,0.0,7841,Depressed,Not Depressed,False,0.18613252985243034,0.8138674701475697
+Male,High School,Never Married,Over $20K,No,Yes,Yes,Missing,No,No,No,26,5.0,120.0,24.35,116.0,66.0,74.0,8151,Depressed,Not Depressed,False,0.014150425923500798,0.9858495740764992
+Male,High School,Divorced,Below $45K,No,No,No,Every Day,No,No,No,70,6.0,180.0,25.97,104.0,72.0,66.0,11814,Depressed,Not Depressed,False,0.0354533688849048,0.9645466311150952
+Female,High School,Partner,Below $55K,No,Yes,Yes,Missing,No,No,No,27,6.0,240.0,29.33,0.0,0.0,62.0,8920,Depressed,Not Depressed,False,0.03317572171289285,0.9668242782871072
+Male,9-11th Grade,Married,Below $25K,Yes,No,Yes,Every Day,Yes,Yes,Yes,25,4.0,360.0,24.65,116.0,80.0,84.0,13344,Not Depressed,Depressed,False,0.7221325627610669,0.2778674372389331
+Female,High School,Divorced,Below $10K,Yes,No,No,Never,No,Yes,Yes,40,3.0,300.0,39.55,120.0,84.0,76.0,13581,Not Depressed,Depressed,False,0.6018509133519767,0.3981490866480233
+Female,Some College or AA Degree,Married,Below $35K,Yes,No,No,Missing,No,Yes,Yes,66,7.0,720.0,50.6,0.0,0.0,0.0,22655,Depressed,Not Depressed,False,0.2688779417013808,0.7311220582986192
+Male,Some College or AA Degree,Never Married,Below $35K,No,No,Yes,Never,Yes,Yes,Yes,28,10.0,600.0,37.3,134.0,92.0,76.0,18638,Depressed,Not Depressed,False,0.248200600441993,0.751799399558007
+Male,High School,Partner,$75K+,No,No,No,Every Day,No,No,No,28,5.0,300.0,30.03,126.0,64.0,60.0,13879,Depressed,Not Depressed,False,0.0616974030494184,0.9383025969505816
+Male,Some College or AA Degree,Never Married,$75K+,Yes,No,Yes,Every Day,No,Yes,No,20,7.0,240.0,18.54,134.0,64.0,84.0,11675,Depressed,Not Depressed,False,0.16684872669483575,0.8331512733051643
+Female,High School,Partner,Below $35K,Yes,No,No,Every Day,No,No,No,44,6.0,120.0,30.6,108.0,72.0,68.0,25342,Depressed,Not Depressed,False,0.23389764276125924,0.7661023572387408
+Female,Some College or AA Degree,Divorced,Below $45K,Yes,No,No,Missing,No,Yes,Yes,55,5.0,480.0,38.8,124.0,74.0,60.0,23458,Depressed,Not Depressed,False,0.40335814503854117,0.5966418549614588
+Female,Some College or AA Degree,Married,Over $20K,Yes,No,No,Never,Yes,No,No,42,6.0,720.0,23.29,98.0,70.0,70.0,13980,Depressed,Not Depressed,False,0.3182248462347411,0.6817751537652589
+Female,High School,Never Married,Below $10K,Yes,Yes,Yes,Every Day,Yes,No,No,22,8.0,120.0,21.01,0.0,0.0,70.0,12974,Depressed,Not Depressed,False,0.3355771295210357,0.6644228704789643
+Male,Some College or AA Degree,Married,Below $45K,Yes,No,Yes,Never,No,No,Yes,79,7.5,780.0,31.4,136.0,92.0,76.0,35081,Depressed,Not Depressed,False,0.05053700382538995,0.94946299617461
+Male,Some College or AA Degree,Married,Below $75K,No,No,No,Never,No,No,No,64,8.0,900.0,34.5,126.0,64.0,62.0,23540,Depressed,Not Depressed,False,0.020526355213810743,0.9794736447861893
+Male,High School,Partner,Below $55K,Yes,No,Yes,Every Day,Yes,Yes,Yes,30,7.0,300.0,30.7,98.0,46.0,72.0,25134,Not Depressed,Depressed,False,0.5473480282977806,0.4526519717022194
+Female,Some College or AA Degree,Married,Below $15K,Yes,No,No,Never,Yes,Yes,No,25,7.0,600.0,44.19,108.0,62.0,96.0,11966,Not Depressed,Depressed,False,0.6961480122203324,0.3038519877796676
+Female,High School,Divorced,Below $15K,No,No,No,Missing,No,No,No,65,8.0,60.0,34.6,138.0,80.0,68.0,19586,Depressed,Not Depressed,False,0.04181876329048795,0.958181236709512
+Female,Some College or AA Degree,Never Married,$75K+,No,No,No,Never,No,No,No,23,6.0,360.0,16.91,112.0,72.0,82.0,10789,Depressed,Not Depressed,False,0.07349078871792081,0.9265092112820792
+Male,Missing,Missing,Below $5K,No,Yes,No,Missing,No,No,No,18,2.0,300.0,24.86,114.0,52.0,58.0,15417,Depressed,Not Depressed,False,0.09686923728299102,0.903130762717009
+Female,Less Than 9th Grade,Never Married,Below $10K,No,No,No,Missing,No,No,No,63,6.0,180.0,37.38,146.0,80.0,74.0,10077,Depressed,Not Depressed,False,0.06334861390236024,0.9366513860976398

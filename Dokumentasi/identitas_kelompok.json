@@ -1,0 +1,42 @@
+{
+  "judul_proyek": "Sistem Klasifikasi dan Skrining Risiko Gangguan Depresi Mayor Berbasis Machine Learning dengan Data CDC NHANES",
+  "tema": "Kesehatan Mental dan Gaya Hidup (Mental Health & Clinical Lifestyle)",
+  "mata_kuliah": "Machine Learning",
+  "kode_mata_kuliah": "IF3105 / CS302",
+  "semester": "Semester 5 (Ganjil 2024/2025)",
+  "program_studi": "Teknik Informatika / Sains Data",
+  "fakultas": "Fakultas Ilmu Komputer / Sains dan Teknologi",
+  "universitas": "Universitas Indonesia / Institut Terkait",
+  "dosen_pengampu": "Tim Dosen Pengampu Machine Learning",
+  "anggota_kelompok": [
+    {
+      "no": 1,
+      "nama": "[Nama Mahasiswa 1 / Ketua Kelompok]",
+      "nim": "[NIM_001]",
+      "peran": "Data Engineering, Validasi Klinis & Pipeline Preprocessing",
+      "kontribusi": "Pembersihan data NHANES, ekstraksi 18 fitur klinis, perancangan imputasi deterministik, dan OneHotEncoder."
+    },
+    {
+      "no": 2,
+      "nama": "[Nama Mahasiswa 2]",
+      "nim": "[NIM_002]",
+      "peran": "Model Training, Hyperparameter Tuning & Cross-Validation",
+      "kontribusi": "Implementasi GridSearchCV pada 3 model (Random Forest, Logistic Regression, Decision Tree), penguncian metrik Macro-F1."
+    },
+    {
+      "no": 3,
+      "nama": "[Nama Mahasiswa 3]",
+      "nim": "[NIM_003]",
+      "peran": "Streamlit Web Application & User Interface Developer",
+      "kontribusi": "Pengembangan web app MindScope (5 halaman), sistem inferensi batch CSV, visualisasi interaktif, dan kustomisasi CSS."
+    },
+    {
+      "no": 4,
+      "nama": "[Nama Mahasiswa 4]",
+      "nim": "[NIM_004]",
+      "peran": "Evaluasi Komparatif, Interpretasi Klinis & Dokumentasi Akademik",
+      "kontribusi": "Penyusunan laporan akademis, telaah 5 jurnal DOI terverifikasi, permutation importance, dan verifikasi kriteria rubrik PJBL."
+    }
+  ],
+  "catatan": "Silakan sesuaikan nama anggota, NIM, dan dosen pengampu sebelum pengumpulan akhir tugas proyek."
+}

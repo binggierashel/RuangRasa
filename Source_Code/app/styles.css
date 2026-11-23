@@ -1,0 +1,23 @@
+/* Teduh - tema minimal */
+.block-container { max-width: 880px; padding-top: 2.2rem; padding-bottom: 2rem; }
+#MainMenu, footer { visibility: hidden; }
+
+.header { margin-bottom: 1.2rem; }
+.logo { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; color: #0F172A; }
+.tagline { color: #64748B; margin-top: 0.1rem; }
+
+.stTabs [data-baseweb="tab-list"] { gap: 1.2rem; border-bottom: 1px solid #E2E8F0; }
+.stTabs [data-baseweb="tab"] { padding: 0.5rem 0.1rem; font-weight: 500; }
+
+h5 { margin-top: 1.1rem; color: #0F172A; }
+
+.pill { display: inline-block; padding: 0.2rem 0.7rem; border-radius: 999px;
+        font-weight: 600; font-size: 0.85rem; }
+.pill-high { background: #FEE2E2; color: #B42318; }
+.pill-low { background: #CCFBF1; color: #0F766E; }
+
+[data-testid="stForm"] { border: 1px solid #E2E8F0; border-radius: 12px; padding: 1.2rem 1.4rem; background: #fff; }
+[data-testid="stMetric"] { border: 1px solid #E2E8F0; border-radius: 10px; padding: 0.7rem 1rem; background: #fff; }
+
+.footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #E2E8F0;
+          color: #94A3B8; font-size: 0.8rem; text-align: center; }

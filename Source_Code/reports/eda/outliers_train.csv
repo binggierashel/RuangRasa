@@ -1,0 +1,8 @@
+feature,lower_iqr,upper_iqr,outlier_count_train
+Age,-17.0,111.0,0
+Sleep Hours,3.0,11.0,416
+Sedentary Time,-270.0,930.0,202
+BMI,11.325000000000003,45.205,1130
+Systolic,72.0,168.0,2708
+Diastolic,33.0,105.0,2354
+Pulse,40.0,104.0,872

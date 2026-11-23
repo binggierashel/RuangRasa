@@ -1,0 +1,395 @@
+/* Tema lokal MindScope: Biru Dongker - Teal - Soft Slate */
+:root {
+    --ink: #102a43;
+    --muted: #486581;
+    --teal: #16817a;
+    --line: #d9e2ec;
+    --accent: #e27802;
+    --alert-red: #c53030;
+    --soft-green: #276749;
+}
+
+.stApp {
+    background: #f7fafc;
+}
+
+[data-testid="stHeader"] {
+    background: rgba(247, 250, 252, 0.95);
+}
+
+.block-container {
+    max-width: 1280px;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+h1, h2, h3, h4 {
+    color: var(--ink);
+    letter-spacing: -0.02em;
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background: #102a43;
+    border-right: 0;
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"],
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"] {
+    color: #e2e8f0;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] label {
+    padding: 0.55rem 0.65rem;
+    border-radius: 9px;
+    margin-bottom: 0.2rem;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] label:has(input:checked) {
+    background: #243b53;
+    outline: 1px solid #486581;
+}
+
+[data-testid="stSidebar"] hr {
+    border-color: #334e68;
+}
+
+[data-testid="stSidebar"] [data-baseweb="select"] {
+    color: var(--ink);
+}
+
+.brand {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 0.3rem 0 1.8rem;
+}
+
+.brand-icon {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #16817a;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.brand-name {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 750;
+    letter-spacing: -0.5px;
+}
+
+.brand-caption {
+    color: #9fb3c8;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.side-label {
+    color: #829ab1;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    margin: 1rem 0 0.6rem;
+}
+
+.side-note {
+    padding: 12px 14px;
+    background: #1f364d;
+    border: 1px solid #334e68;
+    border-radius: 10px;
+    color: #d9e2ec;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.side-note strong {
+    color: #48bb78;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 28px 32px;
+    background: linear-gradient(120deg, #102a43 0%, #1f4e5b 60%, #16817a 100%);
+    color: white;
+    margin-bottom: 18px;
+}
+
+.hero::after {
+    content: '🧠';
+    position: absolute;
+    right: 25px;
+    top: -30px;
+    font-size: 190px;
+    opacity: 0.12;
+    pointer-events: none;
+}
+
+.eyebrow {
+    color: #81e6d9;
+    font-size: 11px;
+    letter-spacing: 1.8px;
+    font-weight: 750;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: clamp(23px, 2.8vw, 34px);
+    font-weight: 750;
+    margin: 8px 0 6px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero p {
+    color: #e2e8f0;
+    max-width: 720px;
+    font-size: 13.5px;
+    line-height: 1.65;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.hero-tags span {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+    color: #f7fafc;
+}
+
+.notice {
+    display: flex;
+    gap: 12px;
+    background: #fffaf0;
+    border: 1px solid #feebc8;
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: #7b341e;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 4px 0 20px;
+}
+
+.notice-icon {
+    font-size: 18px;
+}
+
+/* Form Sections */
+.form-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 6px 0 14px;
+}
+
+.form-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background: #e6fffa;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.form-title {
+    color: var(--ink);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.form-subtitle {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+[data-testid="stForm"] {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+/* Penyelarasan tinggi label widget agar seluruh input di baris yang sama sejajar rapi */
+div[data-testid="stWidgetLabel"],
+label[data-testid="stWidgetLabel"] {
+    min-height: 42px;
+    display: flex !important;
+    align-items: flex-end !important;
+    margin-bottom: 6px !important;
+}
+
+div[data-testid="stWidgetLabel"] > label {
+    display: flex !important;
+    align-items: flex-end !important;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+}
+
+div[data-testid="stWidgetLabel"] p {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #102a43 !important;
+    line-height: 1.3 !important;
+    margin: 0 !important;
+}
+
+/* Penyelarasan ikon tooltip tanda tanya */
+div[data-testid="stWidgetLabel"] button {
+    margin-bottom: 2px !important;
+}
+
+/* Standarisasi tampilan rounded input & selectbox */
+div[data-baseweb="select"] > div,
+div[data-baseweb="input"] > div {
+    border-radius: 10px !important;
+}
+
+.guide {
+    background: #f0f4f8;
+    border: 1px solid #d9e2ec;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.guide h3 {
+    font-size: 16px;
+    margin: 0 0 14px;
+}
+
+.guide-item {
+    margin-bottom: 16px;
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: #334e68;
+}
+
+.guide-item b {
+    display: block;
+    color: #102a43;
+    margin-bottom: 2px;
+}
+
+.guide-small {
+    font-size: 11px;
+    color: #627d98;
+    border-top: 1px solid #bcccdc;
+    padding-top: 12px;
+    line-height: 1.6;
+}
+
+/* Result Cards */
+.result-card {
+    border: 1px solid #b2f5ea;
+    border-left: 6px solid #16817a;
+    border-radius: 14px;
+    background: #f0fff4;
+    padding: 20px 24px;
+    margin: 12px 0 20px;
+}
+
+.result-card.is-depressed {
+    border-color: #fed7d7;
+    border-left-color: #e53e3e;
+    background: #fff5f5;
+}
+
+.result-card .result-label {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #2c7a7b;
+    font-weight: 750;
+}
+
+.result-card.is-depressed .result-label {
+    color: #c53030;
+}
+
+.result-card h2 {
+    color: #234e52;
+    font-size: 24px;
+    margin: 6px 0;
+}
+
+.result-card.is-depressed h2 {
+    color: #9b2c2c;
+}
+
+.result-card p {
+    color: #4a5568;
+    font-size: 12.5px;
+    margin: 0;
+}
+
+.probability-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.probability-card.is-selected {
+    border-color: #16817a;
+    background: #f0fdfa;
+}
+
+.probability-name {
+    font-size: 12px;
+    color: var(--muted);
+    min-height: 20px;
+}
+
+.probability-value {
+    font-size: 26px;
+    font-weight: 750;
+    color: var(--ink);
+    margin: 4px 0 10px;
+}
+
+.probability-track {
+    height: 6px;
+    border-radius: 20px;
+    background: #e2e8f0;
+    overflow: hidden;
+}
+
+.probability-fill {
+    height: 100%;
+    border-radius: 20px;
+    background: #16817a;
+}
+
+.probability-fill.alert {
+    background: #e53e3e;
+}
+
+.footer {
+    color: #829ab1;
+    font-size: 11px;
+    border-top: 1px solid var(--line);
+    padding: 16px 0 0;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}

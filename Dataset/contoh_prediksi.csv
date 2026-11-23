@@ -1,0 +1,11 @@
+Gender,Education Level,Marital Status,Household Income,Trouble Sleeping History,Vigorous Recreation,Moderate Recreation,Current Smoker,Memory Problems,Cant Work,Limited Work,Age,Sleep Hours,Sedentary Time,BMI,Systolic,Diastolic,Pulse,actual
+Female,Missing,Missing,Below $25K,No,No,No,Missing,No,No,No,19,8.0,420.0,0.0,116.0,54.0,68.0,Not Depressed
+Male,Some College or AA Degree,Married,Over $20K,No,Yes,No,Missing,No,No,No,53,7.0,360.0,20.93,122.0,68.0,54.0,Not Depressed
+Male,9-11th Grade,Widowed,Below $45K,Yes,No,No,Missing,No,No,No,39,5.0,120.0,34.58,122.0,78.0,82.0,Depressed
+Female,Less Than 9th Grade,Married,Below $10K,No,No,No,Every Day,No,No,No,28,6.0,240.0,24.53,110.0,70.0,88.0,Not Depressed
+Female,Some College or AA Degree,Never Married,Below $55K,No,Yes,Yes,Missing,No,No,No,63,6.0,240.0,24.2,130.0,72.0,54.0,Not Depressed
+Female,Some College or AA Degree,Never Married,Over $20K,No,Yes,Yes,Missing,No,No,No,26,5.0,300.0,38.7,142.0,76.0,70.0,Not Depressed
+Male,High School,Never Married,Below $45K,No,Yes,Yes,Missing,No,No,No,25,7.0,360.0,32.7,122.0,74.0,86.0,Not Depressed
+Male,Less Than 9th Grade,Partner,Missing,No,No,No,Every Day,No,No,No,65,8.0,360.0,27.45,124.0,52.0,52.0,Not Depressed
+Male,High School,Never Married,Below $20K,No,No,Yes,Every Day,No,No,No,52,6.0,240.0,22.63,0.0,0.0,72.0,Not Depressed
+Female,Less Than 9th Grade,Married,Below $10K,Yes,No,No,Missing,No,No,No,36,8.0,420.0,23.1,108.0,60.0,96.0,Not Depressed

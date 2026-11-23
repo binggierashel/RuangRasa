@@ -1,0 +1,32 @@
+{
+  "executed_utc": "2026-11-04T16:27:15.421580+00:00",
+  "separate_kernels": true,
+  "success": true,
+  "notebooks": [
+    {
+      "file": "01_persiapan_data.ipynb",
+      "code_cells_executed": 5,
+      "success": true
+    },
+    {
+      "file": "02_eksplorasi_data.ipynb",
+      "code_cells_executed": 4,
+      "success": true
+    },
+    {
+      "file": "03_preprocessing.ipynb",
+      "code_cells_executed": 4,
+      "success": true
+    },
+    {
+      "file": "04_training_model.ipynb",
+      "code_cells_executed": 5,
+      "success": true
+    },
+    {
+      "file": "05_evaluasi_dan_ekspor.ipynb",
+      "code_cells_executed": 7,
+      "success": true
+    }
+  ]
+}

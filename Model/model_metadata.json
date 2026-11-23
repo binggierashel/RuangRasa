@@ -1,0 +1,104 @@
+{
+  "title": "Klasifikasi Risiko Gangguan Depresi Menggunakan Algoritma Machine Learning",
+  "selected_model": "random_forest",
+  "selection_rule": "Rata-rata Macro-F1 tertinggi pada 5-Fold Stratified Cross-Validation Data Latih.",
+  "primary_method": "random_forest",
+  "labels": [
+    "Not Depressed",
+    "Depressed"
+  ],
+  "summary": {
+    "raw_rows": 36259,
+    "raw_columns": 20,
+    "model_features": 18,
+    "duplicates_removed": 0,
+    "clean_rows": 36259,
+    "unique_profiles": 36259,
+    "conflicting_profiles": 0,
+    "train_rows": 29007,
+    "test_rows": 7252,
+    "seed": 42,
+    "selection_metric": "Stratified 5-Fold Training CV Macro-F1",
+    "split_ratio": "80% Train : 20% Test Stratified",
+    "class_counts_raw": {
+      "Not Depressed": 33091,
+      "Depressed": 3168
+    },
+    "class_counts_train": {
+      "Not Depressed": 26473,
+      "Depressed": 2534
+    },
+    "class_counts_test": {
+      "Not Depressed": 6618,
+      "Depressed": 634
+    }
+  },
+  "results": [
+    {
+      "model": "logistic_regression",
+      "baseline_cv_f1": 0.6216360512431278,
+      "cv_f1_mean": 0.6216360512431278,
+      "cv_f1_std": 0.0036844890943093563,
+      "cv_train_f1": 0.6223927490098657,
+      "best_params": "{\"model__C\": 1.0, \"model__class_weight\": null}",
+      "train_accuracy": 0.9183645326990036,
+      "train_precision_macro": 0.7662178999532842,
+      "train_recall_macro": 0.5882460591633161,
+      "train_f1_macro": 0.6219396955279487,
+      "test_accuracy": 0.9151958080529509,
+      "test_precision_macro": 0.736833149258725,
+      "test_recall_macro": 0.5784494157507534,
+      "test_f1_macro": 0.6074743209165286,
+      "selected_by_cv": false,
+      "train_cv_gap": 0.0007566977667379238
+    },
+    {
+      "model": "decision_tree",
+      "baseline_cv_f1": 0.5875099955038008,
+      "cv_f1_mean": 0.6298505507095872,
+      "cv_f1_std": 0.01395387278670909,
+      "cv_train_f1": 0.6514548568337328,
+      "best_params": "{\"model__class_weight\": null, \"model__max_depth\": 6}",
+      "train_accuracy": 0.9201227289964491,
+      "train_precision_macro": 0.7669055681962084,
+      "train_recall_macro": 0.6188285731160438,
+      "train_f1_macro": 0.6571707418653759,
+      "test_accuracy": 0.9088527302813018,
+      "test_precision_macro": 0.6884212868772435,
+      "test_recall_macro": 0.5849573336460261,
+      "test_f1_macro": 0.6105033722417841,
+      "selected_by_cv": false,
+      "train_cv_gap": 0.021604306124145656
+    },
+    {
+      "model": "random_forest",
+      "baseline_cv_f1": 0.6033584945887601,
+      "cv_f1_mean": 0.6428094987105364,
+      "cv_f1_std": 0.007401525453943962,
+      "cv_train_f1": 0.718279373091713,
+      "best_params": "{\"model__class_weight\": \"balanced\", \"model__max_depth\": 10, \"model__n_estimators\": 100}",
+      "train_accuracy": 0.85465577274451,
+      "train_precision_macro": 0.6636143524161858,
+      "train_recall_macro": 0.8215218519764191,
+      "train_f1_macro": 0.6998751689328611,
+      "test_accuracy": 0.8175675675675675,
+      "test_precision_macro": 0.6144858794069029,
+      "test_recall_macro": 0.7346079852958141,
+      "test_f1_macro": 0.6355526818306808,
+      "selected_by_cv": true,
+      "train_cv_gap": 0.07546987438117658
+    }
+  ],
+  "dataset_sha256": "ffd05c1c9912c583d3e76413c5a8d6722940c94b25652c47572f936d973a210f",
+  "trained_utc": "2026-11-04T16:28:28.624635+00:00",
+  "python": "3.12.4",
+  "packages": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  },
+  "refit_on_test": false,
+  "clinical_use": false
+}

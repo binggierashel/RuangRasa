@@ -1,0 +1,409 @@
+"""RuangRasa - Skrining Risiko Depresi Berbasis Machine Learning (CDC NHANES).
+
+Fitur: prediksi individu, prediksi batch CSV, eksplorasi data, evaluasi model, informasi proyek.
+Jalankan dari folder utama: python -m streamlit run Source_Code/app/streamlit_app.py
+"""
+import json
+import sys
+from pathlib import Path
+
+import joblib
+import numpy as np
+import pandas as pd
+import plotly.graph_objects as go
+import streamlit as st
+
+APP_DIR = Path(__file__).resolve().parent
+SRC_DIR = APP_DIR.parent
+ROOT_DIR = SRC_DIR.parent
+if str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
+
+from depresi_project import DISPLAY, validate_input  # noqa: E402
+
+APP_NAME = "RuangRasa"
+TEAL, RED = "#0F766E", "#B42318"
+
+st.set_page_config(page_title=f"{APP_NAME} | Skrining Risiko Depresi", page_icon="🌿", layout="centered")
+
+css_file = APP_DIR / "styles.css"
+if css_file.exists():
+    st.markdown(f"<style>{css_file.read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
+
+
+@st.cache_resource
+def load_artifacts():
+    schema = json.loads((ROOT_DIR / "Model/input_schema.json").read_text(encoding="utf-8"))
+    metadata = json.loads((ROOT_DIR / "Model/model_metadata.json").read_text(encoding="utf-8"))
+    models = {
+        "Random Forest (terpilih)": joblib.load(ROOT_DIR / "Model/random_forest_pipeline.joblib"),
+        "Logistic Regression": joblib.load(ROOT_DIR / "Model/logistic_regression_pipeline.joblib"),
+        "Decision Tree": joblib.load(ROOT_DIR / "Model/decision_tree_pipeline.joblib"),
+    }
+    return schema, metadata, models
+
+
+try:
+    SCHEMA, METADATA, MODELS = load_artifacts()
+except Exception as exc:  # noqa: BLE001
+    st.error(f"Gagal memuat model: {exc}")
+    st.stop()
+
+CAT = SCHEMA["categories"]
+
+# Contoh data untuk demo
+DEFAULTS = {
+    "Gender": "Female", "Age": 38, "Education Level": "College Graduate or Above",
+    "Marital Status": "Married", "Household Income": "$75K+", "Sleep Hours": 7.5,
+    "Trouble Sleeping History": "No", "Sedentary Time": 300.0, "Vigorous Recreation": "Yes",
+    "Moderate Recreation": "Yes", "Current Smoker": "Never", "Memory Problems": "No",
+    "Cant Work": "No", "Limited Work": "No", "BMI": 23.5, "Systolic": 118.0,
+    "Diastolic": 76.0, "Pulse": 70.0,
+}
+HIGH_RISK = {
+    "Gender": "Female", "Age": 46, "Education Level": "High School",
+    "Marital Status": "Divorced", "Household Income": "Below $15K", "Sleep Hours": 4.5,
+    "Trouble Sleeping History": "Yes", "Sedentary Time": 660.0, "Vigorous Recreation": "No",
+    "Moderate Recreation": "No", "Current Smoker": "Every Day", "Memory Problems": "Yes",
+    "Cant Work": "Yes", "Limited Work": "Yes", "BMI": 33.2, "Systolic": 138.0,
+    "Diastolic": 88.0, "Pulse": 88.0,
+}
+
+
+KURS = 16_000  # asumsi kurs USD -> IDR untuk tampilan (perkiraan)
+
+YES_NO = {"Yes": "Ya", "No": "Tidak", "Missing": "Tidak diketahui"}
+ID_TEXT = {
+    "Gender": {"Female": "Perempuan", "Male": "Laki-laki"},
+    "Education Level": {
+        "Less Than 9th Grade": "Di bawah kelas 9, belum tamat SMP",
+        "9-11th Grade": "Kelas 9-11, SMP akhir sampai SMA",
+        "High School": "SMA / sederajat",
+        "Some College or AA Degree": "Pernah kuliah / D2-D3",
+        "College Graduate or Above": "Lulusan S1 atau lebih tinggi",
+        "Missing": "Tidak diketahui",
+    },
+    "Marital Status": {
+        "Married": "Menikah", "Never Married": "Belum pernah menikah",
+        "Divorced": "Cerai hidup", "Widowed": "Cerai mati",
+        "Separated": "Berpisah", "Partner": "Tinggal bersama pasangan",
+        "Missing": "Tidak diketahui",
+    },
+    "Trouble Sleeping History": YES_NO,
+    "Vigorous Recreation": YES_NO,
+    "Moderate Recreation": YES_NO,
+    "Memory Problems": YES_NO,
+    "Cant Work": YES_NO,
+    "Limited Work": YES_NO,
+    "Current Smoker": {
+        "Every Day": "Setiap hari", "Some Days": "Kadang-kadang",
+        "Never": "Tidak pernah", "Missing": "Tidak diketahui",
+    },
+}
+
+
+def rupiah(usd: float) -> str:
+    """Format nilai USD ke rupiah singkat, mis. 75.000 -> 'Rp1,2 miliar'."""
+    idr = usd * KURS
+    if idr >= 1e9:
+        return f"Rp{idr / 1e9:.1f} miliar".replace(".", ",")
+    return f"Rp{idr / 1e6:.0f} juta"
+
+
+def id_label(key: str, value: str) -> str:
+    """Tampilkan nilai asli (Inggris) beserta terjemahan Indonesia dalam kurung."""
+    if key == "Household Income":
+        if value == "Missing":
+            return "Missing (Tidak diketahui)"
+        digits = "".join(ch for ch in value if ch.isdigit())
+        usd = float(digits) * 1000
+        if value.endswith("+"):
+            return f"{value} (± {rupiah(usd)}+ per tahun)"
+        if value.startswith("Below"):
+            return f"{value} (di bawah ± {rupiah(usd)} per tahun)"
+        if value.startswith("Over"):
+            return f"{value} (di atas ± {rupiah(usd)} per tahun)"
+        return f"{value} (± {rupiah(usd)} per tahun)"
+    translated = ID_TEXT.get(key, {}).get(value)
+    return f"{value} ({translated})" if translated else value
+
+
+def gauge(prob: float) -> go.Figure:
+    fig = go.Figure(go.Indicator(
+        mode="gauge+number",
+        value=prob * 100,
+        number={"suffix": "%", "font": {"size": 42}},
+        gauge={
+            "axis": {"range": [0, 100], "tickwidth": 0},
+            "bar": {"color": RED if prob >= 0.5 else TEAL, "thickness": 0.28},
+            "bgcolor": "#F1F5F9", "borderwidth": 0,
+            "threshold": {"line": {"color": "#334155", "width": 2}, "value": 50},
+        },
+    ))
+    fig.update_layout(height=220, margin=dict(l=20, r=20, t=10, b=0), paper_bgcolor="rgba(0,0,0,0)")
+    return fig
+
+
+def show_image(path: Path, caption: str) -> None:
+    if path.exists():
+        st.image(str(path), caption=caption, width="stretch")
+
+
+# ------------------------------------------------------------------ Header
+st.markdown(
+    f"""
+    <div class="header">
+        <div class="logo">🌿 {APP_NAME}</div>
+        <div class="tagline">Skrining awal risiko depresi berbasis machine learning</div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+tab_single, tab_batch, tab_data, tab_model, tab_about = st.tabs(
+    ["Skrining", "Batch CSV", "Data", "Model", "Tentang"]
+)
+
+# Pilihan model (dipakai pada tab Skrining dan Batch)
+with st.expander("Pengaturan model", expanded=False):
+    model_name = st.selectbox(
+        "Algoritma", list(MODELS.keys()), index=0,
+        help="Random Forest dipilih berdasarkan Macro-F1 tertinggi pada 5-Fold Stratified CV.",
+    )
+model = MODELS[model_name]
+
+# ------------------------------------------------------------------ Skrining
+with tab_single:
+    c1, c2, c3 = st.columns(3)
+    if c1.button("Contoh risiko rendah", width="stretch"):
+        st.session_state["inputs"] = dict(DEFAULTS)
+    if c2.button("Contoh risiko tinggi", width="stretch"):
+        st.session_state["inputs"] = dict(HIGH_RISK)
+    if c3.button("Reset", width="stretch") or "inputs" not in st.session_state:
+        st.session_state["inputs"] = dict(DEFAULTS)
+    v = st.session_state["inputs"]
+
+    def pick(col, label, key):
+        return col.selectbox(
+            label, CAT[key], index=CAT[key].index(v[key]),
+            format_func=lambda x: id_label(key, x),
+        )
+
+    with st.form("skrining"):
+        st.markdown("##### Profil")
+        a, b, c = st.columns(3)
+        gender = pick(a, "Jenis kelamin", "Gender")
+        age = b.number_input("Usia", 18, 100, int(v["Age"]))
+        marital = pick(c, "Status pernikahan", "Marital Status")
+        a, b = st.columns(2)
+        edu = pick(a, "Pendidikan", "Education Level")
+        income = pick(b, "Pendapatan rumah tangga per tahun (USD, ± Rp)", "Household Income")
+
+        st.markdown("##### Tidur & aktivitas")
+        a, b = st.columns(2)
+        sleep = a.number_input("Durasi tidur (jam)", 1.0, 18.0, float(v["Sleep Hours"]), step=0.5)
+        trouble = pick(b, "Riwayat gangguan tidur", "Trouble Sleeping History")
+        a, b, c, d = st.columns(4)
+        sedentary = a.number_input("Waktu duduk (menit/hari)", 0.0, 1440.0, float(v["Sedentary Time"]), step=30.0)
+        vigorous = pick(b, "Olahraga berat", "Vigorous Recreation")
+        moderate = pick(c, "Olahraga sedang", "Moderate Recreation")
+        smoker = pick(d, "Status merokok", "Current Smoker")
+
+        st.markdown("##### Kondisi fungsional")
+        a, b, c = st.columns(3)
+        memory = pick(a, "Masalah memori / fokus", "Memory Problems")
+        cant = pick(b, "Tidak mampu bekerja", "Cant Work")
+        limited = pick(c, "Pekerjaan terbatas", "Limited Work")
+
+        st.markdown("##### Pengukuran tubuh")
+        a, b, c, d = st.columns(4)
+        bmi = a.number_input("BMI", 12.0, 70.0, float(v["BMI"]), step=0.1)
+        sys_bp = b.number_input("Sistolik", 70.0, 240.0, float(v["Systolic"]), step=1.0)
+        dia_bp = c.number_input("Diastolik", 40.0, 150.0, float(v["Diastolic"]), step=1.0)
+        pulse = d.number_input("Nadi (bpm)", 40.0, 200.0, float(v["Pulse"]), step=1.0)
+
+        submitted = st.form_submit_button("Analisis", type="primary", width="stretch")
+
+    if submitted:
+        row = {
+            "Gender": gender, "Education Level": edu, "Marital Status": marital,
+            "Household Income": income, "Trouble Sleeping History": trouble,
+            "Vigorous Recreation": vigorous, "Moderate Recreation": moderate,
+            "Current Smoker": smoker, "Memory Problems": memory, "Cant Work": cant,
+            "Limited Work": limited, "Age": age, "Sleep Hours": sleep,
+            "Sedentary Time": sedentary, "BMI": bmi, "Systolic": sys_bp,
+            "Diastolic": dia_bp, "Pulse": pulse,
+        }
+        try:
+            valid = validate_input(pd.DataFrame([row]), SCHEMA)
+            pred = model.predict(valid)[0]
+            probs = dict(zip(model.classes_, model.predict_proba(valid)[0]))
+            p_dep = float(probs.get("Depressed", 0.0))
+            high = pred == "Depressed"
+
+            st.divider()
+            left, right = st.columns([1.1, 1])
+            with left:
+                st.plotly_chart(gauge(p_dep), width="stretch", config={"displayModeBar": False})
+            with right:
+                if high:
+                    st.markdown('<span class="pill pill-high">Risiko tinggi</span>', unsafe_allow_html=True)
+                    st.markdown("#### Terindikasi berisiko depresi")
+                    st.write("Profil ini mirip responden dengan skor PHQ-9 ≥ 10. "
+                             "Disarankan berkonsultasi dengan psikolog atau tenaga kesehatan.")
+                else:
+                    st.markdown('<span class="pill pill-low">Risiko rendah</span>', unsafe_allow_html=True)
+                    st.markdown("#### Tidak terindikasi berisiko")
+                    st.write("Profil ini lebih mirip responden tanpa depresi. "
+                             "Jaga kualitas tidur, aktivitas fisik, dan kelola stres.")
+            st.caption(f"Model: {model_name}. Garis pada gauge = ambang 50%. "
+                       "Hasil ini skrining berbasis model, **bukan diagnosis medis**.")
+        except Exception as err:  # noqa: BLE001
+            st.error(f"Input tidak valid: {err}")
+
+# ------------------------------------------------------------------ Batch
+with tab_batch:
+    st.markdown("Unggah CSV berisi banyak responden untuk diprediksi sekaligus.")
+    d1, d2 = st.columns(2)
+    template = ROOT_DIR / "Dataset/template_input.csv"
+    sample = ROOT_DIR / "Dataset/contoh_prediksi.csv"
+    if template.exists():
+        d1.download_button("Unduh template CSV", template.read_bytes(), "template_input.csv",
+                           "text/csv", width="stretch")
+    if sample.exists():
+        d2.download_button("Unduh contoh data (10 baris)", sample.read_bytes(), "contoh_prediksi.csv",
+                           "text/csv", width="stretch")
+
+    with st.expander("Panduan nilai kolom CSV (Inggris dan artinya)"):
+        rows = [
+            {"Kolom": k, "Nilai CSV": val, "Arti": id_label(k, val)}
+            for k in ["Gender", "Education Level", "Marital Status", "Household Income",
+                      "Trouble Sleeping History", "Current Smoker"]
+            for val in CAT[k]
+        ]
+        st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
+        st.caption(f"Konversi rupiah memakai kurs perkiraan 1 USD = Rp{KURS:,}".replace(",", "."))
+
+    up = st.file_uploader("Berkas CSV", type=["csv"], label_visibility="collapsed")
+    if up is not None:
+        try:
+            df = pd.read_csv(up)
+            st.caption(f"{df.shape[0]:,} baris × {df.shape[1]} kolom")
+            st.dataframe(df.head(10), width="stretch")
+            if st.button("Jalankan prediksi", type="primary", width="stretch"):
+                with st.spinner("Memproses..."):
+                    valid = validate_input(df, SCHEMA)
+                    preds = model.predict(valid)
+                    probs = model.predict_proba(valid)
+                    out = df.copy()
+                    out["Prediksi"] = preds
+                    for i, cls in enumerate(model.classes_):
+                        out[f"Peluang_{cls}"] = np.round(probs[:, i], 4)
+                n_dep = int((preds == "Depressed").sum())
+                m1, m2, m3 = st.columns(3)
+                m1.metric("Total", f"{len(preds):,}")
+                m2.metric("Berisiko", f"{n_dep:,}", f"{n_dep / len(preds) * 100:.1f}%", delta_color="off")
+                m3.metric("Tidak berisiko", f"{len(preds) - n_dep:,}")
+                st.dataframe(out, width="stretch")
+                st.download_button("Unduh hasil (CSV)", out.to_csv(index=False).encode("utf-8"),
+                                   "hasil_prediksi.csv", "text/csv", width="stretch")
+        except Exception as err:  # noqa: BLE001
+            st.error(f"Gagal memproses CSV: {err}")
+
+# ------------------------------------------------------------------ Data
+with tab_data:
+    eda = SRC_DIR / "reports/eda"
+    summary = eda / "summary.json"
+    if summary.exists():
+        s = json.loads(summary.read_text(encoding="utf-8"))
+        m1, m2, m3 = st.columns(3)
+        m1.metric("Responden", f"{s['clean_rows']:,}")
+        m2.metric("Fitur", s["model_features"])
+        m3.metric("Berisiko depresi", f"{s['class_counts_raw'].get('Depressed', 0) / s['clean_rows'] * 100:.1f}%")
+    st.caption("Sumber: CDC NHANES 2005-2018. Label depresi: skor PHQ-9 ≥ 10. "
+               "Kelas sangat tidak seimbang, sehingga model dipilih dengan Macro-F1.")
+
+    opt = st.radio(
+        "Visualisasi",
+        ["Distribusi kelas", "Sebaran numerik", "Outlier", "Korelasi", "Fitur kategorikal"],
+        horizontal=True, label_visibility="collapsed",
+    )
+    if opt == "Distribusi kelas":
+        show_image(eda / "01_distribusi_kelas.png", "Distribusi label depresi pada data latih dan uji")
+    elif opt == "Sebaran numerik":
+        show_image(eda / "02_histogram_train.png", "Histogram fitur numerik (data latih)")
+    elif opt == "Outlier":
+        show_image(eda / "03_boxplot_train.png", "Boxplot fitur numerik; outlier IQR dipertahankan")
+        out_file = eda / "outliers_train.csv"
+        if out_file.exists():
+            st.dataframe(pd.read_csv(out_file), width="stretch")
+    elif opt == "Korelasi":
+        show_image(eda / "04_korelasi_train.png", "Matriks korelasi Pearson antarfitur numerik")
+    else:
+        show_image(eda / "05_kategorikal_train.png", "Proporsi depresi per kategori kunci")
+        show_image(eda / "06_scatter_train.png", "Usia vs jam tidur")
+
+# ------------------------------------------------------------------ Model
+with tab_model:
+    rep = SRC_DIR / "reports/modeling"
+    ana = SRC_DIR / "reports/analysis"
+    comp = rep / "model_comparison.csv"
+    st.markdown("##### Perbandingan tiga algoritma")
+    if comp.exists():
+        df = pd.read_csv(comp)[["model", "cv_f1_mean", "cv_f1_std", "train_f1_macro", "test_accuracy",
+                                "test_precision_macro", "test_recall_macro", "test_f1_macro"]]
+        df.columns = ["Model", "CV Macro-F1", "CV Std", "Train Macro-F1", "Accuracy",
+                      "Precision", "Recall", "Test Macro-F1"]
+        st.dataframe(df.style.format({c: "{:.4f}" for c in df.columns[1:]})
+                     .highlight_max(subset=["CV Macro-F1", "Test Macro-F1"], color="#CCFBF1"),
+                     hide_index=True, width="stretch")
+    st.caption("Model dipilih dari Macro-F1 validasi silang, bukan dari accuracy. "
+               "Accuracy tinggi pada kelas mayoritas (91%) menyesatkan.")
+
+    t1, t2 = st.tabs(["Confusion matrix", "Faktor berpengaruh"])
+    with t1:
+        show_image(rep / "01_confusion_matrices.png", "Confusion matrix pada data uji (N = 7.252)")
+        show_image(rep / "02_model_comparison.png", "Perbandingan metrik antar model")
+    with t2:
+        show_image(ana / "02_permutation_importance.png", "Permutation importance (Random Forest)")
+        show_image(ana / "03_logistic_coefficients.png", "Koefisien Logistic Regression")
+        st.markdown("Faktor teratas: riwayat gangguan tidur, ketidakmampuan bekerja, dan masalah memori.")
+
+# ------------------------------------------------------------------ Tentang
+with tab_about:
+    st.markdown(
+        f"**{APP_NAME}** adalah proyek PJBL Machine Learning (Semester 5) untuk skrining awal risiko "
+        "depresi dari data survei kesehatan CDC NHANES. Aplikasi ini bukan alat diagnosis."
+    )
+    ident_file = ROOT_DIR / "Dokumentasi/identitas_kelompok.json"
+    if ident_file.exists():
+        ident = json.loads(ident_file.read_text(encoding="utf-8"))
+        if ident.get("anggota"):
+            st.markdown("##### Tim")
+            st.dataframe(pd.DataFrame(ident["anggota"]), hide_index=True, width="stretch")
+
+    st.markdown("##### Referensi")
+    refs = [
+        ("Kroenke, Spitzer & Williams (2001). The PHQ-9: Validity of a Brief Depression Severity Measure. J Gen Intern Med.", "10.1046/j.1525-1497.2001.016009606.x"),
+        ("Dipnall et al. (2016). Fusing Data Mining, Machine Learning and Traditional Statistics to Detect Biomarkers Associated with Depression. PLOS ONE.", "10.1371/journal.pone.0148195"),
+        ("Su, Xu, Pathak & Wang (2020). Deep Learning in Mental Health Outcome Research: A Scoping Review. Transl Psychiatry.", "10.1038/s41398-020-0780-3"),
+        ("Pryor et al. (2021). Machine Learning Prediction of Depression Using NHANES Health Data.", "10.2196/24673"),
+        ("Zhang, Wang & Zhao (2022). Predicting Depressive Symptoms with Explainable Machine Learning Models. Front Psychiatry.", "10.3389/fpsyt.2022.856421"),
+    ]
+    st.caption("Periksa kembali setiap DOI dan detail jurnal sebelum dikumpulkan.")
+    for i, (text, doi) in enumerate(refs, 1):
+        st.markdown(f"{i}. {text} [{doi}](https://doi.org/{doi})")
+
+    st.markdown("##### Spesifikasi")
+    pk = METADATA.get("packages", {})
+    st.markdown(
+        f"- Python {METADATA.get('python', '-')}, scikit-learn {pk.get('scikit-learn', '-')}\n"
+        f"- Split stratified 80:20, validasi 5-Fold Stratified CV\n"
+        f"- Model terpilih: **{METADATA.get('selected_model', 'Random Forest')}**"
+    )
+
+st.markdown(
+    f'<div class="footer">{APP_NAME} · PJBL Machine Learning 2026 · Data: CDC NHANES · '
+    "Bukan pengganti diagnosis medis</div>",
+    unsafe_allow_html=True,
+)

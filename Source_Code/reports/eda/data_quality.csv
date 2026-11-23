@@ -1,0 +1,21 @@
+feature,dtype,missing_count,unique_count
+SEQN,int64,0,36259
+Depression,str,0,2
+Age,int64,0,68
+Gender,str,0,2
+Education Level,str,0,6
+Marital Status,str,0,7
+Household Income,str,0,13
+Sleep Hours,float64,0,28
+Trouble Sleeping History,str,0,2
+Sedentary Time,float64,0,67
+Vigorous Recreation,str,0,3
+Moderate Recreation,str,0,3
+Current Smoker,str,0,4
+Memory Problems,str,0,2
+Cant Work,str,0,2
+Limited Work,str,0,2
+BMI,float64,0,3139
+Systolic,float64,0,86
+Diastolic,float64,0,61
+Pulse,float64,0,58

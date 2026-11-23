@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "model": "logistic_regression",
+      "baseline_cv_f1": 0.6216360512431278,
+      "cv_f1_mean": 0.6216360512431278,
+      "cv_f1_std": 0.0036844890943093563,
+      "cv_train_f1": 0.6223927490098657,
+      "best_params": "{\"model__C\": 1.0, \"model__class_weight\": null}"
+    },
+    {
+      "model": "decision_tree",
+      "baseline_cv_f1": 0.5875099955038008,
+      "cv_f1_mean": 0.6298505507095872,
+      "cv_f1_std": 0.01395387278670909,
+      "cv_train_f1": 0.6514548568337328,
+      "best_params": "{\"model__class_weight\": null, \"model__max_depth\": 6}"
+    },
+    {
+      "model": "random_forest",
+      "baseline_cv_f1": 0.6033584945887601,
+      "cv_f1_mean": 0.6428094987105364,
+      "cv_f1_std": 0.007401525453943962,
+      "cv_train_f1": 0.718279373091713,
+      "best_params": "{\"model__class_weight\": \"balanced\", \"model__max_depth\": 10, \"model__n_estimators\": 100}"
+    }
+  ],
+  "selection": "random_forest",
+  "input_hashes": {
+    "Dataset/Data_Asli/nhanes_depression_raw.csv": "ffd05c1c9912c583d3e76413c5a8d6722940c94b25652c47572f936d973a210f",
+    "Dataset/Data_Olahan/cleaned.csv": "b29ad56fd2c26076cc17e1ad9f5e1e7b267c5d5c6169803b80ea07a2762628c9",
+    "Dataset/Data_Olahan/train.csv": "b1c74057824b62daf870d45ac72dc1f79ad212caee0907cee05809aa966b882d",
+    "Dataset/Data_Olahan/test.csv": "b07b4ce9f214cb584750be93c2785519e207fa80aac045d88d0d4af77f583e5c"
+  },
+  "pipeline_hashes": {
+    "logistic_regression": "2fb80298973286fbbe51fa3ed5d73d5e15e7024c1992e4747b5f079b0ee15ce9",
+    "decision_tree": "b6f088fe9bba38e70ebe5e208312dff7d9d80fb4b37fa3ede10b98fe3a802b9d",
+    "random_forest": "e526c581f69889cdb6a46bc5f213b986d764f6f0d636a2799f3d510cd3811abf"
+  }
+}

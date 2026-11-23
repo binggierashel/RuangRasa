@@ -1,0 +1,15 @@
+{
+  "dataset_name": "CDC NHANES Depression Screening & Health Lifestyle Dataset",
+  "source": "Centers for Disease Control and Prevention (CDC) - National Health and Nutrition Examination Survey (NHANES) 2005-2018",
+  "source_url": "https://wwwn.cdc.gov/nchs/nhanes/default.aspx",
+  "target_column": "Depression",
+  "target_classes": [
+    "Not Depressed",
+    "Depressed"
+  ],
+  "target_definition": "Patient Health Questionnaire-9 (PHQ-9) depression screener score threshold >= 10 indicates Depressed; score < 10 indicates Not Depressed (Kroenke et al., 2001).",
+  "rows": 36259,
+  "columns": 20,
+  "sha256": "ffd05c1c9912c583d3e76413c5a8d6722940c94b25652c47572f936d973a210f",
+  "description": "Karakteristik demografi, riwayat tidur, aktivitas fisik, status kerja, fungsi kognitif, dan pengukuran fisiologis dari survei kesehatan nasional CDC NHANES."
+}

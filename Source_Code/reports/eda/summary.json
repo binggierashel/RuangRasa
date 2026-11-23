@@ -1,0 +1,26 @@
+{
+  "raw_rows": 36259,
+  "raw_columns": 20,
+  "model_features": 18,
+  "duplicates_removed": 0,
+  "clean_rows": 36259,
+  "unique_profiles": 36259,
+  "conflicting_profiles": 0,
+  "train_rows": 29007,
+  "test_rows": 7252,
+  "seed": 42,
+  "selection_metric": "Stratified 5-Fold Training CV Macro-F1",
+  "split_ratio": "80% Train : 20% Test Stratified",
+  "class_counts_raw": {
+    "Not Depressed": 33091,
+    "Depressed": 3168
+  },
+  "class_counts_train": {
+    "Not Depressed": 26473,
+    "Depressed": 2534
+  },
+  "class_counts_test": {
+    "Not Depressed": 6618,
+    "Depressed": 634
+  }
+}

@@ -1,0 +1,54 @@
+feature,coefficient
+categorical__Memory Problems_Yes,-0.4499796367933618
+categorical__Household Income_Below $5K,-0.4258826407381251
+categorical__Trouble Sleeping History_Yes,-0.3980947190291617
+categorical__Education Level_Less Than 9th Grade,-0.30158466837015796
+categorical__Cant Work_Yes,-0.1918012543680282
+categorical__Marital Status_Separated,-0.18539113280832942
+categorical__Household Income_Below $20K,-0.1846141342399857
+categorical__Current Smoker_Every Day,-0.16164472893104337
+categorical__Gender_Female,-0.12975142140527324
+categorical__Household Income_Below $15K,-0.1273669060519558
+categorical__Education Level_9-11th Grade,-0.11874373050957218
+categorical__Household Income_Below $25K,-0.11000619257377933
+categorical__Household Income_Missing,-0.10985195124017974
+categorical__Marital Status_Divorced,-0.10665123887361681
+numeric__Diastolic,-0.1016296076556175
+categorical__Limited Work_Yes,-0.09185104636713513
+categorical__Moderate Recreation_No,-0.08342327270278557
+numeric__Sedentary Time,-0.07150401843823918
+numeric__BMI,-0.0655905558132436
+categorical__Current Smoker_Some Days,-0.044185318023197494
+categorical__Household Income_Below $10K,-0.039594012231554634
+categorical__Vigorous Recreation_No,-0.008891013261563318
+numeric__Pulse,-0.006949966544366487
+categorical__Marital Status_Missing,-0.0030149318503820046
+categorical__Vigorous Recreation_Missing,0.002702727165517175
+categorical__Moderate Recreation_Missing,0.006930185541733811
+categorical__Household Income_Below $35K,0.007679200069212102
+categorical__Marital Status_Partner,0.05449267507506914
+categorical__Education Level_Missing,0.055439355633263784
+numeric__Systolic,0.08757090480437192
+categorical__Household Income_Below $45K,0.10214680402089953
+categorical__Marital Status_Never Married,0.11285866586898842
+categorical__Household Income_Below $75K,0.127249422739813
+categorical__Education Level_Some College or AA Degree,0.12759729555121202
+categorical__Household Income_Below $55K,0.12773607415405364
+categorical__Marital Status_Widowed,0.13485196452356443
+categorical__Education Level_High School,0.15220550521300094
+numeric__Sleep Hours,0.15743947034378578
+categorical__Current Smoker_Never,0.16212790623860565
+categorical__Household Income_Below $65K,0.1846362133021766
+categorical__Marital Status_Married,0.28953034209037504
+categorical__Household Income_$75K+,0.2923551488870203
+categorical__Vigorous Recreation_Yes,0.3028646301217163
+categorical__Current Smoker_Missing,0.34037848474130494
+categorical__Moderate Recreation_Yes,0.37316943118671986
+numeric__Age,0.3787091644783815
+categorical__Education Level_College Graduate or Above,0.38176258650792266
+categorical__Limited Work_No,0.3885273903928033
+categorical__Gender_Male,0.4264277654309435
+categorical__Household Income_Over $20K,0.45218931792807404
+categorical__Cant Work_No,0.4884775983936992
+categorical__Trouble Sleeping History_No,0.6947710630548316
+categorical__Memory Problems_No,0.7466559808190316

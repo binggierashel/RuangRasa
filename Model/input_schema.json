@@ -1,0 +1,129 @@
+{
+  "features": [
+    "Gender",
+    "Education Level",
+    "Marital Status",
+    "Household Income",
+    "Trouble Sleeping History",
+    "Vigorous Recreation",
+    "Moderate Recreation",
+    "Current Smoker",
+    "Memory Problems",
+    "Cant Work",
+    "Limited Work",
+    "Age",
+    "Sleep Hours",
+    "Sedentary Time",
+    "BMI",
+    "Systolic",
+    "Diastolic",
+    "Pulse"
+  ],
+  "categories": {
+    "Gender": [
+      "Female",
+      "Male"
+    ],
+    "Education Level": [
+      "9-11th Grade",
+      "College Graduate or Above",
+      "High School",
+      "Less Than 9th Grade",
+      "Missing",
+      "Some College or AA Degree"
+    ],
+    "Marital Status": [
+      "Divorced",
+      "Married",
+      "Missing",
+      "Never Married",
+      "Partner",
+      "Separated",
+      "Widowed"
+    ],
+    "Household Income": [
+      "$75K+",
+      "Below $10K",
+      "Below $15K",
+      "Below $20K",
+      "Below $25K",
+      "Below $35K",
+      "Below $45K",
+      "Below $55K",
+      "Below $5K",
+      "Below $65K",
+      "Below $75K",
+      "Missing",
+      "Over $20K"
+    ],
+    "Trouble Sleeping History": [
+      "No",
+      "Yes"
+    ],
+    "Vigorous Recreation": [
+      "Missing",
+      "No",
+      "Yes"
+    ],
+    "Moderate Recreation": [
+      "Missing",
+      "No",
+      "Yes"
+    ],
+    "Current Smoker": [
+      "Every Day",
+      "Missing",
+      "Never",
+      "Some Days"
+    ],
+    "Memory Problems": [
+      "No",
+      "Yes"
+    ],
+    "Cant Work": [
+      "No",
+      "Yes"
+    ],
+    "Limited Work": [
+      "No",
+      "Yes"
+    ]
+  },
+  "training_ranges": {
+    "Age": {
+      "min": 18.0,
+      "max": 85.0,
+      "median": 47.0
+    },
+    "Sleep Hours": {
+      "min": 0.0,
+      "max": 14.5,
+      "median": 7.0
+    },
+    "Sedentary Time": {
+      "min": 0.0,
+      "max": 1320.0,
+      "median": 300.0
+    },
+    "BMI": {
+      "min": 0.0,
+      "max": 86.2,
+      "median": 27.8
+    },
+    "Systolic": {
+      "min": 0.0,
+      "max": 270.0,
+      "median": 120.0
+    },
+    "Diastolic": {
+      "min": 0.0,
+      "max": 124.0,
+      "median": 70.0
+    },
+    "Pulse": {
+      "min": 0.0,
+      "max": 224.0,
+      "median": 72.0
+    }
+  }
+}

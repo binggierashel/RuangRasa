@@ -1,0 +1,6 @@
+Gender,Education Level,Marital Status,Household Income,Trouble Sleeping History,Vigorous Recreation,Moderate Recreation,Current Smoker,Memory Problems,Cant Work,Limited Work,Age,Sleep Hours,Sedentary Time,BMI,Systolic,Diastolic,Pulse
+Female,Missing,Missing,Below $25K,No,No,No,Missing,No,No,No,19,8.0,420.0,0.0,116.0,54.0,68.0
+Male,Some College or AA Degree,Married,Over $20K,No,Yes,No,Missing,No,No,No,53,7.0,360.0,20.93,122.0,68.0,54.0
+Male,9-11th Grade,Widowed,Below $45K,Yes,No,No,Missing,No,No,No,39,5.0,120.0,34.58,122.0,78.0,82.0
+Female,Less Than 9th Grade,Married,Below $10K,No,No,No,Every Day,No,No,No,28,6.0,240.0,24.53,110.0,70.0,88.0
+Female,Some College or AA Degree,Never Married,Below $55K,No,Yes,Yes,Missing,No,No,No,63,6.0,240.0,24.2,130.0,72.0,54.0
