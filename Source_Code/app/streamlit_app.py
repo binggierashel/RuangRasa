@@ -16,10 +16,12 @@ import streamlit as st
 APP_DIR = Path(__file__).resolve().parent
 SRC_DIR = APP_DIR.parent
 ROOT_DIR = SRC_DIR.parent
-if str(SRC_DIR) not in sys.path:
-    sys.path.insert(0, str(SRC_DIR))
+for _p in (str(SRC_DIR), str(APP_DIR)):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
 
 from depresi_project import DISPLAY, TARGET, make_preprocessor, prepare_features, validate_input  # noqa: E402
+from vision_scanner import analyze_snapshot_python, render_realtime_yolo_scanner  # noqa: E402
 
 APP_NAME = "RuangRasa"
 TEAL, RED = "#0F766E", "#B42318"
@@ -182,8 +184,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-tab_single, tab_batch, tab_data, tab_model, tab_about = st.tabs(
-    ["Skrining", "Batch CSV", "Data", "Model", "Tentang"]
+tab_single, tab_camera, tab_batch, tab_data, tab_model, tab_about = st.tabs(
+    ["Skrining", "Kamera AI", "Batch CSV", "Data", "Model", "Tentang"]
 )
 
 # Pilihan model (dipakai pada tab Skrining dan Batch)
@@ -270,6 +272,7 @@ with tab_single:
             pred = model.predict(valid)[0]
             probs = dict(zip(model.classes_, model.predict_proba(valid)[0]))
             p_dep = float(probs.get("Depressed", 0.0))
+            st.session_state["last_clinical_prob"] = p_dep
             high = pred == "Depressed"
 
             st.divider()
@@ -291,6 +294,38 @@ with tab_single:
                        "Hasil ini skrining berbasis model, **bukan diagnosis medis**.")
         except Exception as err:  # noqa: BLE001
             st.error(f"Input tidak valid: {err}")
+
+# ------------------------------------------------------------------ Kamera AI (Fitur Bonus Multimodal)
+with tab_camera:
+    st.markdown("##### Pemindai Ekspresi & Kelelahan Wajah Real-Time (Gaya YOLO)")
+    st.caption(
+        "Fitur pendukung multimodal: mendeteksi kotak wajah (*bounding box*), rasio keterbukaan mata "
+        "(*Eye Aspect Ratio* untuk indikasi kurang tidur/kelelahan), dan ekspresi afek datar (*flat affect*) "
+        "secara *real-time* sebagai pendamping model klinis Random Forest CDC NHANES."
+    )
+    render_realtime_yolo_scanner(st.session_state.get("last_clinical_prob"))
+
+    with st.expander("Mode Unggah Foto / Snapshot Statis (Deteksi Bounding Box Python)"):
+        img_file = st.file_uploader("Unggah foto wajah (JPG/PNG)", type=["jpg", "jpeg", "png"])
+        if img_file is not None:
+            from PIL import Image
+            pil_img = Image.open(img_file)
+            annotated, vis_metrics = analyze_snapshot_python(pil_img)
+            col_img, col_res = st.columns([1.15, 1])
+            with col_img:
+                st.image(annotated, caption="Hasil Deteksi Bounding Box (FACE, EYE-L/R, AFFECT)", width="stretch")
+            with col_res:
+                st.metric("Indeks Kelelahan Mata", f"{vis_metrics['eye_fatigue']}%")
+                st.metric("Indikasi Afek Datar", f"{vis_metrics['flat_affect']}%")
+                st.metric("Skor Sinyal Visual", f"{vis_metrics['visual_risk']}%")
+                clin_p = st.session_state.get("last_clinical_prob")
+                if clin_p is not None:
+                    fused_p = 0.75 * float(clin_p) + 0.25 * (vis_metrics["visual_risk"] / 100.0)
+                    st.metric("Skor Multimodal (75% NHANES + 25% Visual)", f"{fused_p * 100:.1f}%")
+    st.caption(
+        "⚠️ **Catatan Ilmiah:** Deteksi ekspresi dan kelelahan wajah berfungsi sebagai sinyal pendukung "
+        "multimodal (terkait fitur gangguan tidur & afek), **bukan** penentu tunggal diagnosis depresi klinis."
+    )
 
 # ------------------------------------------------------------------ Batch
 with tab_batch:
