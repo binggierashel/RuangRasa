@@ -187,8 +187,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-tab_single, tab_camera, tab_batch, tab_data, tab_model, tab_about = st.tabs(
-    ["Skrining", "Kamera AI", "Batch CSV", "Data", "Model", "Tentang"]
+tab_single, tab_camera, tab_batch, tab_data, tab_about = st.tabs(
+    ["Skrining", "Kamera AI", "Batch CSV", "Data", "Tentang"]
 )
 
 # Pilihan model (dipakai pada tab Skrining dan Batch)
@@ -400,6 +400,7 @@ with tab_data:
             "Fitur kategorikal",
             "Confusion matrix",
             "Perbandingan 3 algoritma",
+            "Faktor berpengaruh",
         ],
         horizontal=True, label_visibility="collapsed",
     )
@@ -459,7 +460,7 @@ with tab_data:
                 width="stretch",
             )
             st.caption("TP = Depresi terdeteksi benar · FN = Depresi luput · FP = Tidak depresi diprediksi depresi · TN = Tidak depresi terdeteksi benar.")
-    else:
+    elif opt == "Perbandingan 3 algoritma":
         show_image(rep_data / "02_model_comparison.png", "Perbandingan kinerja 3 algoritma (CV Macro-F1, Test Macro-F1, dan Accuracy)")
         comp_data = rep_data / "model_comparison.csv"
         if comp_data.exists():
@@ -470,32 +471,13 @@ with tab_data:
             st.dataframe(df_cmp.style.format({c: "{:.4f}" for c in df_cmp.columns[1:]})
                          .highlight_max(subset=["CV Macro-F1", "Test Macro-F1"], color="#CCFBF1"),
                          hide_index=True, width="stretch")
-
-# ------------------------------------------------------------------ Model
-with tab_model:
-    rep = SRC_DIR / "reports/modeling"
-    ana = SRC_DIR / "reports/analysis"
-    comp = rep / "model_comparison.csv"
-    st.markdown("##### Perbandingan tiga algoritma")
-    if comp.exists():
-        df = pd.read_csv(comp)[["model", "cv_f1_mean", "cv_f1_std", "train_f1_macro", "test_accuracy",
-                                "test_precision_macro", "test_recall_macro", "test_f1_macro"]]
-        df.columns = ["Model", "CV Macro-F1", "CV Std", "Train Macro-F1", "Accuracy",
-                      "Precision", "Recall", "Test Macro-F1"]
-        st.dataframe(df.style.format({c: "{:.4f}" for c in df.columns[1:]})
-                     .highlight_max(subset=["CV Macro-F1", "Test Macro-F1"], color="#CCFBF1"),
-                     hide_index=True, width="stretch")
-    st.caption("Model dipilih dari Macro-F1 validasi silang, bukan dari accuracy. "
-               "Accuracy tinggi pada kelas mayoritas (91%) menyesatkan.")
-
-    t1, t2 = st.tabs(["Confusion matrix", "Faktor berpengaruh"])
-    with t1:
-        show_image(rep / "01_confusion_matrices.png", "Confusion matrix pada data uji (N = 7.252)")
-        show_image(rep / "02_model_comparison.png", "Perbandingan metrik antar model")
-    with t2:
-        show_image(ana / "02_permutation_importance.png", "Permutation importance (Random Forest)")
-        show_image(ana / "03_logistic_coefficients.png", "Koefisien Logistic Regression")
-        st.markdown("Faktor teratas: riwayat gangguan tidur, ketidakmampuan bekerja, dan masalah memori.")
+        st.caption("Model dipilih dari Macro-F1 validasi silang, bukan dari accuracy. "
+                   "Accuracy tinggi pada kelas mayoritas (91%) menyesatkan.")
+    else:
+        ana_data = SRC_DIR / "reports/analysis"
+        show_image(ana_data / "02_permutation_importance.png", "Permutation importance (Random Forest)")
+        show_image(ana_data / "03_logistic_coefficients.png", "Koefisien Logistic Regression")
+        st.markdown("Faktor teratas: riwayat gangguan tidur, usia, ketidakmampuan bekerja, dan masalah memori.")
 
 # ------------------------------------------------------------------ Tentang
 with tab_about:
