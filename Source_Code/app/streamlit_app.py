@@ -379,6 +379,7 @@ with tab_batch:
 # ------------------------------------------------------------------ Data
 with tab_data:
     eda = SRC_DIR / "reports/eda"
+    rep_data = SRC_DIR / "reports/modeling"
     summary = eda / "summary.json"
     if summary.exists():
         s = json.loads(summary.read_text(encoding="utf-8"))
@@ -391,7 +392,15 @@ with tab_data:
 
     opt = st.radio(
         "Visualisasi",
-        ["Distribusi kelas", "Sebaran numerik", "Outlier", "Korelasi", "Fitur kategorikal"],
+        [
+            "Distribusi kelas",
+            "Sebaran numerik",
+            "Outlier",
+            "Korelasi",
+            "Fitur kategorikal",
+            "Confusion matrix",
+            "Perbandingan 3 algoritma",
+        ],
         horizontal=True, label_visibility="collapsed",
     )
     if opt == "Distribusi kelas":
@@ -405,9 +414,62 @@ with tab_data:
             st.dataframe(pd.read_csv(out_file), width="stretch")
     elif opt == "Korelasi":
         show_image(eda / "04_korelasi_train.png", "Matriks korelasi Pearson antarfitur numerik")
-    else:
+    elif opt == "Fitur kategorikal":
         show_image(eda / "05_kategorikal_train.png", "Proporsi depresi per kategori kunci")
         show_image(eda / "06_scatter_train.png", "Usia vs jam tidur")
+    elif opt == "Confusion matrix":
+        show_image(rep_data / "01_confusion_matrices.png", "Confusion matrix ketiga algoritma pada data uji (N = 7.252)")
+        st.markdown("##### Tabel Evaluasi Matrix (Data Uji, N = 7.252)")
+        matrix_rows = []
+        for m_key, m_label in [
+            ("random_forest", "Random Forest (Terpilih)"),
+            ("decision_tree", "Decision Tree"),
+            ("logistic_regression", "Logistic Regression"),
+        ]:
+            pred_file = rep_data / f"predictions_{m_key}.csv"
+            cr_file = rep_data / f"classification_report_{m_key}.json"
+            if pred_file.exists() and cr_file.exists():
+                p_df = pd.read_csv(pred_file, usecols=["actual", "predicted"])
+                cr = json.loads(cr_file.read_text(encoding="utf-8"))
+                tp = int(((p_df["actual"] == "Depressed") & (p_df["predicted"] == "Depressed")).sum())
+                fn = int(((p_df["actual"] == "Depressed") & (p_df["predicted"] == "Not Depressed")).sum())
+                fp = int(((p_df["actual"] == "Not Depressed") & (p_df["predicted"] == "Depressed")).sum())
+                tn = int(((p_df["actual"] == "Not Depressed") & (p_df["predicted"] == "Not Depressed")).sum())
+                dep = cr.get("Depressed", {})
+                macro = cr.get("macro avg", {})
+                matrix_rows.append({
+                    "Model": m_label,
+                    "TP": tp,
+                    "FN": fn,
+                    "FP": fp,
+                    "TN": tn,
+                    "Precision (Depressed)": dep.get("precision", 0.0),
+                    "Recall (Depressed)": dep.get("recall", 0.0),
+                    "F1 (Depressed)": dep.get("f1-score", 0.0),
+                    "Accuracy": cr.get("accuracy", 0.0),
+                    "Macro-F1": macro.get("f1-score", 0.0),
+                })
+        if matrix_rows:
+            df_mat = pd.DataFrame(matrix_rows)
+            float_cols = ["Precision (Depressed)", "Recall (Depressed)", "F1 (Depressed)", "Accuracy", "Macro-F1"]
+            st.dataframe(
+                df_mat.style.format({c: "{:.4f}" for c in float_cols})
+                .highlight_max(subset=["TP", "Recall (Depressed)", "F1 (Depressed)", "Macro-F1"], color="#CCFBF1"),
+                hide_index=True,
+                width="stretch",
+            )
+            st.caption("TP = Depresi terdeteksi benar · FN = Depresi luput · FP = Tidak depresi diprediksi depresi · TN = Tidak depresi terdeteksi benar.")
+    else:
+        show_image(rep_data / "02_model_comparison.png", "Perbandingan kinerja 3 algoritma (CV Macro-F1, Test Macro-F1, dan Accuracy)")
+        comp_data = rep_data / "model_comparison.csv"
+        if comp_data.exists():
+            df_cmp = pd.read_csv(comp_data)[["model", "cv_f1_mean", "cv_f1_std", "train_f1_macro", "test_accuracy",
+                                             "test_precision_macro", "test_recall_macro", "test_f1_macro"]]
+            df_cmp.columns = ["Model", "CV Macro-F1", "CV Std", "Train Macro-F1", "Accuracy",
+                              "Precision", "Recall", "Test Macro-F1"]
+            st.dataframe(df_cmp.style.format({c: "{:.4f}" for c in df_cmp.columns[1:]})
+                         .highlight_max(subset=["CV Macro-F1", "Test Macro-F1"], color="#CCFBF1"),
+                         hide_index=True, width="stretch")
 
 # ------------------------------------------------------------------ Model
 with tab_model:
