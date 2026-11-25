@@ -442,11 +442,33 @@ with tab_about:
         "depresi dari data survei kesehatan CDC NHANES. Aplikasi ini bukan alat diagnosis."
     )
     ident_file = ROOT_DIR / "Dokumentasi/identitas_kelompok.json"
+    anggota = None
     if ident_file.exists():
         ident = json.loads(ident_file.read_text(encoding="utf-8"))
-        if ident.get("anggota"):
-            st.markdown("##### Tim")
-            st.dataframe(pd.DataFrame(ident["anggota"]), hide_index=True, width="stretch")
+        anggota = ident.get("anggota")
+    if not anggota:
+        anggota = [
+            {
+                "No": 1,
+                "Nama": "Bintang Karini Br Padang",
+                "NIM": "J0404241005",
+                "Pembagian Tugas": "Modeling dan evaluasi",
+            },
+            {
+                "No": 2,
+                "Nama": "Binggie Rashel Prasetyo",
+                "NIM": "J0404241009",
+                "Pembagian Tugas": "Dataset, EDA, dan preprocessing",
+            },
+            {
+                "No": 3,
+                "Nama": "Gregorius Gil Ovidio Sebayang",
+                "NIM": "J0404241088",
+                "Pembagian Tugas": "Implementasi aplikasi dan deployment",
+            },
+        ]
+    st.markdown("##### Tim (Kelompok 11 — Kelas B)")
+    st.dataframe(pd.DataFrame(anggota), hide_index=True, width="stretch")
 
     st.markdown("##### Referensi")
     refs = [

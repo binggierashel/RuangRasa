@@ -6,7 +6,7 @@ $src = $PSScriptRoot
 $dst = Join-Path (Split-Path $src -Parent) "ML2026_B_Kelompok11_PrediksiGangguanDepresi"
 
 if (Test-Path $dst) {
-    Remove-Item -Recurse -Force $dst
+    Remove-Item -Recurse -Force $dst -ErrorAction SilentlyContinue
 }
 
 $folders = @(
@@ -25,17 +25,18 @@ foreach ($f in $folders) {
 }
 
 # 02_Source_Code (salin aplikasi, notebook, laporan, dan tes; buang cache & file sisa)
-Copy-Item "$src\streamlit_app.py", "$src\requirements.txt", "$src\README.md", "$src\JALANKAN_APLIKASI.bat" "$dst\02_Source_Code\"
-Copy-Item -Recurse "$src\.streamlit" "$dst\02_Source_Code\.streamlit"
-Copy-Item -Recurse "$src\Source_Code" "$dst\02_Source_Code\Source_Code"
+Copy-Item "$src\streamlit_app.py", "$src\requirements.txt", "$src\README.md", "$src\JALANKAN_APLIKASI.bat" "$dst\02_Source_Code\" -Force
+Copy-Item -Recurse -Force "$src\.streamlit" "$dst\02_Source_Code\"
+Copy-Item -Recurse -Force "$src\Source_Code" "$dst\02_Source_Code\"
 Get-ChildItem "$dst\02_Source_Code" -Recurse -Force |
     Where-Object { $_.Name -in @("__pycache__", "generate_docx.py", "convert_xpt_to_csv.py") -or $_.Extension -in @(".bak", ".pyc") } |
     Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
 
 # 03_Dataset (hanya dataset yang dipakai proyek, tanpa Data_XPT dan Data_Per_Siklus)
-Copy-Item -Recurse "$src\Dataset\Data_Asli" "$dst\03_Dataset\Data_Asli"
-Copy-Item -Recurse "$src\Dataset\Data_Olahan" "$dst\03_Dataset\Data_Olahan"
-Copy-Item "$src\Dataset\template_input.csv", "$src\Dataset\contoh_prediksi.csv" "$dst\03_Dataset\"
+Copy-Item -Recurse -Force "$src\Dataset\Data_Asli" "$dst\03_Dataset\"
+Copy-Item -Recurse -Force "$src\Dataset\Data_Olahan" "$dst\03_Dataset\"
+Copy-Item "$src\Dataset\template_input.csv" "$dst\03_Dataset\" -Force
+try { Copy-Item "$src\Dataset\contoh_prediksi.csv" "$dst\03_Dataset\" -Force } catch {}
 
 # 04_Model
 Copy-Item "$src\Model\*" "$dst\04_Model\" -Recurse -Force
