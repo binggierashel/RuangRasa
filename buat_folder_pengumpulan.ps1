@@ -38,26 +38,15 @@ Copy-Item -Recurse "$src\Dataset\Data_Olahan" "$dst\03_Dataset\Data_Olahan"
 Copy-Item "$src\Dataset\template_input.csv", "$src\Dataset\contoh_prediksi.csv" "$dst\03_Dataset\"
 
 # 04_Model
-Copy-Item "$src\Model\*" "$dst\04_Model\"
+Copy-Item "$src\Model\*" "$dst\04_Model\" -Recurse -Force
 
-# 06_Jurnal_Referensi (Kroenke 2001 + 5 jurnal terbaru 2024-2026)
-$journals = @(
-    "1_Kroenke_2001_PHQ9.md",
-    "2_Li_2024_NHANES_Depression_Sleep.md",
-    "3_Selvaraj_2024_NHANES_Ensemble_RF.md",
-    "4_Vu_2025_NHANES_ML_Depression.md",
-    "5_Salimi_2026_NHANES_Interpretable_ML.md",
-    "6_Cui_2026_NHANES_Stacking_SHAP.md"
-)
-foreach ($j in $journals) {
-    $p = Join-Path "$src\Referensi_Jurnal" $j
-    if (Test-Path $p) {
-        Copy-Item $p "$dst\06_Jurnal_Referensi\"
-    }
-}
+# 06_Jurnal_Referensi (5 jurnal terbaru 2024-2026: ringkasan .md dan berkas .pdf)
+Get-ChildItem "$src\Referensi_Jurnal" -File |
+    Where-Object { $_.Name -ne "tinjauan_pustaka.md" -and $_.Extension -in @(".md", ".pdf") } |
+    Copy-Item -Destination "$dst\06_Jurnal_Referensi\" -Force
 
-# 07_Tabel_Studi_Literatur
-Copy-Item "$src\Referensi_Jurnal\tinjauan_pustaka.md" "$dst\07_Tabel_Studi_Literatur\"
+# 07_Tabel_Studi_Literatur (format Excel)
+Copy-Item "$src\Referensi_Jurnal\tabel_studi_literatur.xlsx" "$dst\07_Tabel_Studi_Literatur\" -Force
 
 # 08_Link_Deployment
 if (Test-Path "$src\Link_Deployment") {

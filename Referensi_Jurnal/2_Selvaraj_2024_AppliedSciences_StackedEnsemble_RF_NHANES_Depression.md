@@ -1,4 +1,4 @@
-# Ringkasan Artikel Jurnal Ilmiah 3
+# Ringkasan Artikel Jurnal Ilmiah 2
 
 - **Judul Artikel:** Enhancing Depression Detection: A Stacked Ensemble Model with Feature Selection and RF Feature Importance Analysis Using NHANES Data
 - **Penulis:** Annapoorani Selvaraj, L. Mohandoss

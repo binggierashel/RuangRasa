@@ -14,7 +14,7 @@
 
 **RuangRasa** adalah sistem berbasis *Machine Learning* untuk mengidentifikasi dan menskrining tingkat risiko seseorang terhadap **Gangguan Depresi Mayor (*Major Depressive Disorder* / MDD)**. Sistem memanfaatkan data kebiasaan gaya hidup, pola tidur, kapasitas fungsional, dan pengukuran fisik non-invasif yang diekstraksi dari survei kesehatan berkala **Centers for Disease Control and Prevention (CDC) - National Health and Nutrition Examination Survey (NHANES)** periode multi-tahun (2005–2018).
 
-Label target depresi diturunkan dari instrumen skrining baku **Patient Health Questionnaire-9 (PHQ-9)** dengan ambang batas skor $\ge 10$ yang memiliki sensitivitas dan spesifisitas sebesar 88% untuk depresi sedang hingga berat (*Kroenke et al., 2001*).
+Label target depresi diturunkan dari instrumen skrining baku **Patient Health Questionnaire-9 (PHQ-9)** pada data CDC NHANES dengan ambang batas skor $\ge 10$ untuk depresi sedang hingga berat.
 
 Tiga algoritma supervised learning dikomparasikan secara ketat mengacu pada rubrik evaluasi PJBL:
 1. **Random Forest Classifier** *(Model Terpilih)*
@@ -91,23 +91,18 @@ prediksi_gangguan_depresi/
 │   ├── input_schema.json                  # Kontrak fitur & rentang kategori
 │   └── model_metadata.json                # Metadata, metrik evaluasi & lingkungan latih
 ├── Referensi_Jurnal/
-│   ├── 1_Kroenke_2001_PHQ9.md             # Ringkasan studi validasi PHQ-9 (DOI aktif)
-│   ├── 2_Li_2024_NHANES_Depression_Sleep.md      # Prediksi depresi & gangguan tidur NHANES
-│   ├── 3_Selvaraj_2024_NHANES_Ensemble_RF.md     # Stacked ensemble & RF feature importance
-│   ├── 4_Vu_2025_NHANES_ML_Depression.md         # Komparasi 6 algoritma ML pada NHANES
-│   ├── 5_Salimi_2026_NHANES_Interpretable_ML.md  # Klasifikasi depresi populasi penuh NHANES
-│   ├── 6_Cui_2026_NHANES_Stacking_SHAP.md        # Stacking ensemble + SHAP NHANES 2005–2023
+│   ├── 1_Li_2024_FrontiersPublicHealth_ML_Depression_SleepApnea_NHANES.md/.pdf
+│   ├── 2_Selvaraj_2024_AppliedSciences_StackedEnsemble_RF_NHANES_Depression.md/.pdf
+│   ├── 3_Vu_2025_BMCMedInform_ML_DepressiveDisorder_NHANES.md/.pdf
+│   ├── 4_Salimi_2026_IBRONeurosci_Interpretable_ML_Depression_NHANES.md/.pdf
+│   ├── 5_Cui_2026_EAI_StackingEnsemble_SHAP_GeriatricDepression_NHANES.md/.pdf
 │   └── tinjauan_pustaka.md                # Tabel komparasi jurnal sesuai format PJBL
 ├── Source_Code/
 │   ├── app/
 │   │   ├── streamlit_app.py               # Aplikasi web multi-halaman Streamlit
 │   │   └── styles.css                     # Stylesheet tampilan UI RuangRasa
 │   ├── notebooks/
-│   │   ├── 01_persiapan_data.ipynb        # Tahap 1: Pembacaan data & partisi 80:20
-│   │   ├── 02_eksplorasi_data.ipynb       # Tahap 2: Statistik deskriptif & 6 plot EDA
-│   │   ├── 03_preprocessing.ipynb         # Tahap 3: Pipeline imputasi & One-Hot Encoding
-│   │   ├── 04_training_model.ipynb        # Tahap 4: Pelatihan 3 model & CV tuning
-│   │   └── 05_evaluasi_dan_ekspor.ipynb   # Tahap 5: Evaluasi test set & ekspor artefak
+│   │   └── RuangRasa_Prediksi_Depresi.ipynb # Notebook lengkap end-to-end (EDA, preprocessing, training, evaluasi)
 │   ├── reports/
 │   │   ├── eda/                           # Grafik dan laporan CSV hasil EDA
 │   │   ├── modeling/                      # Matriks konfusi, kurva & laporan metrik
@@ -170,19 +165,17 @@ Buka browser pada alamat: `http://localhost:8501`.
 
 ---
 
-## 📚 Referensi Jurnal Ilmiah (DOI Terverifikasi: Dasar PHQ-9 + 5 Jurnal 2024–2026)
+## 📚 Referensi Jurnal Ilmiah (5 Jurnal Open Access 2024–2026, DOI Terverifikasi)
 
-1. **Kroenke, K., Spitzer, R. L., & Williams, J. B. (2001).** *The PHQ-9: Validity of a Brief Depression Severity Measure.* Journal of General Internal Medicine, 16(9), 606–613.  
-   DOI: [10.1046/j.1525-1497.2001.016009606.x](https://doi.org/10.1046/j.1525-1497.2001.016009606.x)
-2. **Li, E., Ai, F., & Liang, C. (2024).** *A machine learning model to predict the risk of depression in US adults with obstructive sleep apnea hypopnea syndrome: a cross-sectional study.* Frontiers in Public Health, 11, 1348803.  
+1. **Li, E., Ai, F., & Liang, C. (2024).** *A machine learning model to predict the risk of depression in US adults with obstructive sleep apnea hypopnea syndrome: a cross-sectional study.* Frontiers in Public Health, 11, 1348803.  
    DOI: [10.3389/fpubh.2023.1348803](https://doi.org/10.3389/fpubh.2023.1348803)
-3. **Selvaraj, A., & Mohandoss, L. (2024).** *Enhancing Depression Detection: A Stacked Ensemble Model with Feature Selection and RF Feature Importance Analysis Using NHANES Data.* Applied Sciences.  
+2. **Selvaraj, A., & Mohandoss, L. (2024).** *Enhancing Depression Detection: A Stacked Ensemble Model with Feature Selection and RF Feature Importance Analysis Using NHANES Data.* Applied Sciences.  
    DOI: [10.3390/app14167366](https://doi.org/10.3390/app14167366)
-4. **Vu, T., Dawadi, R., Yamamoto, M., Tay, J. T., Watanabe, N., Kuriya, Y., Oya, A., Tran, P. N. H., & Araki, M. (2025).** *Prediction of depressive disorder using machine learning approaches: findings from the NHANES.* BMC Medical Informatics and Decision Making.  
+3. **Vu, T., Dawadi, R., Yamamoto, M., Tay, J. T., Watanabe, N., Kuriya, Y., Oya, A., Tran, P. N. H., & Araki, M. (2025).** *Prediction of depressive disorder using machine learning approaches: findings from the NHANES.* BMC Medical Informatics and Decision Making.  
    DOI: [10.1186/s12911-025-02903-1](https://doi.org/10.1186/s12911-025-02903-1)
-5. **Salimi, O., Ghahramani, Z., Taghavi Zenouz, M., et al. (2026).** *Interpretable machine learning for depression symptom classification in NHANES: Performance in a curated high-confidence corpus and the full survey population.* IBRO Neuroscience Reports, 21, 738–746.  
+4. **Salimi, O., Ghahramani, Z., Taghavi Zenouz, M., et al. (2026).** *Interpretable machine learning for depression symptom classification in NHANES: Performance in a curated high-confidence corpus and the full survey population.* IBRO Neuroscience Reports, 21, 738–746.  
    DOI: [10.1016/j.ibneur.2026.08.009](https://doi.org/10.1016/j.ibneur.2026.08.009)
-6. **Cui, M., Li, X., & Gong, W. (2026).** *An Interpretable Stacking Ensemble Model with SHAP for Geriatric Depression Prediction: Analysis of the NHANES 2005-2023 Database.* EAI Endorsed Transactions on Pervasive Health and Technology, Vol. 11.  
+5. **Cui, M., Li, X., & Gong, W. (2026).** *An Interpretable Stacking Ensemble Model with SHAP for Geriatric Depression Prediction: Analysis of the NHANES 2005-2023 Database.* EAI Endorsed Transactions on Pervasive Health and Technology, Vol. 11.  
    DOI: [10.4108/eetpht.11.11671](https://doi.org/10.4108/eetpht.11.11671)
 
 ---

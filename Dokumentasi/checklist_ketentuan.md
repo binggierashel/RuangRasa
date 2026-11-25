@@ -19,8 +19,8 @@ Dokumen ini memetakan setiap butir persyaratan dalam panduan resmi `PJBL-KETENTU
 | Butir Ketentuan Panduan | Status | Realisasi dalam Proyek | Bukti File / Lokasi |
 |---|:---:|---|---|
 | Tema permasalahan nyata berbasis data terukur (*Classification*) | **TERPENUHI** | Klasifikasi risiko depresi mayor (Biner: `Not Depressed` vs `Depressed`). | `Dokumentasi/pengajuan_tema.md` |
-| Minimal 5 artikel jurnal ilmiah relevan dengan DOI aktif | **TERPENUHI** | Landasan PHQ-9 (Kroenke 2001) + 5 jurnal terbitan 5 tahun terakhir (Li 2024, Selvaraj 2024, Vu 2025, Salimi 2026, Cui 2026) dengan DOI terverifikasi. | Folder `Referensi_Jurnal/` |
-| Tabel studi literatur komparatif (Penulis, Masalah, Dataset, Metode, Metrik, Hasil, Perbedaan) | **TERPENUHI** | Dibuat tabel matriks perbandingan komprehensif mengacu format rubrik ketentuan. | `Referensi_Jurnal/tinjauan_pustaka.md` |
+| Minimal 5 artikel jurnal ilmiah relevan dengan DOI aktif | **TERPENUHI** | 5 jurnal terbitan terbaru (Li 2024, Selvaraj 2024, Vu 2025, Salimi 2026, Cui 2026) dengan DOI terverifikasi dan berkas PDF *open access*. | Folder `Referensi_Jurnal/` |
+| Tabel studi literatur komparatif (Penulis, Masalah, Dataset, Metode, Metrik, Hasil, Perbedaan) | **TERPENUHI** | Dibuat tabel matriks perbandingan komprehensif mengacu format rubrik ketentuan dalam format Excel (`.xlsx`) dan Markdown. | `Referensi_Jurnal/tabel_studi_literatur.xlsx` |
 
 ---
 
@@ -64,7 +64,7 @@ Dokumen ini memetakan setiap butir persyaratan dalam panduan resmi `PJBL-KETENTU
 | Aplikasi antarmuka pengguna interaktif (Streamlit) | **TERPENUHI** | Aplikasi web 5 modul lengkap dengan styling kustom (`styles.css`), tombol profil demo, visualisasi probabilitas, dan responsif. | `Source_Code/app/streamlit_app.py` |
 | Fitur Input Lengkap (Input Tunggal & Batch CSV) | **TERPENUHI** | Mendukung formulir skrining individu dan unggah berkas CSV massal disertai template unduhan. | Tab Prediksi Individu & Batch |
 | Validasi Input Ketat | **TERPENUHI** | Memvalidasi tipe numerik, rentang biometrik logis (Sistolik > Diastolik), serta pencegahan nilai anomali. | `Source_Code/depresi_project.py` (`validate_input`) |
-| Source code terstruktur rapi dan dapat direproduksi | **TERPENUHI** | 5 Jupyter Notebook berurutan dengan output riil, script Python modular, dan runner eksekusi otomatis. | `Source_Code/notebooks/`<br>`Source_Code/run_split_notebooks.py` |
+| Source code terstruktur rapi dan dapat direproduksi | **TERPENUHI** | Notebook Jupyter terpadu (`RuangRasa_Prediksi_Depresi.ipynb`) dengan output riil beserta script Python modular. | `Source_Code/notebooks/RuangRasa_Prediksi_Depresi.ipynb` |
 | Unit Testing & Integritas Pipeline | **TERPENUHI** | Script automated testing komprehensif menguji skema, data, validasi, dan prediksi pipeline dengan kelulusan 100%. | `Source_Code/tests/test_project.py`<br>`Source_Code/run_tests.py` |
 | Kemudahan Menjalankan Aplikasi (*One-Click Run*) | **TERPENUHI** | Disediakan script batch Windows untuk langsung meluncurkan Streamlit via klik ganda. | `JALANKAN_APLIKASI.bat` |
 

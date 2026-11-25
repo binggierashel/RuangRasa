@@ -1,4 +1,4 @@
-# Ringkasan Artikel Jurnal Ilmiah 2
+# Ringkasan Artikel Jurnal Ilmiah 1
 
 - **Judul Artikel:** A machine learning model to predict the risk of depression in US adults with obstructive sleep apnea hypopnea syndrome: a cross-sectional study
 - **Penulis:** Enguang Li, Fangzhu Ai, Chunguang Liang

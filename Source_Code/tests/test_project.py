@@ -119,8 +119,12 @@ class TestDepressionProject(unittest.TestCase):
         ]
         sample_df = pd.read_csv(ROOT / "Dataset/template_input.csv")
 
+        model_dir = ROOT / "Model/joblib untuk streamlit"
+        if not model_dir.exists():
+            model_dir = ROOT / "Model"
+
         for m_name in models:
-            m_path = ROOT / "Model" / m_name
+            m_path = model_dir / m_name
             self.assertTrue(m_path.exists(), f"Model {m_name} harus ada.")
             pipeline = joblib.load(m_path)
 
@@ -133,16 +137,16 @@ class TestDepressionProject(unittest.TestCase):
             self.assertEqual(probs.shape, (len(sample_df), 2))
             np.testing.assert_allclose(probs.sum(axis=1), 1.0, rtol=1e-5)
 
-    def test_06_split_notebooks_execution(self):
-        """Memverifikasi bahwa 5 notebook berurutan telah dieksekusi dengan hasil riil."""
-        nb_evidence_path = ROOT / "Dokumentasi/eksekusi_notebook_bertahap.json"
-        self.assertTrue(nb_evidence_path.exists())
-        evidence = json.loads(nb_evidence_path.read_text(encoding="utf-8"))
-        self.assertTrue(evidence["success"])
-        self.assertEqual(len(evidence["notebooks"]), 5)
-        for nb in evidence["notebooks"]:
-            self.assertTrue(nb["success"])
-            self.assertGreater(nb["code_cells_executed"], 0)
+    def test_06_notebook_execution(self):
+        """Memverifikasi bahwa notebook lengkap telah dieksekusi dengan output riil."""
+        nb_path = ROOT / "Source_Code/notebooks/RuangRasa_Prediksi_Depresi.ipynb"
+        self.assertTrue(nb_path.exists(), "Notebook RuangRasa_Prediksi_Depresi.ipynb harus ada.")
+        nb = json.loads(nb_path.read_text(encoding="utf-8"))
+        code_cells = [c for c in nb.get("cells", []) if c.get("cell_type") == "code"]
+        self.assertGreater(len(code_cells), 0)
+        for cell in code_cells:
+            self.assertIsNotNone(cell.get("execution_count"))
+            self.assertGreater(len(cell.get("outputs", [])), 0)
 
     def test_07_model_evaluation_metrics_consistency(self):
         """Memverifikasi perbandingan ketiga model dan konsistensi Random Forest terpilih."""

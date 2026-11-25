@@ -37,11 +37,14 @@ if css_file.exists():
 def load_artifacts():
     schema = json.loads((ROOT_DIR / "Model/input_schema.json").read_text(encoding="utf-8"))
     metadata = json.loads((ROOT_DIR / "Model/model_metadata.json").read_text(encoding="utf-8"))
+    model_dir = ROOT_DIR / "Model/joblib untuk streamlit"
+    if not model_dir.exists():
+        model_dir = ROOT_DIR / "Model"
     try:
         models = {
-            "Random Forest (terpilih)": joblib.load(ROOT_DIR / "Model/random_forest_pipeline.joblib"),
-            "Logistic Regression": joblib.load(ROOT_DIR / "Model/logistic_regression_pipeline.joblib"),
-            "Decision Tree": joblib.load(ROOT_DIR / "Model/decision_tree_pipeline.joblib"),
+            "Random Forest (terpilih)": joblib.load(model_dir / "random_forest_pipeline.joblib"),
+            "Logistic Regression": joblib.load(model_dir / "logistic_regression_pipeline.joblib"),
+            "Decision Tree": joblib.load(model_dir / "decision_tree_pipeline.joblib"),
         }
     except Exception:
         from sklearn.ensemble import RandomForestClassifier
@@ -447,7 +450,6 @@ with tab_about:
 
     st.markdown("##### Referensi")
     refs = [
-        ("Kroenke, Spitzer & Williams (2001). The PHQ-9: Validity of a Brief Depression Severity Measure. J Gen Intern Med (dasar ambang klinis PHQ-9 ≥ 10).", "10.1046/j.1525-1497.2001.016009606.x"),
         ("Li, Ai & Liang (2024). A machine learning model to predict the risk of depression in US adults with obstructive sleep apnea hypopnea syndrome. Front Public Health.", "10.3389/fpubh.2023.1348803"),
         ("Selvaraj & Mohandoss (2024). Enhancing Depression Detection: A Stacked Ensemble Model with Feature Selection and RF Feature Importance Analysis Using NHANES Data. Appl Sci.", "10.3390/app14167366"),
         ("Vu et al. (2025). Prediction of depressive disorder using machine learning approaches: findings from the NHANES. BMC Med Inform Decis Mak.", "10.1186/s12911-025-02903-1"),

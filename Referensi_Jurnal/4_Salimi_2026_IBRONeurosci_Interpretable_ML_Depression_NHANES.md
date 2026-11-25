@@ -1,4 +1,4 @@
-# Ringkasan Artikel Jurnal Ilmiah 5
+# Ringkasan Artikel Jurnal Ilmiah 4
 
 - **Judul Artikel:** Interpretable machine learning for depression symptom classification in NHANES: Performance in a curated high-confidence corpus and the full survey population
 - **Penulis:** Omid Salimi, Zahra Ghahramani, Mahsa Taghavi Zenouz, Marziyeh Heidari, Alireza Amini, Fatemeh Nouroozi, Mobina Fathi, Arian Tavasol, Mohammad Reza Bateni

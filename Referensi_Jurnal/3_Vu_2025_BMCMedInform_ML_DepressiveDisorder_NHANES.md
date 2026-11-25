@@ -1,4 +1,4 @@
-# Ringkasan Artikel Jurnal Ilmiah 4
+# Ringkasan Artikel Jurnal Ilmiah 3
 
 - **Judul Artikel:** Prediction of depressive disorder using machine learning approaches: findings from the NHANES
 - **Penulis:** Thien Vu, Research Dawadi, Masaki Yamamoto, Jie Ting Tay, Naoki Watanabe, Yuki Kuriya, Ai Oya, Phap Ngoc Hoang Tran, Michihiro Araki

@@ -1,4 +1,4 @@
-# Ringkasan Artikel Jurnal Ilmiah 6
+# Ringkasan Artikel Jurnal Ilmiah 5
 
 - **Judul Artikel:** An Interpretable Stacking Ensemble Model with SHAP for Geriatric Depression Prediction: Analysis of the NHANES 2005-2023 Database
 - **Penulis:** Manman Cui, Xian Li, Wei Gong
