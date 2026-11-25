@@ -447,13 +447,13 @@ with tab_about:
 
     st.markdown("##### Referensi")
     refs = [
-        ("Kroenke, Spitzer & Williams (2001). The PHQ-9: Validity of a Brief Depression Severity Measure. J Gen Intern Med.", "10.1046/j.1525-1497.2001.016009606.x"),
-        ("Dipnall et al. (2016). Fusing Data Mining, Machine Learning and Traditional Statistics to Detect Biomarkers Associated with Depression. PLOS ONE.", "10.1371/journal.pone.0148195"),
-        ("Su, Xu, Pathak & Wang (2020). Deep Learning in Mental Health Outcome Research: A Scoping Review. Transl Psychiatry.", "10.1038/s41398-020-0780-3"),
-        ("Pryor et al. (2021). Machine Learning Prediction of Depression Using NHANES Health Data.", "10.2196/24673"),
-        ("Zhang, Wang & Zhao (2022). Predicting Depressive Symptoms with Explainable Machine Learning Models. Front Psychiatry.", "10.3389/fpsyt.2022.856421"),
+        ("Kroenke, Spitzer & Williams (2001). The PHQ-9: Validity of a Brief Depression Severity Measure. J Gen Intern Med (dasar ambang klinis PHQ-9 ≥ 10).", "10.1046/j.1525-1497.2001.016009606.x"),
+        ("Li, Ai & Liang (2024). A machine learning model to predict the risk of depression in US adults with obstructive sleep apnea hypopnea syndrome. Front Public Health.", "10.3389/fpubh.2023.1348803"),
+        ("Selvaraj & Mohandoss (2024). Enhancing Depression Detection: A Stacked Ensemble Model with Feature Selection and RF Feature Importance Analysis Using NHANES Data. Appl Sci.", "10.3390/app14167366"),
+        ("Vu et al. (2025). Prediction of depressive disorder using machine learning approaches: findings from the NHANES. BMC Med Inform Decis Mak.", "10.1186/s12911-025-02903-1"),
+        ("Salimi et al. (2026). Interpretable machine learning for depression symptom classification in NHANES. IBRO Neurosci Rep.", "10.1016/j.ibneur.2026.08.009"),
+        ("Cui, Li & Gong (2026). An Interpretable Stacking Ensemble Model with SHAP for Geriatric Depression Prediction: Analysis of the NHANES 2005-2023 Database. EAI Endorsed Trans Pervasive Health Technol.", "10.4108/eetpht.11.11671"),
     ]
-    st.caption("Periksa kembali setiap DOI dan detail jurnal sebelum dikumpulkan.")
     for i, (text, doi) in enumerate(refs, 1):
         st.markdown(f"{i}. {text} [{doi}](https://doi.org/{doi})")
 

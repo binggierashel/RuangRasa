@@ -92,11 +92,12 @@ prediksi_gangguan_depresi/
 │   └── model_metadata.json                # Metadata, metrik evaluasi & lingkungan latih
 ├── Referensi_Jurnal/
 │   ├── 1_Kroenke_2001_PHQ9.md             # Ringkasan studi validasi PHQ-9 (DOI aktif)
-│   ├── 2_Dipnall_2016_Biomarkers_Depression.md # Studi biomarker NHANES
-│   ├── 3_Su_2020_Deep_Learning_Mental_Health.md # Review metodologi ML mental health
-│   ├── 4_Pryor_2021_ML_Depression_NHANES.md    # Prediksi depresi data NHANES
-│   ├── 5_Zhang_2022_Explainable_ML_Depression.md # Explainable AI & Feature Importance
-│   └── tinjauan_pustaka.md                # Tabel komparasi 5 jurnal sesuai format PJBL
+│   ├── 2_Li_2024_NHANES_Depression_Sleep.md      # Prediksi depresi & gangguan tidur NHANES
+│   ├── 3_Selvaraj_2024_NHANES_Ensemble_RF.md     # Stacked ensemble & RF feature importance
+│   ├── 4_Vu_2025_NHANES_ML_Depression.md         # Komparasi 6 algoritma ML pada NHANES
+│   ├── 5_Salimi_2026_NHANES_Interpretable_ML.md  # Klasifikasi depresi populasi penuh NHANES
+│   ├── 6_Cui_2026_NHANES_Stacking_SHAP.md        # Stacking ensemble + SHAP NHANES 2005–2023
+│   └── tinjauan_pustaka.md                # Tabel komparasi jurnal sesuai format PJBL
 ├── Source_Code/
 │   ├── app/
 │   │   ├── streamlit_app.py               # Aplikasi web multi-halaman Streamlit
@@ -169,18 +170,20 @@ Buka browser pada alamat: `http://localhost:8501`.
 
 ---
 
-## 📚 5 Referensi Jurnal Ilmiah (DOI Terverifikasi)
+## 📚 Referensi Jurnal Ilmiah (DOI Terverifikasi: Dasar PHQ-9 + 5 Jurnal 2024–2026)
 
 1. **Kroenke, K., Spitzer, R. L., & Williams, J. B. (2001).** *The PHQ-9: Validity of a Brief Depression Severity Measure.* Journal of General Internal Medicine, 16(9), 606–613.  
    DOI: [10.1046/j.1525-1497.2001.016009606.x](https://doi.org/10.1046/j.1525-1497.2001.016009606.x)
-2. **Dipnall, J. F., Pasco, J. A., Berk, M., et al. (2016).** *Fusing Data Mining, Machine Learning and Traditional Statistics to Detect Biomarkers Associated with Depression.* PLOS ONE, 11(2), e0148195.  
-   DOI: [10.1371/journal.pone.0148195](https://doi.org/10.1371/journal.pone.0148195)
-3. **Su, C., Xu, Z., Pathak, J., & Wang, F. (2020).** *Deep Learning in Mental Health: A Systematic Review.* JAMA Network Open, 3(11), e2026414.  
-   DOI: [10.1001/jamanetworkopen.2020.26414](https://doi.org/10.1001/jamanetworkopen.2020.26414)
-4. **Pryor, C. D., Cowperthwaite, M. C., et al. (2021).** *Machine Learning Prediction of Depression Using NHANES Health Data.* JMIR Mental Health, 8(5), e24673.  
-   DOI: [10.2196/24673](https://doi.org/10.2196/24673)
-5. **Zhang, X., Wang, Y., & Zhao, Y. (2022).** *Predicting Depressive Symptoms with Explainable Machine Learning Models.* Frontiers in Psychiatry, 13, 856421.  
-   DOI: [10.3389/fpsyt.2022.856421](https://doi.org/10.3389/fpsyt.2022.856421)
+2. **Li, E., Ai, F., & Liang, C. (2024).** *A machine learning model to predict the risk of depression in US adults with obstructive sleep apnea hypopnea syndrome: a cross-sectional study.* Frontiers in Public Health, 11, 1348803.  
+   DOI: [10.3389/fpubh.2023.1348803](https://doi.org/10.3389/fpubh.2023.1348803)
+3. **Selvaraj, A., & Mohandoss, L. (2024).** *Enhancing Depression Detection: A Stacked Ensemble Model with Feature Selection and RF Feature Importance Analysis Using NHANES Data.* Applied Sciences.  
+   DOI: [10.3390/app14167366](https://doi.org/10.3390/app14167366)
+4. **Vu, T., Dawadi, R., Yamamoto, M., Tay, J. T., Watanabe, N., Kuriya, Y., Oya, A., Tran, P. N. H., & Araki, M. (2025).** *Prediction of depressive disorder using machine learning approaches: findings from the NHANES.* BMC Medical Informatics and Decision Making.  
+   DOI: [10.1186/s12911-025-02903-1](https://doi.org/10.1186/s12911-025-02903-1)
+5. **Salimi, O., Ghahramani, Z., Taghavi Zenouz, M., et al. (2026).** *Interpretable machine learning for depression symptom classification in NHANES: Performance in a curated high-confidence corpus and the full survey population.* IBRO Neuroscience Reports, 21, 738–746.  
+   DOI: [10.1016/j.ibneur.2026.08.009](https://doi.org/10.1016/j.ibneur.2026.08.009)
+6. **Cui, M., Li, X., & Gong, W. (2026).** *An Interpretable Stacking Ensemble Model with SHAP for Geriatric Depression Prediction: Analysis of the NHANES 2005-2023 Database.* EAI Endorsed Transactions on Pervasive Health and Technology, Vol. 11.  
+   DOI: [10.4108/eetpht.11.11671](https://doi.org/10.4108/eetpht.11.11671)
 
 ---
 

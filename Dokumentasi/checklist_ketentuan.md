@@ -19,7 +19,7 @@ Dokumen ini memetakan setiap butir persyaratan dalam panduan resmi `PJBL-KETENTU
 | Butir Ketentuan Panduan | Status | Realisasi dalam Proyek | Bukti File / Lokasi |
 |---|:---:|---|---|
 | Tema permasalahan nyata berbasis data terukur (*Classification*) | **TERPENUHI** | Klasifikasi risiko depresi mayor (Biner: `Not Depressed` vs `Depressed`). | `Dokumentasi/pengajuan_tema.md` |
-| Minimal 5 artikel jurnal ilmiah relevan dengan DOI aktif | **TERPENUHI** | 5 artikel jurnal internasional terindeks bereputasi (Kroenke 2001, Dipnall 2016, Su 2020, Pryor 2021, Zhang 2022) dengan DOI terverifikasi. | Folder `Referensi_Jurnal/` |
+| Minimal 5 artikel jurnal ilmiah relevan dengan DOI aktif | **TERPENUHI** | Landasan PHQ-9 (Kroenke 2001) + 5 jurnal terbitan 5 tahun terakhir (Li 2024, Selvaraj 2024, Vu 2025, Salimi 2026, Cui 2026) dengan DOI terverifikasi. | Folder `Referensi_Jurnal/` |
 | Tabel studi literatur komparatif (Penulis, Masalah, Dataset, Metode, Metrik, Hasil, Perbedaan) | **TERPENUHI** | Dibuat tabel matriks perbandingan komprehensif mengacu format rubrik ketentuan. | `Referensi_Jurnal/tinjauan_pustaka.md` |
 
 ---
